@@ -12,9 +12,9 @@ We build executable formal frameworks for cognitive AI, with a focus on
 substrate-agnostic primitives that bridge cognitive neuroscience theory
 and machine learning practice. Our current cycle (2026) axiomatizes
 **dream-based knowledge consolidation** in artificial cognitive
-systems, with a publication track targeting *Nature Human Behaviour*
-(Paper 1, theory + formal framework) and *NeurIPS/ICML/TMLR* (Paper 2,
-empirical ablation, cycle 2).
+systems, with Paper 1 (theory + formal framework) targeting *PLOS
+Computational Biology* and Paper 2 (empirical ablation, cycle 2)
+targeting *NeurIPS / ICML / TMLR*.
 
 Our research discipline is public-by-default:
 
@@ -31,17 +31,31 @@ Our research discipline is public-by-default:
 
 ### Flagship
 
-- [**dream-of-kiki**](https://github.com/genial-lab/dream-of-kiki) — Substrate-agnostic formal framework for dream-based knowledge consolidation in artificial cognitive systems. Axioms DR-0..DR-4, Conformance Criterion, 8 primitives, 4 canonical operations, 5-tuple Dream Episode ontology. Python 3.12+, MLX on Apple Silicon.
+- [**dream-of-kiki**](https://github.com/genial-lab/dream-of-kiki) — Substrate-agnostic formal framework for dream-based knowledge consolidation in artificial cognitive systems. Axioms DR-0..DR-4, Conformance Criterion, 8 primitives, 4 canonical operations, 5-tuple Dream Episode ontology. Python 3.12+, MLX on Apple Silicon. **Paper 1 v0.2** (2026-04-19, PLOS CB submission target).
 
 ### Upstream / foundational
 
-- [**kiki-flow-research**](https://github.com/genial-lab/kiki-flow-research) — Wasserstein-gradient-flow engine for self-organization on continual-learning substrates.
-- [**nerve-wml**](https://github.com/genial-lab/nerve-wml) — Substrate-agnostic nerve protocol for inter-WML communication (discrete neuroletters, γ/θ multiplexing, sparse learned topology).
+- [**kiki-flow-research**](https://github.com/genial-lab/kiki-flow-research) — Wasserstein-gradient-flow engine for self-organization on continual-learning substrates. Provides the numerical routines (species ontology, flow integrators, divergence estimators) that downstream substrates depend on. Grounded in the Levelt-Baddeley model of language production.
+- [**nerve-wml**](https://github.com/genial-lab/nerve-wml) — Substrate-agnostic Nerve Protocol for inter-WML (World Model Language) communication. Two concrete substrates (MlpWML dense, LifWML surrogate-gradient SNN) share the same Protocol ; polymorphism gap measured at 0 % on linearly separable FlowProxyTask and 12.1 % on HardFlowProxyTask (Gate M merge retains 1.000 of mock-baseline accuracy). Reference cross-substrate validation cited in dream-of-kiki Paper 1 v0.2 §7.4.
 
 ### Implementation substrates
 
-- [**micro-kiki**](https://github.com/genial-lab/micro-kiki) — 32 domain experts (MoE-LoRA) on a Qwen3.5-4B base, fits a 24 GB GPU. Distillation from Mistral-Large-Opus / Qwen3.5-122B teachers.
-- **micro-kiki-quantum** (private) — True-quantum research: Quantum-PEFT (QPU), QMoE routing, IonQ / IBM Quantum experiments.
+- [**micro-kiki**](https://github.com/genial-lab/micro-kiki) — 35 domain-expert MoE-LoRA adapters on Qwen3.5 MoE base. Sequential per-domain training via MLX on Apple Silicon ; Q4_K_M inference on consumer GPUs (RTX 4090 class). Router of 35 sigmoid outputs — domains are not mutually exclusive.
+- **micro-kiki-quantum** (private) — True-quantum research : Quantum-PEFT, QMoE routing, IonQ / IBM Quantum experiments.
+
+### Architecture map
+
+```
+dream-of-kiki (flagship, formal framework)
+    │
+    ├── depends on → kiki-flow-research (Wasserstein solver, species ontology)
+    │
+    ├── cites       → nerve-wml (cross-substrate portability evidence §7.4)
+    │
+    └── sibling     → micro-kiki (deployable MoE-LoRA instance)
+```
+
+See [dream-of-kiki/docs/ARCHITECTURE.md](https://github.com/genial-lab/dream-of-kiki/blob/main/docs/ARCHITECTURE.md) for the detailed cross-repo integration map.
 
 ---
 
@@ -73,7 +87,7 @@ or bibliographies.
 ## Open science stack
 
 - **Pre-registration** — [OSF project dreamOfkiki](https://osf.io/v7a2j) · DOI [10.17605/OSF.IO/Q6JYN](https://doi.org/10.17605/OSF.IO/Q6JYN)
-- **Preprint** — arXiv (forthcoming, cycle 1 tag `arxiv-v0.1`)
+- **Preprint** — arXiv (forthcoming, cycle 1 tag `arxiv-v0.2`)
 - **Code** — GitHub (this organization), MIT licence
 - **Models** — HuggingFace (forthcoming) under `clemsail/kiki-oniric-*`
 - **Raw runs** — Zenodo DOI (at cycle-1 release)
@@ -84,3 +98,7 @@ or bibliographies.
 ## Contact
 
 Research / collaboration inquiries : clement@saillant.cc
+
+---
+
+*Last updated : 2026-04-19 (Paper 1 v0.2 release, org profile aligned with sibling-repo integration map).*
