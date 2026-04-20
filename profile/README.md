@@ -100,7 +100,7 @@ See each repo's `docs/ARCHITECTURE.md` / design spec for the detailed interface 
 - **Clément Saillant** — founder, corresponding author, maintainer.
   [GitHub](https://github.com/electron-rare) · [L'Electron Rare](https://lelectronrare.fr) · `clement@saillant.cc`
   Embedded Systems & AI Architect, Grandris (69), Auvergne-Rhône-Alpes, France.
-- Visiting contributors and co-authors credited per publication.
+- Future visiting collaborators and co-authors would be credited per publication.
 
 ---
 
