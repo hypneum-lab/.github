@@ -91,7 +91,7 @@ See each repo's `docs/ARCHITECTURE.md` / design spec for the detailed interface 
 - **Preprints** — arXiv (Paper 1 v0.2 bundle ready) · HAL FR (mirror post-arXiv-announcement).
 - **Models** — HuggingFace `clemsail/kiki-oniric-*` (posted when **S8 PUBLICATION-READY** gate is achieved).
 - **Data** — Zenodo DOI for raw runs at S20-S22 (experiments start S5).
-- **Reviewer slate** — 6 named DR-2 proof reviewers (Milewski / Locatello / Gershman EN · Dumas / Alexandre / Oudeyer / Dehaene FR) + 2 JEPA-adjacent (Bardes V-JEPA · LeBrun AMI Labs), draft outreach `.eml` files held in the author's workspace.
+
 
 ---
 
