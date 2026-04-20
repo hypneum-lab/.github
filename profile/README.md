@@ -31,16 +31,16 @@ Our research discipline is public-by-default:
 
 ### Flagship
 
-- [**dream-of-kiki**](https://github.com/genial-lab/dream-of-kiki) — Substrate-agnostic formal framework for dream-based knowledge consolidation in artificial cognitive systems. Axioms DR-0..DR-4, Conformance Criterion, 8 primitives, 4 canonical operations, 5-tuple Dream Episode ontology. Python 3.12+, MLX on Apple Silicon. **Paper 1 v0.2** (2026-04-19, PLOS CB submission target).
+- [**dream-of-kiki**](https://github.com/c-geni-al/dream-of-kiki) — Substrate-agnostic formal framework for dream-based knowledge consolidation in artificial cognitive systems. Axioms DR-0..DR-4, Conformance Criterion, 8 primitives, 4 canonical operations, 5-tuple Dream Episode ontology. Python 3.12+, MLX on Apple Silicon. **Paper 1 v0.2** (2026-04-19, PLOS CB submission target).
 
 ### Upstream / foundational
 
-- [**kiki-flow-research**](https://github.com/genial-lab/kiki-flow-research) — Wasserstein-gradient-flow engine for self-organization on continual-learning substrates. Provides the numerical routines (species ontology, flow integrators, divergence estimators) that downstream substrates depend on. Grounded in the Levelt-Baddeley model of language production.
-- [**nerve-wml**](https://github.com/genial-lab/nerve-wml) — Substrate-agnostic Nerve Protocol for inter-WML (World Model Language) communication. Two concrete substrates (MlpWML dense, LifWML surrogate-gradient SNN) share the same Protocol ; polymorphism gap measured at 0 % on linearly separable FlowProxyTask and 12.1 % on HardFlowProxyTask (Gate M merge retains 1.000 of mock-baseline accuracy). Reference cross-substrate validation cited in dream-of-kiki Paper 1 v0.2 §7.4.
+- [**kiki-flow-research**](https://github.com/c-geni-al/kiki-flow-research) — Wasserstein-gradient-flow engine for self-organization on continual-learning substrates. Provides the numerical routines (species ontology, flow integrators, divergence estimators) that downstream substrates depend on. Grounded in the Levelt-Baddeley model of language production.
+- [**nerve-wml**](https://github.com/c-geni-al/nerve-wml) — Substrate-agnostic Nerve Protocol for inter-WML (World Model Language) communication. Two concrete substrates (MlpWML dense, LifWML surrogate-gradient SNN) share the same Protocol ; polymorphism gap measured at 0 % on linearly separable FlowProxyTask and 12.1 % on HardFlowProxyTask (Gate M merge retains 1.000 of mock-baseline accuracy). Reference cross-substrate validation cited in dream-of-kiki Paper 1 v0.2 §7.4.
 
 ### Implementation substrates
 
-- [**micro-kiki**](https://github.com/genial-lab/micro-kiki) — 35 domain-expert MoE-LoRA adapters on Qwen3.5 MoE base. Sequential per-domain training via MLX on Apple Silicon ; Q4_K_M inference on consumer GPUs (RTX 4090 class). Router of 35 sigmoid outputs — domains are not mutually exclusive.
+- [**micro-kiki**](https://github.com/c-geni-al/micro-kiki) — 35 domain-expert MoE-LoRA adapters on Qwen3.5 MoE base. Sequential per-domain training via MLX on Apple Silicon ; Q4_K_M inference on consumer GPUs (RTX 4090 class). Router of 35 sigmoid outputs — domains are not mutually exclusive.
 - **micro-kiki-quantum** (private) — True-quantum research : Quantum-PEFT, QMoE routing, IonQ / IBM Quantum experiments.
 
 ### Architecture map
@@ -55,7 +55,7 @@ dream-of-kiki (flagship, formal framework)
     └── sibling     → micro-kiki (deployable MoE-LoRA instance)
 ```
 
-See [dream-of-kiki/docs/ARCHITECTURE.md](https://github.com/genial-lab/dream-of-kiki/blob/main/docs/ARCHITECTURE.md) for the detailed cross-repo integration map.
+See [dream-of-kiki/docs/ARCHITECTURE.md](https://github.com/c-geni-al/dream-of-kiki/blob/main/docs/ARCHITECTURE.md) for the detailed cross-repo integration map.
 
 ---
 
@@ -76,7 +76,7 @@ Research-first discipline. Pull requests are welcome, especially on:
 - Reproducibility tooling (harness, run_registry, invariants)
 - Translations and accessibility improvements
 
-See [`CONTRIBUTING.md`](https://github.com/genial-lab/dream-of-kiki/blob/main/CONTRIBUTING.md) in the flagship repository.
+See [`CONTRIBUTING.md`](https://github.com/c-geni-al/dream-of-kiki/blob/main/CONTRIBUTING.md) in the flagship repository.
 
 Authorship policy: every experimental claim must resolve to a
 registered `run_id`. No AI attribution in author lists, acknowledgments,
