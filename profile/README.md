@@ -79,7 +79,7 @@ Four PRs closed in a single session. On the `nerve-wml` side, §Related Work gre
 > **Correction notes (2026-10-23)** — the 2026-05-19 text above is kept as written ; three present-tense claims in it no longer match the repos :
 > - **"Friston 2025"** (GTM re-grounding) : that entry was removed on 2026-05-20 as unverifiable and replaced by Gabhart et al. 2025 ; the GTM rationale now rests on Bastos 2020 / Gabhart et al. 2025 / Ruffini 2025. `nerve-wml#16` (`friston2025pivot` metadata) is closed as superseded.
 > - **DR-3 "local form of PRH"** : after `dream-of-kiki` PR #40 the related-work and discussion prose reads *relational structure, not metric geometry* (per You et al.). No axiom, proof or reported number changed.
-> - **`nerve-wml` Related Work** : the six-thread passage had been accidentally dropped from `main.tex` by the 2026-06-04 merge of PR #53 ; restored in PR #50 (2026-10-23).
+> - **`nerve-wml` Related Work** : the six-thread passage had been accidentally dropped from `main.tex` by the 2026-06-04 merge of Gitea PR #53 ; restored in PR #50 (2026-10-23).
 
 **Three Open Question defaults** documented in PR bodies (reviewable) :
 - OQ-1 (DR-0 boundary) : `BioFieldWML.step()` performs ONE synchronous Up-Down cycle per call.
@@ -90,7 +90,7 @@ Four PRs closed in a single session. On the `nerve-wml` side, §Related Work gre
 
 ## 2026-10-23 update — repo state sync
 
-- Literature-update PRs (branch `docs/sota-2026-10`, covering 2026-04-23 → 2026-10-23) merged across 10 repos : `baby-brain`, `BabyBrain`, `bouba_sens`, `dream-of-kiki`, `kiki-flow-research`, `micro-kiki`, `micro-kiki-quantum`, `moshivis`, `nerve-wml`, `whisperx-server`.
+- Literature-update PRs (branch `docs/sota-2026-10`, covering 2026-04-23 → 2026-10-23) merged across 10 repos : [`baby-brain` #282](https://github.com/hypneum-lab/baby-brain/pull/282), [`BabyBrain` #47](https://github.com/hypneum-lab/BabyBrain/pull/47), [`bouba_sens` #8](https://github.com/hypneum-lab/bouba_sens/pull/8), [`dream-of-kiki` #40](https://github.com/hypneum-lab/dream-of-kiki/pull/40), [`kiki-flow-research` #10](https://github.com/hypneum-lab/kiki-flow-research/pull/10), [`micro-kiki` #7](https://github.com/hypneum-lab/micro-kiki/pull/7), [`micro-kiki-quantum` #1](https://github.com/hypneum-lab/micro-kiki-quantum/pull/1), [`moshivis` #1](https://github.com/hypneum-lab/moshivis/pull/1), [`nerve-wml` #50](https://github.com/hypneum-lab/nerve-wml/pull/50), [`whisperx-server` #1](https://github.com/hypneum-lab/whisperx-server/pull/1).
 - `micro-kiki` PR #6 : fixed MLX prompt-cache reuse in `src/serving/full_pipeline_server.py` (a prefix hit now prefills only the new suffix).
 - Draft OSF pre-registration amendments / new pre-registrations are open as draft PRs : `nerve-wml` #51, `dream-of-kiki` #41, `bouba_sens` #9.
 - Corrections to earlier present-tense claims on this page : `bouba_sens` B-3 (magnitude only, N12 LOST 0/2), `kiki-flow-research` tag (`paper-v0.11-draft`), the "Friston 2025" citation and DR-3 PRH wording (see the correction notes in the 2026-05-11 and 2026-05-19 sections).
