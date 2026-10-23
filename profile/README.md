@@ -31,6 +31,8 @@ repos (`nerve-wml`, `dream-of-kiki`, `bouba_sens`) :
   compute node bootstrapped 2026-05-11), tactile-floor +
   force-plus10 candidates from `bouba_sens` pooled-v2 discovery,
   N=20 seeds, ETA ~07:30 morning.
+  *Correction 2026-10-23 :* the N12 replication is complete — outcome
+  **LOST 0/2** at Bonferroni α=0.025 (ADR-0019), see `bouba_sens`.
 - **6 critic-driven fixes shipped** : ablation void → cosine
   plasticity ; degenerate metrics handled ; Cat C honest framing
   (1 % / 6 % / 80 % per-substrate, no overstatement) ;
@@ -74,10 +76,24 @@ Four PRs closed in a single session. On the `nerve-wml` side, §Related Work gre
 - `nerve-wml#16` — `friston2025pivot` bibliographic metadata to complete pre-submission.
 - `dream-of-kiki#20` — `paper1-fr/` EN→FR sync of PR #18 changes.
 
+> **Correction notes (2026-10-23)** — the 2026-05-19 text above is kept as written ; three present-tense claims in it no longer match the repos :
+> - **"Friston 2025"** (GTM re-grounding) : that entry was removed on 2026-05-20 as unverifiable and replaced by Gabhart et al. 2025 ; the GTM rationale now rests on Bastos 2020 / Gabhart et al. 2025 / Ruffini 2025. `nerve-wml#16` (`friston2025pivot` metadata) is closed as superseded.
+> - **DR-3 "local form of PRH"** : after `dream-of-kiki` PR #40 the related-work and discussion prose reads *relational structure, not metric geometry* (per You et al.). No axiom, proof or reported number changed.
+> - **`nerve-wml` Related Work** : the six-thread passage had been accidentally dropped from `main.tex` by the 2026-06-04 merge of PR #53 ; restored in PR #50 (2026-10-23).
+
 **Three Open Question defaults** documented in PR bodies (reviewable) :
 - OQ-1 (DR-0 boundary) : `BioFieldWML.step()` performs ONE synchronous Up-Down cycle per call.
 - OQ-2 (STDP scope) : STDP triplet scoped to `BioFieldWML` exclusively ; surrogate-gradient YAGNI bounded, not revoked.
 - OQ-3 (stratification spec scope) : Paper 2 appendix scaffolding by default.
+
+---
+
+## 2026-10-23 update — repo state sync
+
+- Literature-update PRs (branch `docs/sota-2026-10`, covering 2026-04-23 → 2026-10-23) merged across 10 repos : `baby-brain`, `BabyBrain`, `bouba_sens`, `dream-of-kiki`, `kiki-flow-research`, `micro-kiki`, `micro-kiki-quantum`, `moshivis`, `nerve-wml`, `whisperx-server`.
+- `micro-kiki` PR #6 : fixed MLX prompt-cache reuse in `src/serving/full_pipeline_server.py` (a prefix hit now prefills only the new suffix).
+- Draft OSF pre-registration amendments / new pre-registrations are open as draft PRs : `nerve-wml` #51, `dream-of-kiki` #41, `bouba_sens` #9.
+- Corrections to earlier present-tense claims on this page : `bouba_sens` B-3 (magnitude only, N12 LOST 0/2), `kiki-flow-research` tag (`paper-v0.11-draft`), the "Friston 2025" citation and DR-3 PRH wording (see the correction notes in the 2026-05-11 and 2026-05-19 sections).
 
 ---
 
@@ -111,7 +127,7 @@ Open-science discipline is public-by-default :
   - `track1_perf` — nightly offline consolidation over the LoRA stack tensor (40 hybrid species, ~30 min on Studio M3 Ultra). Tag `track1-v0.1`.
   - `track2_paper` — N-particle Langevin × JKO rigorous proxy, 4 Levelt-Baddeley species, 5-seed paper figures. Tag `track2-v0.1`, paper draft advanced to `paper-v0.7-draft` ; **`phase1-pilot10k-done`** reached, scale-50k prep (T22–T23) complete.
   - `track3_deploy` — pure-NumPy streaming surrogate, MiniLM query encoder, advisory-only routing (p50 ≈ 0.04 ms on M5). Tag `track3-v0.1` ; **v0.3 text-bridge surrogate** just merged (PR #6) with query-conditioned free energy + g_JEPA phase-A pre-training + 4-species simplex init fix.
-  186 commits on `main`, latest release `paper-v0.9-draft`, strict ruff + mypy. **Zenodo-GitHub integration live** — concept DOI [10.5281/zenodo.19666755](https://doi.org/10.5281/zenodo.19666755), latest-version DOI [10.5281/zenodo.19666756](https://doi.org/10.5281/zenodo.19666756) for `paper-v0.8-draft`. MIT.
+  186 commits on `main`, latest tag `paper-v0.11-draft` (the packaged v0.5 arXiv bundle is stale and must be regenerated before submission), strict ruff + mypy. **Zenodo-GitHub integration live** — concept DOI [10.5281/zenodo.19666755](https://doi.org/10.5281/zenodo.19666755), latest-version DOI [10.5281/zenodo.19666756](https://doi.org/10.5281/zenodo.19666756) for `paper-v0.8-draft`. MIT.
 
 ### Reference cross-substrate measurement
 
@@ -135,9 +151,9 @@ Open-science discipline is public-by-default :
   A 5-modality agent (audio, vision, tactile, gravity, force) undergoes a two-arm lesion protocol — **congenital (T1, pre-training)** vs **late-acquired (T2, post-convergence)** — combined with progressive SNR degradation. Three pre-registered invariants evaluated against fixed thresholds on every grid run :
   - **B-1 Congenital gap** — `Me7 > 0.05`
   - **B-2 MI migration** — `Me3_delta > 0.10 bit`
-  - **B-3 Perceptive/proprioceptive asymmetry** — `Me6 max-abs off-diag > 0.02`
+  - **B-3 Perceptive/proprioceptive asymmetry** — `Me6 max-abs off-diag > 0.02` — **passes on magnitude only** ; the architectural reading is withdrawn (ADR-0014, ADR-0015)
   Built on top of `nerve-wml` (shared neuroletter codebook, γ/θ multiplexing) with adaptive gating, adaptive codebook expansion, and learnable cross-modal transducers.
-  **State (v0.5.9, 164 commits)** — Sprint 8 closed; §5.5 further retracted (ADR-0019, see the dated milestone above). **All three pre-registered findings have failed critical validation** — the programme is now a *methodology-first* contribution with an active paper draft. **F1 B-3** is a 3+2-partition tautology (pre-reg at 12.5th percentile of an n=8 null-model distribution, `docs/adr/0006-critical-validation.md`). **F2 B-1** sign flip is sampling noise (bootstrap 95 % CIs straddle 0 across all three worlds). **F3 B-2** decay is a Kraskov-k-NN artefact at n=16 probe batch (binning + MINE both return median 0). Paper 1 v0.1 draft (`papers/paper1/main.md`, ~9 pages) reframes the programme around three methodological recommendations: probe batch size ≥ 128 for MI estimators, bootstrap CIs mandatory for sub-threshold effects, null-model partition controls for group-asymmetry claims. The Popperian guardrails fired before external review — this is the lab's first null-results publication, tagged `v0.5.0`. Target venue TMLR or NeurIPS D&B.
+  **State (v0.5.9, 164 commits)** — Sprint 8 closed; §5.5 further retracted (ADR-0019, see the dated milestone above). **Critical validation overturned the original reading of all three pre-registered findings** (B-3 survives on magnitude only) — the programme is now a *methodology-first* contribution with an active paper draft. **F1 B-3** passes on magnitude (5–6× threshold) but is not an architectural perceptive/proprioceptive property : that reading is withdrawn (ADR-0014, ADR-0015) ; the magnitude behaves as a per-modality entropy proxy, and a null-model partition control puts the pre-registered partition at the 44–72th percentile of random 3+2 alternatives. **F2 B-1** sign flip is sampling noise (bootstrap 95 % CIs straddle 0 across all three worlds). **F3 B-2** decay is a Kraskov-k-NN artefact at n=16 probe batch (binning + MINE both return median 0). Paper 1 v0.1 draft (`papers/paper1/main.md`, ~9 pages) reframes the programme around three methodological recommendations: probe batch size ≥ 128 for MI estimators, bootstrap CIs mandatory for sub-threshold effects, null-model partition controls for group-asymmetry claims. The Popperian guardrails fired before external review — this is the lab's first null-results publication, tagged `v0.5.0`. Target venue TMLR or NeurIPS D&B. *Update 2026-10-23 :* the §5.5 retraction is landed in the manuscript ; N12 subgroup replication outcome **LOST 0/2** ; TMLR submission remains BLOCKED pending the critic-review gate and the N≥30 decision.
 
 ### Private
 
@@ -158,7 +174,7 @@ Open-science discipline is public-by-default :
       ┌────────────────────────────────────┐
       │  kiki-flow-research                │  upstream numerical engine
       │  Wasserstein JKO + species         │  (ρ_phono, ρ_lex, ρ_syntax, ρ_sem)
-      │  186 commits · Zenodo DOI live     │  paper-v0.9-draft + pilot10k-done
+      │  186 commits · Zenodo DOI live     │  paper-v0.11-draft + pilot10k-done
       └──────────────┬─────────────────────┘
                      │
                      ▼  numerical primitives
@@ -191,7 +207,7 @@ Open-science discipline is public-by-default :
    │  bouba_sens v0.5.9   │               │
    │  §5.5 FINAL Retract  │               │
    │  TMLR BLOCKED        │               │
-   │  N12 RUNNING + pool- │               │
+   │  N12 LOST 0/2 ; pool-│               │
    │  v2 subgroup discov. │               │
    │  ADRs 0004→0019 ✓    │               │
    └──────────────────────┘               │
@@ -256,3 +272,5 @@ For L'Électron Rare business (custom electronic systems design and consulting �
 ---
 
 *Repository snapshot — 2026-06-09 (live GitHub state). `dream-of-kiki` release `v0.9.2`, `pyproject` `0.23.0`, 621 commits on `main` (Paper 1 → PLOS Comp Bio). `nerve-wml` release `v1.8.1`, 416 commits on `master` (GTM tied-stable, BioFieldWML substrate track). `bouba_sens` release `v0.5.9`, 164 commits (§5.5 FINAL Retract, ADR-0019, TMLR blocked pending reformulation). `kiki-flow-research` 186 commits, latest release `paper-v0.9-draft` (Zenodo DOI live). `micro-kiki` release `v0.3.0`, 580 commits (35-LoRA + Aeon/CAMP/KnowBias on Qwen3.6-35B-A3B). `micro-kiki-quantum` archived (`v0.0.1-archived`). New embodied track: `baby-brain` (642 commits, World-Model Learners), `BabyBrain` (macOS cockpit), `whisperx-server` (on-device STT), `moshivis` (vision-speech fork). The dated milestone sections above (2026-05-11 N8→N14, 2026-05-19 biophysical framing) are preserved as historical journal entries.*
+
+*Update 2026-10-23 : the `kiki-flow-research` latest tag is `paper-v0.11-draft` (not `paper-v0.9-draft`) ; other figures above are the 2026-06-09 snapshot and have not been re-counted.*
