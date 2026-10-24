@@ -24,7 +24,7 @@ Version 1 du 25 octobre 2026. Chercheur : Clément Saillant (indépendant, ~10 h
 | Sem. | Tâches (≈ 10 h) | Dépôt | Hôte | Fait quand |
 |---|---|---|---|---|
 | S1 (26 oct–1 nov) | Fusionner les 3 PR du 25/10 (avenant N10-C-bis, fix ε kiki-flow, calibration Me6) après lecture · Retirer des README/ROADMAP les « PASS » sans artefact (baby-brain) et les affirmations d'énergie (micro-kiki, BSK) · Retirer la mention « préenregistré OSF » de bouba_sens · Bylines auteur unique dans 5 dépôts · Lot e-Soleau : les préregs locales encore confidentielles (une après-midi) | tous | — | 0 chiffre sans artefact dans un README ; 5 bylines corrigées ; reçus e-Soleau archivés |
-| S2 (2–8 nov) | **Geler N10-C-bis** (tag annoté + SWHID) avant le 6 nov · Localiser les checkpoints bouba_sens (Studio / T7) et ré-évaluer Me6 à n ≥ 1024 ; rétracter B-3 sur la magnitude si confirmé ; corriger ADR, .zenodo.json, main.tex §4.4 · Erratum kiki-flow v0.13 (ε) + référence Zenodo 23619954 · `loihi_stub.py` (Lava archivé) et main.tex nerve-wml alignés | bouba_sens, kiki-flow, nerve-wml | ES (CPU), Studio si checkpoints | tag `n10c-bis-freeze-*` + SWH ; verdict B-3 écrit ; erratum publié |
+| S2 (2–8 nov) | **Geler N10-C-bis** (tag annoté + SWHID) avant le 6 nov · Localiser les checkpoints bouba_sens (Studio / T7) et ré-évaluer Me6 à n ≥ 1024 ; rétracter B-3 sur la magnitude si confirmé ; corriger ADR, .zenodo.json, main.tex §4.4 · Fusionner kiki-flow PR #27 (balayage ε) et référencer Zenodo 23619954 dans ERRATUM (le correctif ε est déjà sur `main`, PR #25) · `loihi_stub.py` (Lava archivé) et main.tex nerve-wml alignés | bouba_sens, kiki-flow, nerve-wml | ES (CPU), Studio si checkpoints | tag `n10c-bis-freeze-*` + SWH ; verdict B-3 écrit ; erratum publié |
 
 ### Phase 1 — Falsifiable (S3–S5)
 
@@ -40,7 +40,7 @@ Ordre = rapport « ce que ça tranche » / coût (revue §4.1). macM1 libre à p
 
 | Sem. | Hypothèse (catalogue) | Dépôt | Hôte | Durée | Verdict attendu |
 |---|---|---|---|---|---|
-| S6 (30 nov–6 déc) | **NH-01** rêve ≠ downscale : HopfieldDreamWML (unlearning Fachechi-Agliari-Barra) vs shrink · **NH-58** ε-température : KL(ε) suit ε/(2τ) ? | nerve-wml / dream-of-kiki ; kiki-flow | ES, KXKM-CPU | heures ; 1 j | formule du rêve ou SHY reformulé ; flot ou thermostat |
+| S6 (30 nov–6 déc) | **NH-01** rêve ≠ downscale : HopfieldDreamWML (unlearning Fachechi-Agliari-Barra) vs shrink · ~~NH-58 ε-température~~ (tranché le 25/10, PR #27 : gap insensible à ε) → remplacer par **NH-63** F monotone / réinjection JKO (cause structurelle de l'écart rapide/rigoureux) | nerve-wml / dream-of-kiki ; kiki-flow | ES, KXKM-CPU | heures ; 1 j | formule du rêve ou SHY reformulé ; flot ou thermostat |
 | S7 (7–13 déc) | **NH-59** spinodale (balayage λ_J) · **NH-60** coarsening t^{1/3} sous double puits · **NH-20** splitting Lie O(τ) vs Strang O(τ²) | kiki-flow ; dream-of-kiki | KXKM-CPU | 1 j chacun | « émergent » ou pas ; DR-2 devient une loi d'ordre ou une convention |
 | S8 (14–20 déc) | **NH-33** alphabet dimensionné par le jitter (SER par taille, prédiction 16 > 64) · **NH-81** J/token mesurés spiking vs dense (powermetrics, NVML) · **NH-10 (micro-kiki)** baseline RAG brut vs Aeon | nerve-wml ; BSK/micro-kiki | macM1, KXKM-GPU | 1 j ; 2 j ; 2 j | codebook fixé par la physique ; argument énergie fermé ou rouvert ; couche mémoire justifiée ou non |
 | S9 (21–27 déc) | **Tampon** (Noël) : rattrapage, relectures, aucune nouvelle hypothèse | — | — | — | — |
