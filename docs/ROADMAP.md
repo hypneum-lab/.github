@@ -42,7 +42,7 @@ Ordre = rapport « ce que ça tranche » / coût (revue §4.1). macM1 libre à p
 |---|---|---|---|---|---|
 | S6 (30 nov–6 déc) | **NH-01** rêve ≠ downscale : HopfieldDreamWML (unlearning Fachechi-Agliari-Barra) vs shrink · ~~NH-58 ε-température~~ (tranché le 25/10, PR #27 : gap insensible à ε) → remplacer par **NH-63** F monotone / réinjection JKO (cause structurelle de l'écart rapide/rigoureux) | nerve-wml / dream-of-kiki ; kiki-flow | ES, KXKM-CPU | heures ; 1 j | formule du rêve ou SHY reformulé ; flot ou thermostat |
 | S7 (7–13 déc) | **NH-59** spinodale (balayage λ_J) · **NH-60** coarsening t^{1/3} sous double puits · **NH-20** splitting Lie O(τ) vs Strang O(τ²) | kiki-flow ; dream-of-kiki | KXKM-CPU | 1 j chacun | « émergent » ou pas ; DR-2 devient une loi d'ordre ou une convention |
-| S8 (14–20 déc) | **NH-33** alphabet dimensionné par le jitter (SER par taille, prédiction 16 > 64) · **NH-81** J/token mesurés spiking vs dense (powermetrics, NVML) · **NH-10 (micro-kiki)** baseline RAG brut vs Aeon | nerve-wml ; BSK/micro-kiki | macM1, KXKM-GPU | 1 j ; 2 j ; 2 j | codebook fixé par la physique ; argument énergie fermé ou rouvert ; couche mémoire justifiée ou non |
+| S8 (14–20 déc) | **NH-28** alphabet dimensionné par le jitter (SER par taille, prédiction 16 > 64) · **NH-81** J/token mesurés spiking vs dense (powermetrics, NVML) · **NH-85 (micro-kiki)** baseline RAG brut vs Aeon | nerve-wml ; BSK/micro-kiki | macM1, KXKM-GPU | 1 j ; 2 j ; 2 j | codebook fixé par la physique ; argument énergie fermé ou rouvert ; couche mémoire justifiée ou non |
 | S9 (21–27 déc) | **Tampon** (Noël) : rattrapage, relectures, aucune nouvelle hypothèse | — | — | — | — |
 | S10 (28 déc–3 jan) | **NH-77** WML-JEPA : LeWorldModel latent comme substrat baby-brain, stades vs bras chronologique (démarré S6 en tâche de fond sur macM1) · **NH-03** TTT comme substrat C+ vs épisodes discrets à budget égal · **NH-07** RECOMBINE inter-domaines avec gate d'admission · **R8-H1** NcaWML budget de retour d'attracteur (pilote « bio ») | baby-brain ; dream-of-kiki ; nerve-wml | macM1 ; KXKM-GPU ; ES | 1–2 sem ; 1 sem ; 1 sem ; 1–2 sem | premier test réel de « WML de zéro » ; survie de DR-0 ; réouverture DR-4 ; premier substrat non neuronal |
 
@@ -65,7 +65,7 @@ Pilotes « matière » (track M) : NH-01 (S6) et NH-59/60 (S7) sont les deux pil
 | Q3 (22 fév–7 mars) | bouba_sens : publication du nul en équivalence (TOST) + calibration Me6 ; v0.7 exécutée si déposée en S5 | S5 |
 | Q4 (8–21 mars) | nerve-wml : papier N10-C/N10-C-bis ; décision sur le GTM (garder comme porteuse physique ou retirer) | N10-C-bis |
 | Q5 (22 mars–4 avr) | baby-brain : premier résultat WML-JEPA à 5 graines ; décision Path-B | NH-77 |
-| Q6 (5–18 avr) | Si GO matière : deuxième vague (machine d'Ising à oscillateurs simulée comme porteuse du GTM, NH-31/NH-33) ; sinon fermeture documentée | S13 |
+| Q6 (5–18 avr) | Si GO matière : deuxième vague (machine d'Ising à oscillateurs simulée comme porteuse du GTM, NH-28/NH-31) ; sinon fermeture documentée | S13 |
 | Q7 (19 avr–2 mai) | Bilan semestriel ; roadmap v3 ; décision BSK (relance seulement si J/token favorable) | NH-81 |
 
 ## Mois 7 à 12 (trimestres, mai → octobre 2027)
@@ -81,7 +81,7 @@ Pilotes « matière » (track M) : NH-01 (S6) et NH-59/60 (S7) sont les deux pil
 |---|---|---|---|---|
 | KXKM GPU | N10-C (graines 73/101/131) | N10-C-bis | N10-C-bis | NH-81, NH-03, campagnes |
 | KXKM CPU (`nice 19`) | libre pour balayages | idem | idem | idem |
-| macM1 | N10-C (graines 0/17/42) | N10-C | libre : WML-JEPA, NH-33 | WML-JEPA |
+| macM1 | N10-C (graines 0/17/42) | N10-C | libre : WML-JEPA, NH-28 | WML-JEPA |
 | electron-server | calibrations, RCI, scripts | idem | idem | idem |
 | Studio | éteint ; réveil ponctuel pour les checkpoints bouba_sens (S2) | — | — | — |
 | GrosMac | rien | rien | rien | rien |

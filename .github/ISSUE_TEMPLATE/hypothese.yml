@@ -1,0 +1,90 @@
+name: Hypothèse
+description: Une hypothèse à tester — une issue = un verdict attendu (gabarit PROJECT-MANAGEMENT.md §3).
+title: "NH-xx : "
+labels: ["type:hypothese", "a-valider-pi"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Une issue = un verdict attendu. Pas d'issue « réfléchir à ». Ajouter les étiquettes `phase:*`, `axe:*`, `hote:*` et le jalon.
+  - type: input
+    id: cout
+    attributes:
+      label: Coût estimé (h)
+      description: Heures de calcul et d'analyse (ordre de grandeur, source indiquée).
+      placeholder: "8 (1 j, ROADMAP S7)"
+    validations:
+      required: true
+  - type: dropdown
+    id: hote
+    attributes:
+      label: Hôte
+      options:
+        - ES
+        - KXKM-CPU
+        - KXKM-GPU
+        - macM1
+        - aucun
+    validations:
+      required: true
+  - type: textarea
+    id: enonce
+    attributes:
+      label: Énoncé (verbatim, EN)
+      description: L'énoncé tel qu'il figurera dans la préreg, en anglais, sans reformulation.
+    validations:
+      required: true
+  - type: textarea
+    id: prediction
+    attributes:
+      label: Prédiction quantitative
+      description: Chiffre, direction, intervalle. Pas de prédiction sans nombre.
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: Test (script, graines ≥ 5, hôte, durée)
+      description: Script ou commande, nombre de graines (≥ 5 ou puissance calculée), hôte, durée.
+    validations:
+      required: true
+  - type: textarea
+    id: nul
+    attributes:
+      label: Nul calibré (comment, seuil)
+      description: Comment le nul est construit (permutation, substrats non entraînés, TOST…) et le seuil retenu.
+    validations:
+      required: true
+  - type: textarea
+    id: refutation
+    attributes:
+      label: Critère de réfutation
+    validations:
+      required: true
+  - type: textarea
+    id: negatif
+    attributes:
+      label: Ce que dit un négatif (nul informatif)
+      description: Ce que l'on conclut si l'hypothèse tombe — un négatif doit être informatif.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Références (vérifiées)
+      description: Identifiants arXiv/DOI tels que vérifiés, une par ligne.
+    validations:
+      required: true
+  - type: input
+    id: prereg
+    attributes:
+      label: "Préreg : niveau L0/L1/L2/L3, lien"
+      placeholder: "L1 — tag prereg-<nom>-<date>, SWHID…"
+    validations:
+      required: true
+  - type: textarea
+    id: verdict
+    attributes:
+      label: "Verdict (rempli à la fermeture) : classe + chiffre + artefact"
+      description: "Classe (confirmé · réfuté · nul · non concluant · rétracté · amendé · en attente · non testé · non vérifiable) + chiffre + chemin JSON ou DOI."
+      placeholder: "À remplir à la fermeture."

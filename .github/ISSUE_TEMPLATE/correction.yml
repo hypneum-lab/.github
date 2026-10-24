@@ -1,0 +1,53 @@
+name: Correction
+description: Un chiffre ou une affirmation faux à retirer, corriger ou rétracter (gabarit PROJECT-MANAGEMENT.md §3).
+title: "Correction : "
+labels: ["type:correction", "a-valider-pi"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terminée quand le chiffre faux n'apparaît plus nulle part (grep), l'erratum est publié avec cause racine et la version (DualVer, pyproject, CITATION) est cohérente.
+  - type: input
+    id: cout
+    attributes:
+      label: Coût estimé (h)
+      placeholder: "0,5"
+    validations:
+      required: true
+  - type: dropdown
+    id: hote
+    attributes:
+      label: Hôte
+      options:
+        - aucun
+        - ES
+        - KXKM-CPU
+        - KXKM-GPU
+        - macM1
+    validations:
+      required: true
+  - type: textarea
+    id: faux
+    attributes:
+      label: Ce qui est faux (fichier:ligne, chiffre, source qui le contredit)
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction
+    validations:
+      required: true
+  - type: textarea
+    id: ou
+    attributes:
+      label: Où le retirer (README, papier, Zenodo, ADR)
+    validations:
+      required: true
+  - type: input
+    id: erratum
+    attributes:
+      label: "Erratum : oui/non, lien"
+      placeholder: "oui — ERRATUM.md#…"
+    validations:
+      required: true
