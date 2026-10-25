@@ -12,7 +12,7 @@ A one-person research lab running an open-science programme on knowledge consoli
 
 **Six months in, the lab has formulated 180 hypotheses or claims and built the discipline to test them** — pre-registration, five seeds minimum, Bonferroni, public errata. A full review of those claims was carried out on 2026-10-24 and revised on 2026-10-25 after two independent critiques ([`docs/research/2026-10-24-revue-hypotheses/`](https://github.com/hypneum-lab/.github/blob/main/docs/research/2026-10-24-revue-hypotheses/README.md), in French). Per its master table : 55 confirmed with ≥ 5 seeds or a calibrated null, 46 negative (refuted, retracted or null), 24 inconclusive, 19 amended, 12 pending, 19 never tested, 5 unverifiable. What holds is mostly *negative or methodological* : the retractions were made by the lab itself, before external review.
 
-That review feeds the **2026-27 roadmap** ([`docs/ROADMAP.md`](https://github.com/hypneum-lab/.github/blob/main/docs/ROADMAP.md), [`docs/PROJECT-MANAGEMENT.md`](https://github.com/hypneum-lab/.github/blob/main/docs/PROJECT-MANAGEMENT.md)), tracked publicly on the GitHub Project [Hypneum — Programme 2026-27](https://github.com/orgs/hypneum-lab/projects/1) (47 issues, milestones M0–M3, ~10 h of research time per week) :
+That review feeds the **2026-27 roadmap** ([`docs/ROADMAP.md`](https://github.com/hypneum-lab/.github/blob/main/docs/ROADMAP.md), [`docs/PROJECT-MANAGEMENT.md`](https://github.com/hypneum-lab/.github/blob/main/docs/PROJECT-MANAGEMENT.md)), tracked issue by issue on an internal GitHub Project of the organisation (47 issues, milestones M0–M3, ~10 h of research time per week) :
 
 | Phase | Weeks | Goal | Milestone |
 |---|---|---|---|
