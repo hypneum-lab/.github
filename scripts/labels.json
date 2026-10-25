@@ -1,0 +1,39 @@
+[
+  {"name": "phase:0-verite",        "color": "0B3D91", "description": "Phase 0 — Vérité (26 oct → 8 nov 2026)"},
+  {"name": "phase:1-falsifiable",   "color": "1D5FC2", "description": "Phase 1 — Falsifiable (9 → 29 nov 2026)"},
+  {"name": "phase:2-hypotheses",    "color": "3F83E0", "description": "Phase 2 — Dix hypothèses (30 nov → 3 jan 2027)"},
+  {"name": "phase:3-ecrire",        "color": "7FAEEF", "description": "Phase 3 — Écrire (4 → 24 jan 2027)"},
+  {"name": "phase:2027",            "color": "BFD6F7", "description": "Après janvier 2027 (quinzaines et trimestres)"},
+
+  {"name": "type:correction",       "color": "C2410C", "description": "Chiffre ou affirmation à corriger ou rétracter (gabarit « correction »)"},
+  {"name": "type:prereg",           "color": "E05A1A", "description": "Préenregistrement, gel, amendement (niveaux L0–L3)"},
+  {"name": "type:hypothese",        "color": "F0853A", "description": "Hypothèse à tester (gabarit « hypothèse »)"},
+  {"name": "type:papier",           "color": "F7AD6E", "description": "Papier, note, rapport, dépôt (arXiv, Zenodo, HAL)"},
+  {"name": "type:infra",            "color": "FBD3B0", "description": "Outillage, indicateurs, gouvernance du programme"},
+
+  {"name": "axe:genial",            "color": "0A6B2A", "description": "Axe GENIAL (dream-of-kiki)"},
+  {"name": "axe:nerve-wml",         "color": "157F38", "description": "Axe nerve-wml (protocole inter-substrats)"},
+  {"name": "axe:kiki-flow",         "color": "239447", "description": "Axe kiki-flow (flots JKO, spécialisation)"},
+  {"name": "axe:bouba-sens",        "color": "35A858", "description": "Axe bouba_sens (partition multimodale)"},
+  {"name": "axe:baby-brain",        "color": "4BBB6B", "description": "Axe baby-brain (WML développemental)"},
+  {"name": "axe:micro-kiki",        "color": "64CC81", "description": "Axe micro-kiki (routage, mémoire d'agent, BSK)"},
+  {"name": "axe:matiere",           "color": "81DB99", "description": "Axe matière (track M : Hopfield rêveur, coarsening)"},
+  {"name": "axe:bio",               "color": "9FE7B2", "description": "Axe bio (R8-lite : substrat NCA)"},
+  {"name": "axe:thermo",            "color": "BEF0CB", "description": "Axe thermo (température effective, énergie libre)"},
+  {"name": "axe:maths",             "color": "DCF7E3", "description": "Axe maths structurales (RCI, splitting, inclusion de traces)"},
+
+  {"name": "hote:es",               "color": "005F6B", "description": "Hôte : electron-server (CPU léger, calibrations, scripts)"},
+  {"name": "hote:kxkm-cpu",         "color": "0A7F8C", "description": "Hôte : KXKM-AI CPU (nice 19, balayages)"},
+  {"name": "hote:kxkm-gpu",         "color": "1E9EAB", "description": "Hôte : KXKM-AI RTX 4090 (réservé N10-C/N10-C-bis jusqu'à début déc.)"},
+  {"name": "hote:macm1",            "color": "55BFC9", "description": "Hôte : macM1 32 Go (libre à partir du 15 nov)"},
+  {"name": "hote:aucun",            "color": "A9DEE4", "description": "Aucun calcul : écriture, correction, dépôt"},
+
+  {"name": "verdict:confirme",      "color": "4A1FAE", "description": "Verdict : confirmé (exige un nul calibré)"},
+  {"name": "verdict:refute",        "color": "6236C9", "description": "Verdict : réfuté"},
+  {"name": "verdict:nul",           "color": "7E58DD", "description": "Verdict : nul (équivalence TOST)"},
+  {"name": "verdict:non-concluant", "color": "9D7CE8", "description": "Verdict : non concluant"},
+  {"name": "verdict:retracte",      "color": "BCA3F1", "description": "Verdict : rétracté"},
+  {"name": "verdict:amende",        "color": "DACBF8", "description": "Verdict : amendé"},
+
+  {"name": "a-valider-pi",          "color": "FBCA04", "description": "À valider par le chercheur avant exécution ou fusion"}
+]

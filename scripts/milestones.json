@@ -1,0 +1,6 @@
+[
+  {"title": "M0 Vérité",                     "due_on": "2026-11-08T23:59:59Z", "description": "Phase 0 — rétracter et corriger ce qui est faux ; sécuriser l'antériorité ; geler N10-C-bis."},
+  {"title": "M1 Falsifiable",                "due_on": "2026-11-29T23:59:59Z", "description": "Phase 1 — rendre DR-3, test 6, DR-0 et les préregs bouba_sens mesurables ; évaluer N10-C ; lancer N10-C-bis."},
+  {"title": "M2 Dix hypothèses",             "due_on": "2027-01-03T23:59:59Z", "description": "Phase 2 — exécuter les dix tests qui tranchent le plus pour le moins ; pilotes matière et WML-JEPA."},
+  {"title": "M3 Note méthodo + GO/NO-GO",    "due_on": "2027-01-24T23:59:59Z", "description": "Phase 3 — note méthodologique soumise ; rapport N10-C/N10-C-bis ; GO/NO-GO axe matière et R8-lite."}
+]
