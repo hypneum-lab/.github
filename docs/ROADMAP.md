@@ -24,13 +24,13 @@ Version 1 du 25 octobre 2026. Chercheur : Clément Saillant (indépendant, ~10 h
 | Sem. | Tâches (≈ 10 h) | Dépôt | Hôte | Fait quand |
 |---|---|---|---|---|
 | S1 (26 oct–1 nov) | Fusionner les 3 PR du 25/10 (avenant N10-C-bis, fix ε kiki-flow, calibration Me6) après lecture · Retirer des README/ROADMAP les « PASS » sans artefact (baby-brain) et les affirmations d'énergie (micro-kiki, BSK) · Retirer la mention « préenregistré OSF » de bouba_sens · Bylines auteur unique dans 5 dépôts · Lot e-Soleau : les préregs locales encore confidentielles (une après-midi) | tous | — | 0 chiffre sans artefact dans un README ; 5 bylines corrigées ; reçus e-Soleau archivés |
-| S2 (2–8 nov) | **Geler N10-C-bis** (tag annoté + SWHID) avant le 6 nov · Localiser les checkpoints bouba_sens (Studio / T7) et ré-évaluer Me6 à n ≥ 1024 ; rétracter B-3 sur la magnitude si confirmé ; corriger ADR, .zenodo.json, main.tex §4.4 · Fusionner kiki-flow PR #27 (balayage ε) et référencer Zenodo 23619954 dans ERRATUM (le correctif ε est déjà sur `main`, PR #25) · `loihi_stub.py` (Lava archivé) et main.tex nerve-wml alignés | bouba_sens, kiki-flow, nerve-wml | ES (CPU), Studio si checkpoints | tag `n10c-bis-freeze-*` + SWH ; verdict B-3 écrit ; erratum publié |
+| S2 (2–8 nov) | **Geler N10-C-bis** (tag annoté + SWHID) avant le 6 nov · Localiser les checkpoints bouba_sens (Studio / T7) et calibrer Me6 : volet n croissant fait (PR #19), reste le nul apparié de la médiane (rééchantillonnage centré des succès par sonde, modèle et graine, critique astra B2) ; requalifier B-3 « non calibré » dans ADR, .zenodo.json, main.tex §4.4 (retrait de l'interprétation, pas de la valeur) · Fusionner kiki-flow PR #27 (balayage ε) et référencer Zenodo 23619954 dans ERRATUM (le correctif ε est déjà sur `main`, PR #25) · `loihi_stub.py` (Lava archivé) et main.tex nerve-wml alignés | bouba_sens, kiki-flow, nerve-wml | ES (CPU), Studio si checkpoints | tag `n10c-bis-freeze-*` + SWH ; statut B-3 « non calibré » écrit, nul apparié calculé ; erratum publié |
 
 ### Phase 1 — Falsifiable (S3–S5)
 
 | Sem. | Tâches | Dépôt | Hôte | Fait quand |
 |---|---|---|---|---|
-| S3 (9–15 nov) | **N10-C-bis démarre sur KXKM** (≈ 7 nov) · Indice RCI pour DR-3 (mKNN calibré / GW / persistance, nul « substrats non entraînés », TOST 0,25) sur les données G5 · Test 6 → profil de treillis Π, décision préenregistrée | dream-of-kiki, nerve-wml | ES | RCI calculé sur ≥ 3 substrats ; amendement DR-3 rédigé |
+| S3 (9–15 nov) | **N10-C-bis démarre sur KXKM** (≈ 7 nov) · Test DR-3 à partir du brouillon H13 (nul « non entraîné » apparié par graine, δ = 0,025, Bonferroni) + indice relationnel corrigé (distances brutes, pas de ratio de médianes, marge justifiée par l'usage ; critique astra B6) sur les données G5 · Test 6 → profil de treillis Π, décision préenregistrée | dream-of-kiki, nerve-wml | ES | statistiques H13 + indice relationnel calculés sur ≥ 3 substrats ; amendement DR-3 rédigé |
 | S4 (16–22 nov) | **N10-C terminée sur macM1 (≈ 15 nov) : évaluation + archive ES** · Amendement DR-0 (budget en bits effacés + trafic), DR-1 sélective, `downscale` → `rescale` · Invariants N/W : inclusion de traces (Quint/TLA+) + property-based testing + 2 propriétés de vivacité | dream-of-kiki, nerve-wml | KXKM (éval), ES | rapport N10-C descriptif (sans lecture positive) ; spec amendée |
 | S5 (23–29 nov) | Préregs bouba_sens v0.7–v0.9 : décodabilité + PID (R/U/S) co-primaires, contrôle positif bouba/kiki (monde physique), seuil Me6 calibré sur le nul · Dépôt OSF ou Octopus de v0.7 · Préparer les dix tests de la phase 2 (scripts, graines, nuls) | bouba_sens, tous | ES | v0.7 déposée ; 10 scripts prêts |
 
@@ -52,7 +52,7 @@ Pilotes « matière » (track M) : NH-01 (S6) et NH-59/60 (S7) sont les deux pil
 
 | Sem. | Tâches | Livrable |
 |---|---|---|
-| S11 (4–10 jan) | Note méthodologique « Calibrated nulls and errata in a solo preregistered programme » : B-1/B-2 en équivalence (TOST), nul d'extrême Me6, ε Sinkhorn, VQ ×10, N-3 tautologique ; 8–10 pages | brouillon v0.1 (TMLR ou ReScience C) |
+| S11 (4–10 jan) | Note méthodologique « Calibrated nulls and errata in a solo preregistered programme » : B-1/B-2 comme nuls (équivalence TOST seulement si marges justifiées), nul apparié Me6, ε Sinkhorn, VQ ×10, ablations N-3 à mécanisme inactif ; 8–10 pages | brouillon v0.1 (TMLR ou ReScience C) |
 | S12 (11–17 jan) | Rapport N10-C + N10-C-bis (descriptif + préenregistré) ; relecture indépendante (critic) ; dépôt arXiv Paper 1 v0.2 + Zenodo dream-of-kiki ; HAL pour les trois papiers | rapport ; DOIs |
 | S13 (18–24 jan) | **GO/NO-GO axe matière** (critères A1–A5 de R7) ; **GO/NO-GO R8-lite** ; soumission de la note méthodo ; bilan trimestriel (KPIs) ; roadmap v2 | décisions écrites (ADR) ; soumission ; roadmap v2 |
 
@@ -61,8 +61,8 @@ Pilotes « matière » (track M) : NH-01 (S6) et NH-59/60 (S7) sont les deux pil
 | Quinzaine | Objectif | Dépend de |
 |---|---|---|
 | Q1 (25 jan–7 fév) | Réponses aux relectures de la note méthodo ; préreg des hypothèses survivantes de la phase 2 (niveau L3 : Octopus ou OSF) | verdicts phase 2 |
-| Q2 (8–21 fév) | Paper 1 GENIAL reformulé : DR-0 budget, DR-1 sélective, DR-3 avec RCI, DR-4 inter-domaines, prior art Hopfield rêveurs ; retrait des « axiomes » au profit de « hypothèses de cadre » | RCI (S3), NH-01, NH-20 |
-| Q3 (22 fév–7 mars) | bouba_sens : publication du nul en équivalence (TOST) + calibration Me6 ; v0.7 exécutée si déposée en S5 | S5 |
+| Q2 (8–21 fév) | Paper 1 GENIAL reformulé : DR-0 budget, DR-1 sélective, DR-3 avec test H13 + indice relationnel, DR-4 inter-domaines, prior art Hopfield rêveurs ; « axiomes » gardés comme hypothèses de cadre à portée empirique délimitée | H13 (S3), NH-01, NH-20 |
+| Q3 (22 fév–7 mars) | bouba_sens : publication de B-1/B-2 comme nuls (équivalence TOST seulement si marges justifiées) + calibration appariée de Me6 ; v0.7 exécutée si déposée en S5 | S5 |
 | Q4 (8–21 mars) | nerve-wml : papier N10-C/N10-C-bis ; décision sur le GTM (garder comme porteuse physique ou retirer) | N10-C-bis |
 | Q5 (22 mars–4 avr) | baby-brain : premier résultat WML-JEPA à 5 graines ; décision Path-B | NH-77 |
 | Q6 (5–18 avr) | Si GO matière : deuxième vague (machine d'Ising à oscillateurs simulée comme porteuse du GTM, NH-28/NH-31) ; sinon fermeture documentée | S13 |
