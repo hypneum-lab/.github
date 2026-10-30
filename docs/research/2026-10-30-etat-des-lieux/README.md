@@ -347,3 +347,25 @@ Actions techniques en attente d'un accord explicite, aucune faite : repointer le
 - Codex CLI 0.162.1, gpt-6.1-sol, effort xhigh, passage en aveugle sur les dépôts seuls (brief `codex/brief-sol.md`), lancé 14:18, rapport `codex/report-sol-2026-10-30.md` rendu 14:44 (36 Ko). Comptages confirmés/réfutés : voir l'annexe `codex/verification-sol.md` et la colonne Codex de la relecture.
 - Limites : aucune intervention sur les machines ; progression des campagnes observée en direct et non committée ; veilles sur résumés, PDF non lus ; dates d'appels non vérifiées.
 - Annexes (Markdown, même dossier que ce rapport dans `hypneum-lab/.github/docs/research/2026-10-30-etat-des-lieux/`) : inventaires par dépôt, relevé de calcul, trois veilles, utilité, stratégie, relecture, vérification Codex, enquête réutilisation.
+
+
+## Addendum — mises à jour du 30/10 après 14 h (ajouté 17:00 CET)
+
+Le corps de ce rapport est un instantané pris entre 14:14 et 15:50. D'autres sessions ont avancé en parallèle le même jour ; les faits ci-dessous viennent de leurs notes de clôture (`~/.remember/today-2026-10-30.md`) et requalifient deux constats.
+
+**bouba_sens.** PR #56 squash-mergée sur `main` (`1290a4b`) : seuil `>` strict, tests, graines 300–304, `OUT_ROOT` neuf. PR #57 corrige l'issue #52 (blocage isolé rejetait tout segment) : porte de qualité audio sur le p99 des résidus au lieu du maximum, compteur `audio_stall_drop`, réajustement d'horloge sans blocs > 0,2 s, 2 tests ajoutés, CI verte (463 tests) ; suite complète sur electron-server en cours, re-revue ciblée en attente. PR #55 = amendement v0.7 de la pré-registration ActionSense (S02–S05), bloqué sur la signature du PI (6 décisions) ; aucune extraction S02–S05 avant la fusion de #57, la signature et le tag v0.7. Pilote S00 run 2 : 5 contrôles passent, contrôle 3 faible, test nul GO (p = 0,012). Nuls calibrés Me6 : pré-registration grand n (ADR, coût, graines 400–404) en sous-agent ; **aucun calcul Me6 sur KXKM sans signature + tag**. Données S00 raw (35 Go) + regen35 (8,3 Go) déplacées sur le SSD T7 du macM1 (sha256 vérifié, symlinks), S02–S05 en téléchargement sur T7.
+→ **Constat 2 requalifié** : la mention « PR #55 reproduit le défaut » du corps du rapport est à relire ; #55 est l'amendement v0.7 (ActionSense), pas un correctif de la lésion B-3. L'absence d'application de `--k-steps` sur B-3 reste à vérifier sur `main` post-#56/#57 avant tout verdict.
+
+**kiki-flow-research / M5.** PR #51 (pas implicite certifié) mergée (`31feab6`), CI verte, 2 MAJEUR Codex corrigés. Règle de verdict certify taguée `prereg-m5-certify-20261030` (`f2f146e`, PR draft #52) avant lecture du résultat γ ≤ 30. Analyse sur KXKM (26 workers CPU, nice 19, sans GPU) : la configuration γ = 10 (α 10, h 0,05, graine 500) **échoue dans l'appel interne** (résidu 1,77e-10 > tolérance 1e-10 après 200 k itérations ; `inner_max_*` ne compte que les succès) ; rejeu instrumenté de 11 configurations (1 M itérations internes, 2 000 externes, commit `31feab6`) lancé, fin ce soir ou demain matin. Reste de la grille (37 configurations, γ 20–100) relancé sur macM3 après NH-81. Certify sur electron-server stoppé à 13:58 (13 lignes gardées).
+→ **Constat 6 requalifié** : l'échec M5 n'est pas seulement mécanique (`RUN_KEY` sans hôte) ; au moins une configuration échoue numériquement dans le solveur interne. Le verdict M5 attend le rejeu instrumenté.
+
+**micro-kiki / NH-81.** Réplique r4 taguée `prereg-nh81-kxkm-20261030-r4` ; mesure sur le MacBook Pro M3 (3/4 blocs OK, 12/12 paires) terminée vers 15:30, verdict provisoire ; mesure KXKM prévue le 02/11 au soir, après E1-small. Le macM3 (261 Go libérés) est désormais un hôte de calcul Hypneum actif, absent de `~/CLAUDE.md`.
+
+**dream-of-kiki / NH-03.** PR #69 (`971c077`) et #70 (`6a61e80`) fusionnées, issue #78 ouverte ; pilote court (300 cellules, < 10 min) différé après la fin de M5 sur macM3. Aucun lancement.
+
+**nerve-wml / NH-01.** PR #86 et #87 toujours en brouillon ; les notes de l'autre session les disent bloquées par « 4 MAJEUR Codex », ce que le corps du rapport (errata) n'a pas retrouvé dans les dépôts : à concilier lundi. Runs relancés sur electron-server (fin ≈ 16:30 / 19:40) ; formulations m = 0,30 et phrase causale en attente de décision humaine. Lie/Strang (kiki-flow) : pré-registration + pilote 4 cœurs en PR draft.
+
+**Décisions prises après 15:50.**
+- File d'attente KXKM après E1-small (01/11 soir) : **NH-81 d'abord (02/11 soir), porte de nécessité N10-C ensuite (≈ 4 h GPU, 03/11), nuls Me6 en CPU en parallèle** ; gel de N10-C-bis possible le 06/11 si la porte passe.
+- Budget d'heures : la session « plan pro à 3 ans » a fixé Hypneum à 10 h/semaine ; cette session avait enregistré ≈ 17 h/semaine. **Le PI tranche lundi 02/11 dans la session plan pro** ; le calendrier de la section « Suite » reste indicatif d'ici là.
+- Ce rapport reste un instantané daté ; les mises à jour ultérieures iront dans la session du lundi, pas dans ce fichier.
