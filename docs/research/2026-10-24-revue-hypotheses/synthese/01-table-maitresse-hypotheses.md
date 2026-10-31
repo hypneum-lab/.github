@@ -173,7 +173,7 @@ Lecture : 57 « confirmés » (32 %) dont ~⅔ sont descriptifs, mono-seed, sur 
 | BS-TAU | τ scan recovers hard gate ; B-2 anomaly at τ=0.3 ; bimodal sweet spot | hyp. v0.6 | τ∈{0,1…2} + finer ; 8 × 150 | B-2 +0,018 (τ=0,3) → 0,000 sur 5/5 seeds | réfuté | 04-21/22 | `0015-gumbel…md:11-14,60-67` ; `0016-finer…md:44-52` ; `0017-sprint14…md:55-69` | anomalie rétractée : « bootstrap smoothing » |
 | BS-CBF | codebook freeze destroys B-1 peak (codebook must stay plastic) | hyp. v0.6 | Me7 ; LOCK=100 + CODEBOOK_LOCK ; 150 | +0,0125 → 0,0000 ; ΔH −6e-5 | amendé (mécanisme adouci) | 04-22 | `0016-finer…md:80-106` | pic de référence lui-même rétracté |
 | BS-S14c | phase-transition schedule HARD→GUMBEL combines both signals | hyp. v0.6 | 150, per-seed | B-1 +0,0063 (seed 4 −0,0375) ; B-2 −0,022 | réfuté (interférence destructive) | 04-22 | `0017-sprint14…md:32-36,132-140` | — |
-| BS-B3 | B-3 Me6 max \|off-diag\| > 0.02 with reproducible sign structure | hyp. préreg (OSF Q6JYN) | Me6 ; 30 cellules/grille, 5 seeds | 0,148 / 0,141 / 0,141 / 0,313 / 0,445 (5–6×) | confirmé (magnitude) | 04-20→ | spec `:46` ; ADR-0008 `:46` ; ADR-0009 `:78` | structure de signe jamais testée ; ≈ entropie par modalité |
+| BS-B3 | B-3 Me6 max \|off-diag\| > 0.02 with reproducible sign structure | hyp. préreg (OSF Q6JYN) | Me6 ; 30 cellules/grille, 5 seeds | 0,148 / 0,141 / 0,141 / 0,313 / 0,445 (5–6×) | confirmé (magnitude) | 04-20→ | spec `:46` ; ADR-0008 `:46` ; ADR-0009 `:78` | structure de signe jamais testée ; ≈ entropie par modalité ; **MAJ 10-31** : nul apparié non calibré à n ≥ 256, B-3 bloqué (§ Mise à jour 2026-10-31) |
 | BS-B3arch | B-3 is a robust architectural invariant (22.3× lifts critique) | claim descriptif | null 9 partitions, mid-rank ; 4 grilles | pctl 61/72/56/44 % ; plafond 72,2 % | rétracté (« empirically dead ») | 04-22/24 | ADR-0005-v03 `:36-41` ; ADR-0014-b3 `:87-99` ; ADR-0015-lemma | `main.tex:349-358` dit encore « load-bearing » |
 | BS-NG | next-gen partition: n ≥ 12 modalities / mean statistic / label permutation | hyp. proposée | mid-rank pctl ; 4 grilles | A plafond 73,5 % ; B 29,2 % ; C ≡ partition | réfuté (cadre épuisé) | 04-24 | `0016-next-gen…md:30-128` ; ADR-0017-mean `:91-96` ; ADR-0018 `:32-44` | contrôles positifs B 100/72/94 % |
 | BS-F123 | ADR-0006 F1 tautology / F2 sign flip > noise / F3 Kraskov-specific | validation critique (branche orpheline) | null partitions / bootstrap 10k / 3 estimateurs | F1 1/10 partitions ; F2 CI ∋ 0 ; F3 Kraskov = Binning = 0 | réfuté (F2/F3 downgraded) | 04-21 | `v0.5.0:docs/adr/0006…md:11-13` | fichier absent de `main` ; F1 suspendu |
@@ -312,3 +312,11 @@ Lecture : 57 « confirmés » (32 %) dont ~⅔ sont descriptifs, mono-seed, sur 
 - **MK-23** (borne d'information C5) : « confirmé » → **réfuté** (`src/routing/info_bound.py:63-70` somme des MI marginales ; 150,74 bits > log₂ 10).
 - **KFR-H35** (DriftTrigger recall 0,99) : « confirmé » → **non vérifiable** (aucun JSON de résultats sur `main`).
 - **Zenodo 23619954** : le record existe (paper-v0.12-draft, publié le 24/10) ; il n'est simplement pas référencé dans le dépôt.
+
+## Mise à jour 2026-10-31 — BS-B3 (Me6 à grandes tailles de sonde)
+
+Ajout daté ; les comptages de la §1 restent ceux de l'instantané du 2026-10-24 (le verdict de BS-B3 n'est pas modifié).
+
+- **Statut B-3 :** nul apparié non calibré à n ≥ 256 (Me6 large-n, ADR-0026 : excès gaussien dans les deux bras, mock compatible, réseau à la chance 0,25) ; diagnostic test anticonservateur vs asymétrie réelle en amendement exploratoire ; **B-3 bloqué jusqu'au verdict**.
+- **Sources :** `bouba_sens` ADR-0026 (tag `prereg-me6-large-n-20261031`, `swh:1:rev:b790db272fede343fa55c996709fe39b31f4f9dd`) ; note `docs/milestones/2026-10-31-me6-large-n-results.md` (PR #63) ; relevé des blocs PR #60.
+- **Chiffres :** gaussien n = 4096, médiane observée 0,0585 (`cell`) et 0,0282 (`legacy`) contre une médiane du nul apparié de 0,0164 / 0,0157 (P99 0,0193 / 0,0187), p = 5·10⁻⁵ ; mock n ≥ 256, p ≥ 0,29 dans les deux bras ; précision moyenne 0,238–0,269.
