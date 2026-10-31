@@ -1,5 +1,7 @@
 # Upstream contributions — plan (v2, 2026-10-31)
 
+> **v3 added the same day**: the standing presence towards recognised contributor or member status (Apple MLX + `mlx-community`, EleutherAI, Farama, reviewer roles; 2 h/week on top of the Hypneum ceiling) is in [`upstream-contributor-plan-v3-2026-10-31.md`](upstream-contributor-plan-v3-2026-10-31.md). This page keeps the one-off items.
+
 *Goal set by the PI on 2026-10-31: make the lab visible to the large laboratories whose work it builds on through technical contributions that are modest and real. Status of every item: **proposed, nothing sent**, unless the line says otherwise. Each item is sent by the PI, one at a time, after a human read.*
 
 ## Principles
