@@ -2,7 +2,7 @@
 
 Date : 2026-10-31.
 Sources primaires lues le 2026-10-31 ; rédigé avec Claude Code ; échéances à revérifier avant dépôt.
-Pièce jointe : texte intégral de l'appel ANR AAPG 2027 (extrait du PDF officiel v1.0) → [`funding-watch-2026-10-31-anr-aapg-2027.txt`](funding-watch-2026-10-31-anr-aapg-2027.txt).
+Texte de l'appel ANR AAPG 2027 : PDF officiel v1.0 (https://anr.fr/fileadmin/aap/2027/anr-aapg-2027.pdf), non recopié dans le dépôt.
 Proposition de talk associée : [`../talks/fosdem-2027-open-research.md`](../talks/fosdem-2027-open-research.md).
 
 ---
@@ -188,7 +188,7 @@ pseudonyme, e-mail, PGP, tél., type de demandeur : Individual / Collective / SM
 | **Prototype Fund (DE)**, Jahrgang 03, lignes Innovation / Up and Coming / Resilienz | **30 nov. 2026** (15:00 CET, site officiel 403 → dates lues via bewerben.prototypefund.de + StartHub Hessen + OSB Alliance 5 oct. 2026) | Oui | **NON** : résidence en Allemagne obligatoire pour les individus (« Einzelentwickler müssen in Deutschland wohnen », impôts payés en DE ; GbR siège DE). Montants 47,5 k€ / 6 mois (individuel) — chiffres divergents 79 k€ chez OSB, non résolu | https://bewerben.prototypefund.de/ |
 | **Sovereign Tech Agency / Fund (DE)** | au fil de l'eau, ~6 mois de process | Oui | Juridiquement non exclu (investit « globally »), mais **inadapté** : « We do not finance the development of prototypes », coût minimal **> 50 000 €**, projets « prevalent » (largement utilisés par d'autres logiciels), pas d'autre financement public sur les mêmes tâches | https://www.sovereign.tech/programs/fund |
 | **FNSO** (Fonds national pour la science ouverte, 4e appel) | clos 21 mai 2025 ; résultats T4 2025 ; aucun 5e appel annoncé | **FERMÉ** | **NON** : « higher education and research institutions, companies or any institution with legal personality » dont la mission principale est la recherche/diffusion, projets portés par des institutions françaises ; thème = édition scientifique ouverte uniquement | https://www.ouvrirlascience.fr/fourth-call-for-projects-of-the-national-fund-for-open-science/ |
-| **ANR AAPG 2027** | étape 1 close **13 oct. 2026 17:00** ; étape 2 fin mars 2027 (invités seulement) | **FERMÉ** pour une nouvelle entrée | **NON en solo** : une société commerciale (PME) ne peut entrer qu'en **PRCE** avec au moins un « établissement participant au service public de la recherche » ; une personne physique n'est pas déposante (le coordinateur agit « au nom du partenaire coordinateur ») | https://anr.fr/fileadmin/aap/2027/anr-aapg-2027.pdf (v1.0 du 15 juil. 2026) ; texte intégral : [`funding-watch-2026-10-31-anr-aapg-2027.txt`](funding-watch-2026-10-31-anr-aapg-2027.txt) |
+| **ANR AAPG 2027** | étape 1 close **13 oct. 2026 17:00** ; étape 2 fin mars 2027 (invités seulement) | **FERMÉ** pour une nouvelle entrée | **NON en solo** : une société commerciale (PME) ne peut entrer qu'en **PRCE** avec au moins un « établissement participant au service public de la recherche » ; une personne physique n'est pas déposante (le coordinateur agit « au nom du partenaire coordinateur ») | https://anr.fr/fileadmin/aap/2027/anr-aapg-2027.pdf (v1.0 du 15 juil. 2026) |
 | **Inria « Open Science »** | — | **non vérifié** : aucun appel externe trouvé (recherche web 31/10) ; les dispositifs Inria science ouverte sont internes (Software Heritage, politiques) | NON a priori | — |
 
 ---
