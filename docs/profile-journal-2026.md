@@ -104,6 +104,14 @@ Four PRs closed in a single session. On the `nerve-wml` side, §Related Work gre
 
 ---
 
+## 2026-10-31 update — bouba_sens: Me6 at large probe sizes (paired nulls)
+
+- **Freeze:** [ADR-0026](https://github.com/hypneum-lab/bouba_sens/blob/main/docs/adr/0026-me6-large-n-prereg.md) signed by the PI and merged ([`bouba_sens` #58](https://github.com/hypneum-lab/bouba_sens/pull/58)), annotated tag `prereg-me6-large-n-20261031`, Software Heritage `swh:1:rev:b790db272fede343fa55c996709fe39b31f4f9dd`. The ActionSense v0.7 amendment was frozen the evening before (tag `bouba_sens/v0.7-actionsense-prereg`, `swh:1:rev:02c24073d3a04e1db3d3adf2ee77e545c0bdde17`; ADR-0027 world-seed erratum accepted).
+- **Run:** mock pilot (block lengths pushed before any confirmatory cell, [#60](https://github.com/hypneum-lab/bouba_sens/pull/60)), then 600/600 confirmatory cells on electron-server (seeds 400–404, Gaussian and 65 536-row mock, `cell` and `legacy` world-seed arms, v1 probe at n ∈ {64, 256, 1024, 4096}).
+- **Preregistered readings** ([results note, #63](https://github.com/hypneum-lab/bouba_sens/pull/63)): the Gaussian rows exceed the paired null at n ≥ 256 in both arms (p = 5·10⁻⁵ at n = 1024 and 4096, below the Bonferroni level 0.000625), **against the expected report**; the mock rows are compatible at n ≥ 256 in both arms. The argmax-bridge network does not learn (accuracy ≈ 0.25), so no row is a B-3 reading.
+- **B-3 status:** the paired null is not calibrated at n ≥ 256. Whether the item-level sign flip is anti-conservative or the non-learning network carries a real asymmetry between modalities is open; an exploratory diagnostic is written as an amendment before it runs. B-3 stays blocked until that verdict.
+
+---
 
 ## Snapshot footer (2026-06-09, with 2026-10-23 note)
 
