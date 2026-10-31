@@ -99,6 +99,10 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 
 ---
 
+## Related work and upstream
+
+The programme runs on open components from large industrial laboratories and says so in one place: [`docs/related-work-upstream.md`](https://github.com/hypneum-lab/.github/blob/main/docs/related-work-upstream.md). In short : **used** — Apple MLX everywhere, PyTorch, OpenAI Procgen (N10-C), Meta DINOv2 and Kyutai Mimi (`baby-brain`), Qwen (`micro-kiki`) ; **targeted** — Meta I-JEPA (N11-A) and Google DeepMind DreamerV3 (N11-C), both pre-registered and deferred ; **given back** — one upstream issue, [`ml-explore/mlx#3568`](https://github.com/ml-explore/mlx/issues/3568) (cross-architecture non-determinism of `mx.random.normal`, open), an arm64 build patch for Procgen kept in `nerve-wml`, and the ReScience C package `rescience-nh01`. Candidate contributions, none sent, are listed in [`docs/upstream-contributions-plan-2026-10-31.md`](https://github.com/hypneum-lab/.github/blob/main/docs/upstream-contributions-plan-2026-10-31.md).
+
 ## How we work
 
 - **Pre-registration before evidence.** OSF project [dreamOfkiki](https://osf.io/v7a2j) — DOI [10.17605/OSF.IO/Q6JYN](https://doi.org/10.17605/OSF.IO/Q6JYN) (H1–H4, locked 2026-04-19) plus the Bonferroni amendment ; local pre-regs are frozen by annotated git tag + Software Heritage before OSF filing. Levels L0 draft / L1 tag + SWHID / L2 time-stamped deposit / L3 OSF or Octopus.
@@ -106,7 +110,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 - **Multi-seed first class.** Five seeds minimum ; the `bouba_sens` 5 → 10-seed collapse is the canonical case study.
 - **Internal critical validation before external review.** Null-model controls, bootstrap CIs, multi-estimator robustness checks and an independent critic review ; the Popperian guardrails fire inside the lab, which is why this page lists retractions.
 - **Dual-axis versioning (DualVer)** : the formal-consistency axis (FC) and the empirical-consistency axis (EC) bump independently.
-- **No AI co-authorship.** Byline credits *project contributors* ; LLM assistance is flagged in PR descriptions ; the researcher decides, runs, validates and signs.
+- **No AI co-authorship.** Byline credits *project contributors* ; LLM assistance is flagged in PR descriptions ; the researcher decides, runs, validates and signs. Tools in use : Claude Code (Anthropic) for code, documentation and operations in PI-driven sessions ; Codex CLI (OpenAI) for independent review passes whose reports are published next to the reviewed material. Each repository README carries the same "AI assistance (transparency)" section.
 - **Compute** : a Mac mini M1 (MLX), a shared RTX 4090 node and a small CPU server ; no cloud GPU. The Mac Studio used in spring 2026 is powered down.
 
 Code archives on Zenodo (concept DOIs, latest version resolves) : `dream-of-kiki` [19701355](https://doi.org/10.5281/zenodo.19701355) · `nerve-wml` [19656342](https://doi.org/10.5281/zenodo.19656342) · `bouba_sens` [19701353](https://doi.org/10.5281/zenodo.19701353) · `kiki-flow-research` [19666755](https://doi.org/10.5281/zenodo.19666755) · `micro-kiki` [19666759](https://doi.org/10.5281/zenodo.19666759). Preprints : arXiv (Paper 1, phase 3) then HAL.
