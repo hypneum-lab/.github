@@ -32,6 +32,12 @@ class ResolveIds(unittest.TestCase):
         self.assertEqual(rows[0][1], "ok")
         self.assertIn("Agliari", rows[0][3])
 
+    def test_extract_doi_with_parentheses(self):
+        code, rows = run("(voir 10.1016/0378-4371(90)90345-s) et 10.1073/pnas.2409160121.")
+        self.assertEqual(code, 0)
+        self.assertEqual([r[0] for r in rows], ["10.1016/0378-4371(90)90345-s", "10.1073/pnas.2409160121"])
+        self.assertIn("Hemmen", rows[0][3])
+
     def test_arxiv_ko(self):
         code, rows = run("arXiv:9999.99999")
         self.assertEqual(code, 1)

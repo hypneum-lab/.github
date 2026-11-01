@@ -18,7 +18,19 @@ import urllib.request
 
 UA = "hypneum-lab reading-gate"
 ARXIV_RE = re.compile(r"(?:arxiv[:\s/]+(?:abs/|pdf/)?|arxiv\.org/(?:abs|pdf)/)(\d{4}\.\d{4,5})(?:v\d+)?", re.I)
-DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s\"<>)\]]+)")
+DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s\"<>\]]+)")
+
+
+def _trim_doi(doi):
+    """Strip trailing punctuation and unbalanced closing parentheses.
+
+    DOIs such as 10.1016/0364-0213(93)90058-G contain balanced parentheses;
+    a DOI written inside parentheses in prose ends with one extra ')'.
+    """
+    doi = doi.rstrip(".,;:")
+    while doi.endswith(")") and doi.count(")") > doi.count("("):
+        doi = doi[:-1].rstrip(".,;:")
+    return doi
 _last_arxiv = 0.0
 
 
@@ -69,7 +81,7 @@ def extract(text):
         if k[0] not in seen:
             seen.add(k[0]); ids.append(k)
     for m in DOI_RE.finditer(text):
-        doi = m.group(1).rstrip(".,;:")
+        doi = _trim_doi(m.group(1))
         if doi.lower().startswith("10.48550/arxiv."):
             continue
         k = (doi, "doi", doi)
