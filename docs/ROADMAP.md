@@ -70,13 +70,13 @@ Budget : ≈ 14 h par semaine (rapport:303), soit 56 h pour S2-S5. Postes (spec:
 
 Somme S2-S5 : 56 h = 14 × 4. Par poste : É 40 (#147 18 sur 18, FOSDEM 1, PR 3, citations 3, méthodo 15 sur 45), V 6, A 6, R 2, Rés 2, C 0.
 
-**Report explicite** (ce qui ne tient pas dans S2-S5 et part en S6-S13, à 14 h par semaine soit ≈ 112 h) : note méthodo 30 h (arXiv avant le 15/12, donc S6-S7) ; NH-03 en section de la note 4 h ; amendement bouba v0.7.1 6 h ; verrou N10-D 19 h, bouba 15 h, NH-20 10 h ; analyse Me6 4 h ; retraits textuels 8 h (micro-kiki « +7 pp » et table des latences, bouba `main.tex`, bannières) ; calcul 15 h ; réserve 18 h. Total 129 h contre ≈ 112 h de capacité : l'écart (≈ 17 h) correspond à ce que S1 a déjà couvert, non mesuré, ou à la réserve. **Ce tableau montre déjà que le verrou N10-D ne recevra que 6 h sur 25 avant M1.** Règle appliquée d'ici le point de reprise (spec:139) : les échéances externes tiennent (commentaire #147, v2 ReScience, FOSDEM, arXiv 15/12) et c'est le verrou N10-D qui glisse — M1 au plus tard en S7, calcul N10-D au plus tôt en S8. À arbitrer par le PI au point de reprise.
+**Report explicite** (ce qui ne tient pas dans S2-S5 et part en S6-S13, à 14 h par semaine soit ≈ 112 h) : note méthodo 30 h (arXiv avant le 15/12, donc S6-S7) ; NH-91 (ex-NH-03 « quand dormir ») en section de la note 4 h ; amendement bouba v0.7.1 6 h ; verrou N10-D 19 h, bouba 15 h, NH-20 10 h ; analyse Me6 4 h ; retraits textuels 8 h (micro-kiki « +7 pp » et table des latences, bouba `main.tex`, bannières) ; calcul 15 h ; réserve 18 h. Total 129 h contre ≈ 112 h de capacité : l'écart (≈ 17 h) correspond à ce que S1 a déjà couvert, non mesuré, ou à la réserve. **Ce tableau montre déjà que le verrou N10-D ne recevra que 6 h sur 25 avant M1.** Règle appliquée d'ici le point de reprise (spec:139) : les échéances externes tiennent (commentaire #147, v2 ReScience, FOSDEM, arXiv 15/12) et c'est le verrou N10-D qui glisse — M1 au plus tard en S7, calcul N10-D au plus tôt en S8. À arbitrer par le PI au point de reprise.
 
 ## S6 à S13 — provisoire, réécrit au point de reprise roadmap v2
 
 | Sem. | Contenu indicatif | Postes | Jalon |
 |---|---|---|---|
-| S6 (30 nov-6 déc) | Note méthodo (NH-03 en section, sans run) ; retraits textuels restants ; verrou N10-D (fin si glissé) ; calcul N10-D sur KXKM **seulement** si le verrou est passé | É, R, V, C | — |
+| S6 (30 nov-6 déc) | Note méthodo (NH-91 ex-NH-03 en section, sans run) ; retraits textuels restants ; verrou N10-D (fin si glissé) ; calcul N10-D sur KXKM **seulement** si le verrou est passé | É, R, V, C | — |
 | S7 (7-13 déc) | Note méthodo soumise sur arXiv (cs.DL + stat.ME) avant le 15/12 ; note de lecture bouba v0.7.1 ; amendement v0.7.1 | É, V | M1 au plus tard si glissé |
 | S8 (14-20 déc) | Verrou bouba (contradicteur, tours) ; verrou NH-20 (lecture mathématique) ; analyse Me6 selon sa préreg | V, A | — |
 | S9 (21-27 déc) | Tampon (Noël) : relectures ReScience, réponses éditeur, aucun gel | Rés | — |
@@ -94,7 +94,7 @@ Retirés de la phase 2 (S6-S10) de la roadmap v1, à reprendre après M3 et seul
 - NH-77 (WML-JEPA) ;
 - NH-07 (RECOMBINE inter-domaines) ;
 - R8-H1 (NcaWML) ;
-- NH-03 comme run (reste comme section de la note méthodo, décision PI Q6) ;
+- NH-91 « quand dormir » (ex-NH-03, renumérotée le 01/11 pour lever la collision avec le NH-03 du 24/10) comme run (reste comme section de la note méthodo, décision PI Q6) ;
 - NH-85 (RAG contre Aeon) : reporté après M3, décision PI du 01/11 21:00 (spec:143) — le routage de LoRA est saturé dans la littérature et Aeon est d'Arslan.
 
 Clos ou terminés : **NH-81** est clos par erratum, statut unifié main/PR #19/GB300, pas de run KXKM le 04/11 (décision PI Q7). **NH-01** est fait ; sa suite est la v2 ReScience, pas un nouveau run.
@@ -112,7 +112,7 @@ Rejeux reportés après M3, sous verrou (réponse 3 du §9) : mKNN intra-cluster
 | Q3 : FOSDEM corrigé avant le 16/11 | S3, M1 |
 | Q4 : note méthodo cs.DL + stat.ME, puis JOTE ; endossement cette semaine ; arXiv avant le 15/12 | S2-S7, M2, S11 |
 | Q5 : deux PR (`.github`, kiki-flow) + note Zenodo par le PI | S2, M0 |
-| Q6 : NH-03 en section de la note méthodo, sans run | S6 ; « ne fait plus » |
+| Q6 : NH-91 (ex-NH-03) en section de la note méthodo, sans run | S6 ; « ne fait plus » |
 | Q7 : NH-81 clos par erratum, pas de run KXKM le 04/11 | « ne fait plus » |
 | Q8 : N10-C-bis à 3 graines appariées ou N10-D corrigé, avant tout gel ; N10-C-bis non gelée, sous verrou, issue nerve-wml #62 reformulée « geler après verrou » | M1 |
 | Q9 : bouba K1/K3 rien avant v0.7.1 taguée | S7-S10, M2 |
@@ -185,7 +185,7 @@ Pas de nouveau dépôt ni de nouveau « lab » ; pas de nouvel axe ni de nouvell
 | **Verrou passé pour la forme** : note écrite après le gel, tiers qui relit sans chercher à contredire, tours de veille sur la même source | la note est commise avant le tag (date git vérifiable) ; le contradicteur ne reçoit ni la note ni les conclusions et son rapport est archivé avec elle ; chaque tour de veille porte ses canaux et ses comptes brut → gardé, différents du tour précédent ; les trois tests sont constatés par écrit (saturation : un tour sans nouvelle entrée ; recoupement : ≥ 2 sources de nature différente par phrase ; couverture : six canaux) ; tout identifiant résolu par API ; un tag posé sans ces pièces est déclaré non valide par ADR |
 | Veille sans condition d'arrêt (tours sans fin, listes de papiers non lus) | condition d'arrêt = trois tests, pas un compte ; « [résumé moteur] » pour ce qui n'est pas lu ; heures du poste V plafonnées à 50 h |
 | Le verrou absorbe tout et l'écriture glisse | les échéances externes tiennent (commentaire #147, v2 ReScience, FOSDEM, arXiv 15/12) ; c'est le verrou N10-D qui glisse (M1 → S7 au plus tard, calcul au plus tôt S8) |
-| Surcharge déjà visible (postes S2-S7 au-dessus de 14 h/semaine) | report explicite ci-dessus ; arbitrage au point de reprise ; heures mesurées chaque mois |
+| Surcharge déjà visible (postes S2-S7 au-dessus de 14 h/semaine) | report explicite ci-dessus ; **décision PI 01/11 21:50 : trancher au point de reprise**, roadmap inchangée d'ici là ; heures mesurées chaque mois |
 | Quotas API (Claude, OpenAI) en pleine campagne | agents longs en début de fenêtre ; briefs sauvegardés ; contradicteur Claude à contexte vierge en secours de Codex |
 | Machines : Tower mort, Studio éteint, macM1 pris par le second cerveau | calendrier ci-dessus ; CPU sur ES/KXKM ; aucune case GPU avant S6 |
 | Temps : recherche d'emploi, imprévus | tampon S9 ; réserve 20 h ; S6-S13 provisoires |
