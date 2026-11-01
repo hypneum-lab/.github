@@ -18,7 +18,7 @@ import urllib.request
 
 UA = "hypneum-lab reading-gate"
 ARXIV_RE = re.compile(r"(?:arxiv[:\s/]+(?:abs/|pdf/)?|arxiv\.org/(?:abs|pdf)/)(\d{4}\.\d{4,5})(?:v\d+)?", re.I)
-DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s\"<>\]]+)")
+DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s\"<>\]`]+)")
 
 
 def _trim_doi(doi):

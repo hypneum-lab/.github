@@ -43,6 +43,11 @@ class ResolveIds(unittest.TestCase):
         self.assertEqual(code, 0)
         self.assertIn("Sourav", rows[0][3])
 
+    def test_extract_doi_in_backticks(self):
+        code, rows = run("`10.1073/pnas.2409160121` cité en code.")
+        self.assertEqual(code, 0)
+        self.assertEqual(rows[0][0], "10.1073/pnas.2409160121")
+
     def test_arxiv_ko(self):
         code, rows = run("arXiv:9999.99999")
         self.assertEqual(code, 1)
