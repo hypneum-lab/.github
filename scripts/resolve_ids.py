@@ -5,7 +5,7 @@ Usage: resolve_ids.py <file.md>
 Output (stdout): id<TAB>status(ok|ko)<TAB>title[<TAB>first author]
 Exit code: number of ko lines.
 arXiv: https://arxiv.org/abs/<id> (neutral User-Agent, 3 s between calls).
-DOI: https://api.crossref.org/works/<doi>.
+DOI: https://api.crossref.org/works/<doi>, then DataCite on 404.
 """
 import html
 import json
@@ -60,10 +60,26 @@ def resolve_arxiv(aid):
     return True, html.unescape(m.group(1)).strip(), html.unescape(a.group(1)) if a else ""
 
 
+def _resolve_datacite(doi):
+    """Fallback for dataset DOIs (OSF, Zenodo, institutional repositories)."""
+    try:
+        data = json.loads(_get("https://api.datacite.org/dois/" + urllib.parse.quote(doi)))
+    except urllib.error.HTTPError as e:
+        return False, f"HTTP {e.code} (Crossref et DataCite)", ""
+    except Exception as e:
+        return False, f"erreur: {e}", ""
+    attr = data.get("data", {}).get("attributes", {})
+    title = (attr.get("titles") or [{}])[0].get("title", "")
+    first = (attr.get("creators") or [{}])[0].get("name", "")
+    return bool(title), re.sub(r"\s+", " ", html.unescape(title)).strip() or "titre introuvable", first
+
+
 def resolve_doi(doi):
     try:
         data = json.loads(_get("https://api.crossref.org/works/" + urllib.parse.quote(doi)))
     except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return _resolve_datacite(doi)
         return False, f"HTTP {e.code}", ""
     except Exception as e:
         return False, f"erreur: {e}", ""

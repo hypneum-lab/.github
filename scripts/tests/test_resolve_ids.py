@@ -38,6 +38,11 @@ class ResolveIds(unittest.TestCase):
         self.assertEqual([r[0] for r in rows], ["10.1016/0378-4371(90)90345-s", "10.1073/pnas.2409160121"])
         self.assertIn("Hemmen", rows[0][3])
 
+    def test_doi_datacite_fallback(self):
+        code, rows = run("DOI:10.25592/uhhfdm.139")
+        self.assertEqual(code, 0)
+        self.assertIn("Sourav", rows[0][3])
+
     def test_arxiv_ko(self):
         code, rows = run("arXiv:9999.99999")
         self.assertEqual(code, 1)
