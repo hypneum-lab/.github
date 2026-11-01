@@ -287,6 +287,22 @@ Option recommandée en premier. Renvoi au constat entre parenthèses.
 10. **Scénario du trimestre (§6)** — (a) Médian ≈ 128 h · (b) Conservateur ≈ 95 h · (c) Ambitieux ≈ 185 h.
 11. **Citations .tex vs .md de dream-of-kiki (E18, M38)** — (a) Porter les citations Rome/unlearning de #87 dans `build/full-draft.tex` et Paper 2 maintenant · (b) Attendre la refonte de Paper 1 · (c) Abandonner la .tex au profit du .md.
 
+### Décisions prises par le PI (QCM, 01/11 20:15-20:30 CET)
+
+| Q | Décision | Note |
+|---|---|---|
+| 1 | Commenter #147 le 02/11 + v2 avant fin novembre | texte avec les deux bases (1,90 et 3,05) |
+| 2 | Mail Rome 50142 : attendre la v2 acceptée | option (c), non recommandée ; brouillon reste non envoyé |
+| 3 | FOSDEM : corriger avant le 16/11 | formulation Q3 (a) v3 |
+| 4 | Note méthodo : cs.DL + stat.ME, puis JOTE | endossement à demander cette semaine |
+| 5 | Deux PR cette semaine (`.github`, kiki-flow) + note Zenodo par le PI | |
+| 6 | NH-03 : section de la note méthodo | sans nouveau run |
+| 7 | NH-81 : clore par erratum, pas de run KXKM le 04/11 | |
+| 8 | N10-C-bis : 3 graines appariées ou N10-D corrigé | avant tout gel |
+| 9 | bouba K1/K3 : rien avant v0.7.1 tagué | |
+| 10 | Trimestre : **ambitieux ≈ 185 h** | option (c) ; ≈ 14 h/semaine sur 13 semaines, au-dessus du plafond 10 h/semaine du plan pro 3 ans |
+| 11 | dok : porter les citations #87 dans la .tex et Paper 2 maintenant | |
+
 ## §8 Provenance et limites
 
 - **Session** electron-94, Claude Fable 5.1, GrosMac, 01/11 18:04 → 20:20 CET (v3). Clones frais `--depth 200` des 11 dépôts (SHA en tête de chaque inventaire). Copies : `synthese/rapport-v1-pre-critic.md`, `synthese/rapport-v2-pre-astra.md`, `synthese/rapport-v2-pre-cross-replacement.md`.
