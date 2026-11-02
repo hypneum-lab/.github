@@ -36,6 +36,12 @@ Les cinq bloquants : M5 présenté « en brouillon » alors que les PR kiki-flow
 - Agents de rédaction : sept Opus (thèses) et un Opus (dossier), 19:10 → 19:53 ; canaux arXiv, OpenReview, bioRxiv (2 034 prépublications balayées), OpenAlex en repli de Semantic Scholar (429 sur toute la passe), Crossref, DataCite, HAL, GitHub, Hugging Face, Zenodo, OSF. Aucune source lue en entier sauf quatre PDF pour nerve-wml ; les PDF OpenReview répondent 403 sur toute la passe.
 - Non vérifié : le Claude Doc v3 lui-même, les brouillons Mail.app, l'état pretalx FOSDEM, les machines après le 01/11 18:10.
 
+## Renvois vers les PR #23 et #24 (relecture croisée du 02/11)
+
+- Les chemins `clones/.github/docs/…` des fichiers de ce dossier désignent la branche de la PR #24 (`docs/verrou-lecture-2026-11-01`), lue au commit 0de2b66. Les corrections du 02/11 (commit 3711088) sont faites dans les lignes existantes : les renvois `catalogue-v2.md:N`, `ROADMAP.md:N` et `spec:N` cités ici restent valides.
+- `readme-pr23.md` (cité **[RAP]**) est identique au `README.md` de la PR #23 (`docs/research/2026-11-01-analyse-profonde/`) au commit e932a61 ; `inventory/<dépôt>.md` et `inventory/refs/` sont identiques à `inventaires/<dépôt>.md` et `inventaires/refs/` de la même PR (vérifié par `cmp` le 02/11). Les errata de la PR #23 sont en fin de son README (commit 0012574).
+- Suites données dans les PR #23 et #24 : ReScience #147 (deux relectures à faire, pas deux relecteurs à proposer), Studio allumé au 01/11, catalogue v2 (3gCeBuNNyT et arXiv:2610.36109 pour NH-91, arXiv:2610.33495 pour NWML-PRH et NH-45, débat publié des deux côtés pour BB-01, état enregistré de M5, MK-17, MK-26, Marconi en addendum). La phrase « exactement le mécanisme » de `docs/research/veille-2026-10-31.md:44` porte un erratum daté du 02/11 sous la ligne (cette PR).
+
 ## Pour le PI
 
 1. Relire `dossier-relecture.md` §5 (sept QCM) et appliquer les corrections au Claude Doc v3 avant tout envoi.
