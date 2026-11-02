@@ -32,7 +32,7 @@ Ce document fixe deux choses : un **verrou de lecture** qui conditionne tout gel
 - **Temps** : 185 h sur 13 semaines (S1 = 26 oct → S13 = 24 jan), soit ≈ 14 h par semaine. Le plan pro 3 ans fixe un plafond de 10 h ; le PI a choisi 185 h en connaissance de cause. Le document le note ; la réconciliation appartient au PI.
 - **Machines** : KXKM occupé par E1-small (1 227/1 410 cellules au 01/11 18:10) puis libre ; macM1 occupé par N10-C run 2 jusqu'au ≈ 02/11 02:00, puis par le second cerveau (RAM serrée, swap plein) ; electron-server CPU sans AVX ; Studio éteint ; GrosMac jamais. Une seule campagne lourde à la fois.
 - **Campagnes en cours** : E1-small, N10-C run 2 et Me6 ne reçoivent aucun verdict et ne sont pas touchées (hypneum-campaign). Leur analyse suit leur préreg.
-- **Échéances externes** : ReScience #147 (commentaire 02/11, deux relecteurs attendus depuis le 01/11 09:52 UTC, v2 avant fin novembre) ; FOSDEM PYVZXW à corriger avant le 16/11 ; note méthodo sur arXiv avant le 15/12, JOTE en janvier.
+- **Échéances externes** : ReScience #147 (commentaire 02/11 ; depuis le 01/11 09:52 UTC, l'éditeur en chef demande que l'auteur fasse deux relectures pour ReScience C et le confirme sur ReScience/ReScience#118 — corrigé le 02/11, il ne s'agit pas de proposer deux relecteurs, `docs/research/2026-11-02-veille-theses/these-rescience-methodo.md:93` ; v2 avant fin novembre) ; FOSDEM PYVZXW à corriger avant le 16/11 ; note méthodo sur arXiv avant le 15/12, JOTE en janvier.
 - **Dépôts** : Hypneum reste sur GitHub ; commits en anglais, sujet ≤ 50 caractères, pas d'attribution IA ; les décisions de ce document sont des ADR ou des amendements datés, jamais des modifications silencieuses de préregs.
 
 ## 4. Le verrou de lecture (décidé)
@@ -76,7 +76,7 @@ Le verrou s'applique à toute campagne lourde (GPU, ou > 6 h CPU, ou > 1 semaine
 | Analyse des runs en cours | 10 | N10-C run 2 (analyse appariée par graine, tag d'analyse), E1-small après sa fin, Me6 selon sa préreg ; aucun nouveau calcul | S2-S6 |
 | Calcul | 15 | N10-D sur KXKM, seulement si le verrou passe ; K1/K3 bouba sur electron-server ; NH-20 CPU | S6-S10 |
 | Retraits textuels décidés par la lecture (PI, 01/11 21:00) | 10 | retirer λ̂ = 67,8 et la référence au Thm 3.4 (kiki-flow), « +7 pp » et la table des latences (micro-kiki), rapport d'errata et non-tests dans `main.tex` de bouba, bannières ; **aucun rejeu** (mKNN intra-cluster, Claim B causal, porte baby-brain sur le taux d'apprentissage) : issues reportées après M3, sous verrou | S2-S6 |
-| Réserve | 20 | relecteurs ReScience, réponses éditeur, imprévus | — |
+| Réserve | 20 | deux relectures dues à ReScience C (condition de #147, corrigé le 02/11), réponses éditeur, imprévus | — |
 
 ### 5.3 Ce que le trimestre ne fait plus
 

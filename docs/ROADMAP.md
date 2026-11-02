@@ -44,7 +44,7 @@ Budget : ≈ 14 h par semaine (rapport:303), soit 56 h pour S2-S5. Postes (spec:
 
 | Sem. | Tâche | Poste | h | Dépôt | Hôte | Fait quand |
 |---|---|---|---|---|---|---|
-| **S2 (2-8 nov)** | Commentaire ReScience #147 le 02/11 : déclarer l'ablation diagonale préenregistrée et le recalcul aux deux bases (1,90 et 3,05 ; rapport:294) ; proposer deux relecteurs | É | 2 | rescience-nh01 | aucun | commentaire posté |
+| **S2 (2-8 nov)** | Commentaire ReScience #147 le 02/11 : déclarer l'ablation diagonale préenregistrée et le recalcul aux deux bases (1,90 et 3,05 ; rapport:294) ; confirmer sur ReScience/ReScience#118 que l'auteur fera les deux relectures pour ReScience C demandées par l'éditeur en chef le 01/11 09:52 UTC (corrigé le 02/11 : il ne s'agit pas de proposer deux relecteurs ; `docs/research/2026-11-02-veille-theses/these-rescience-methodo.md:93`, PR #25 ; les deux relectures, 8-12 h estimées par inférence, ne sont pas budgétées ici : à arbitrer par le PI) | É | 2 | rescience-nh01 | aucun | commentaire posté |
 | | Deux PR de corrections publiques (`.github`, kiki-flow-research : bannière `main.tex`, `CITATION.cff`) ; note « superseded » sur Zenodo par le PI | É | 3 | .github, kiki-flow | aucun | PR fusionnées, note Zenodo publiée |
 | | Citations Rome/unlearning de #87 portées dans `build/full-draft.tex` et Paper 2 | É | 3 | dream-of-kiki | aucun | PR fusionnée |
 | | Note méthodo : demande d'endossement arXiv (cs.DL primaire, stat.ME croisé, puis JOTE) ; plan de la section NH-01 réécrite | É | 2 | paper-methodo-2026 | aucun | endossement demandé |
@@ -156,7 +156,7 @@ Aucune nouvelle campagne GPU avant S6. Une seule campagne lourde à la fois. Ét
 | KXKM CPU (`nice 19`) | libre | libre | NH-20 CPU possible sous sa note | selon le point de reprise |
 | macM1 | N10-C run 2 (≈ 02/11), puis second cerveau | second cerveau (RAM serrée) | second cerveau | second cerveau |
 | electron-server (CPU sans AVX) | aucune campagne | aucune campagne | K1/K3 bouba après v0.7.1 taguée ; NH-20 CPU possible | selon le point de reprise |
-| Studio | éteint | éteint | éteint | éteint |
+| Studio | allumé au 01/11 18:10 (corrigé le 02/11 : 7 j d'uptime, processus tiers actif, a servi au rejeu M5 secondaire fini le 31/10 18:42 ; `docs/research/2026-11-02-veille-theses/dossier-relecture.md:26`, PR #25) ; aucune campagne prévue | aucune campagne prévue | aucune campagne prévue | aucune campagne prévue |
 | GrosMac | rien | rien | rien | rien |
 
 ## Ce que l'on ne fait pas en 2026-27
