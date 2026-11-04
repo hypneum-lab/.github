@@ -52,7 +52,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 
 ### Deployable artefact
 
-- [**micro-kiki**](https://github.com/hypneum-lab/micro-kiki) — multi-LoRA runtime with a cognitive layer on **Qwen3.6-35B-A3B** (native MoE, 256 experts, 3 B active, 262 K context) : 35 domain-expert V4 adapters (rank 16, scale 20), sigmoid router (top-1 70.7 %, top-3 89.5 %), **Aeon** episodic memory, **CAMP** negotiator, **KnowBias** double filter, `kiki-flow` advisory-routing bridge. October 2026 : MLX prompt-cache reuse fixed ([#6](https://github.com/hypneum-lab/micro-kiki/pull/6)). The Mac Studio that served it is powered down ; adapters and datasets are preserved, and the review lists a RAG-vs-Aeon baseline (NH-85) for phase 2.
+- [**micro-kiki**](https://github.com/hypneum-lab/micro-kiki) — multi-LoRA runtime with a cognitive layer on **Qwen3.6-35B-A3B** (native MoE, 256 experts, 3 B active, 262 K context) : 35 domain-expert V4 adapters (rank 16, scale 20), sigmoid domain router (its earlier accuracy figures are withdrawn, see erratum [E-2026-10-25-03](https://github.com/hypneum-lab/micro-kiki/blob/main/docs/ERRATA.md)), **Aeon** episodic memory, `kiki-flow` advisory-routing bridge. October 2026 : MLX prompt-cache reuse fixed ([#6](https://github.com/hypneum-lab/micro-kiki/pull/6)). The Mac Studio that served it is powered down ; adapters and datasets are preserved, and the review lists a RAG-vs-Aeon baseline (NH-85) for phase 2.
   `main`, 598 commits ; release `v0.3.0` (2026-04-20). Zenodo concept DOI [10.5281/zenodo.19666759](https://doi.org/10.5281/zenodo.19666759). Apache-2.0.
 
 ### Embodied — World-Model Learners *(private)*
@@ -86,7 +86,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
    │  nerve-wml  v1.9     │   │  micro-kiki  v0.3    │
    │  GTM tied-stable     │   │  Qwen3.6-35B-A3B     │
    │  N10-C → N10-C-bis   │   │  35 LoRA · Aeon ·    │
-   │  Zenodo              │   │  CAMP · KnowBias     │
+   │  Zenodo              │   │  domain router       │
    └──────────┬───────────┘   └──────────────────────┘
               │ shared codebook (γ/θ)
               ▼
