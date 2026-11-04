@@ -34,7 +34,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 
 ### Upstream — numerical engine
 
-- [**kiki-flow-research**](https://github.com/hypneum-lab/kiki-flow-research) — Wasserstein-gradient-flow engine for LLM consolidation, grounded in the Levelt–Baddeley model of language production. Four psycholinguistic species evolve under a JKO-regularised flow on commodity Apple Silicon ; three tracks (nightly consolidation of a LoRA stack, N-particle Langevin × JKO paper proxy, pure-NumPy streaming surrogate for advisory routing).
+- [**kiki-flow-research**](https://github.com/hypneum-lab/kiki-flow-research) — engine for LLM consolidation, grounded in the Levelt–Baddeley model of language production. Four psycholinguistic species evolve on commodity Apple Silicon under a legacy split scheme (projected Euclidean descent of F, then an entropic KL prox anchored on the previous histogram), which the repository's [ERRATUM](https://github.com/hypneum-lab/kiki-flow-research/blob/main/ERRATUM.md) §12 states is not a JKO step of F ; three tracks (nightly consolidation of a LoRA stack, N-particle Langevin paper proxy, pure-NumPy streaming surrogate for advisory routing).
   `main`, 227 commits ; latest release **`paper-v0.13-draft`** (2026-10-25) — Zenodo [10.5281/zenodo.23636477](https://doi.org/10.5281/zenodo.23636477), concept DOI [10.5281/zenodo.19666755](https://doi.org/10.5281/zenodo.19666755). October 2026 : two reproducibility bugs found and documented as errata (MLX `prox_w2`, solver `max_iter` ; the second changes no reported number, impact ≤ 1.7e-5), CI pinned (`uv --locked`), rigorous specialisation measure. MIT.
 
 ### Reference cross-substrate measurement
@@ -70,7 +70,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 ```
       ┌─────────────────────────────────────┐
       │  kiki-flow-research                 │  upstream numerical engine
-      │  Wasserstein JKO + 4 species        │  paper-v0.13-draft · Zenodo
+      │  legacy split scheme + 4 species    │  paper-v0.13-draft · Zenodo
       └──────────────┬──────────────────────┘
                      │ numerical primitives
                      ▼
