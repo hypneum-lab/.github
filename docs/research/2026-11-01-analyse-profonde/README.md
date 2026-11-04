@@ -15,6 +15,7 @@
 9. **Croisement Codex (aveugle)** : 52 lignes BLOQUANT/MAJEUR, 39 confirmées, 9 nuancées, 3 non vérifiées, 1 sans objet, 0 réfutée ; 8 constats nouveaux (C1-C8). Codex retrouve seul 5 de nos 22 bloquants v1, 11 en partie, 6 pas du tout. Désaccords tranchés en §2 : pilote dok (Codex a raison, B2 rétrogradé), diagonale NH-01 (chacun a raison sur un point).
 10. **Décisions** : onze questions en §7. **Cette semaine, dans l'ordre** : (i) commentaire #147 selon le point 3 (PI, 02/11, ≈ 2 h) ; (ii) retrait de la ligne 70,7/89,5 du profil (≤ 1 h) ; (iii) bannière `main.tex` kiki-flow et note « superseded » Zenodo (≈ 2 h) ; (iv) aucun K1/K3 Me6 avant l'amendement bouba v0.7.1 (≈ 6 h) ; (v) FOSDEM et mail Rome alignés sur (i) (≈ 1 h, avant le 16/11).
 11. **Provenance** (§8) : 12 agents Opus/Sonnet ; critique à contexte vierge (36 problèmes, tous appliqués, 2 amendés) ; Codex gpt-6.1-sol aveugle, croisé ; Codex gpt-6-astra hors quota jusqu'à 20:50, passe croisée remplacée par Claude Opus critic (28 constats relus : 24 confirmés, 4 nuancés, 0 réfuté).
+12. **Addendum du 04/11** : documents reçus, relectures, trois conventions de diagonale pour #147 et décisions du PI ; voir [en fin de rapport](#addendum-du-0411--documents-reçus-relecture-et-rescience).
 
 ## §1 État par dépôt
 
@@ -303,6 +304,17 @@ Option recommandée en premier. Renvoi au constat entre parenthèses.
 | 10 | Trimestre : **ambitieux ≈ 185 h** | option (c) ; ≈ 14 h/semaine sur 13 semaines, au-dessus du plafond 10 h/semaine du plan pro 3 ans |
 | 11 | dok : porter les citations #87 dans la .tex et Paper 2 maintenant | |
 
+#### Décisions du 04/11
+
+| Objet | Décision | État au 04/11 |
+|---|---|---|
+| Q1 révisée (#147, B21) | La décision du 01/11 « deux bases 1,90 et 3,05 » est **dépassée**. Le commentaire présente trois conventions : 3,90 avec J_ii = 0 des deux côtés (protocole de l'article, algorithmes 2024-2025 du groupe de Rome) ; 1,90 avec la diagonale gardée des deux côtés (champ imprimé en 2019) ; 3,05, rapport mixte sans protocole publié | posté le 04/11 ([commentaire](https://github.com/ReScience/submissions/issues/147#issuecomment-6637786196)) |
+| Deux relectures ReScience | L'éditeur (rougier, 01/11) demande deux relectures ReScience en échange | réponse à écrire par le PI |
+| FOSDEM (Q3) | Plan aligné sur la formulation Q3 (a), PDF régénéré | fait |
+| Lecture intégrale | Toute la bibliothèque : 372 documents, 39 lots + lot L40 AMI/JEPA | plan `library/references/notes/PLAN-lecture-integrale-2026-11-04.md` |
+| v2 ReScience | Branche `v2-diagonal` + brouillon de réponse | PR brouillon, en cours |
+| Lot AMI/JEPA (L40) | Lire les papiers du cercle LeCun contre micro-kiki et baby-brain | à faire |
+
 ## §8 Provenance et limites
 
 - **Session** electron-94, Claude Fable 5.1, GrosMac, 01/11 18:04 → 20:20 CET (v3). Clones frais `--depth 200` des 11 dépôts (SHA en tête de chaque inventaire). Copies : `synthese/rapport-v1-pre-critic.md`, `synthese/rapport-v2-pre-astra.md`, `synthese/rapport-v2-pre-cross-replacement.md`.
@@ -326,3 +338,74 @@ Ce rapport est daté du 01/11 : son texte n'est pas réécrit. Les lignes ci-des
 | §2 M15, §3 E2, `README.md:266` (M5) | M5 : échec de fond du critère γ ≤ 30 | inchangé ; à lire comme **état enregistré** : règle et verdict primaire « failed » 50/60 (PR kiki-flow-research #52, fusionnée le 01/11 09:19 UTC), analyse secondaire 10/38 (PR #60, fusionnée le 01/11 09:23 UTC) ; aucun verdict nouveau n'est posé ici | API GitHub (02/11) ; `kfr/docs/results/2026-10-30-m5-certify-verdict.md:9-13` ; `kfr/results/m5_secondary_2026_10_30/ANALYSIS.md:26-30` |
 
 Identifiants arXiv de cette section résolus le 02/11 par `scripts/resolve_ids.py` (branche de la PR #24) : 0 échec. Les identifiants OpenReview (3gCeBuNNyT, QFw0sg52VV) ont été résolus par la PR #25 (`api2.openreview.net/notes/search`), leur PDF répond 403.
+
+## Addendum du 04/11 — documents reçus, relecture et ReScience
+
+Comme pour les errata du 02/11, le texte du 01/11 n'est pas réécrit : cette section dit ce que les documents reçus le 04/11 changent à ses constats. Aucun verdict n'est posé sur E1-small, N10-C, Me6 ou M5. Un résultat externe « va dans le sens de » ou « à l'encontre de » un constat ; il ne le tranche pas. Les renvois `README.md:N` suivent la numérotation du commit 0012574, avant l'ajout de cet addendum.
+
+### (a) Ce qui a été lu et relu
+
+- **Cinq documents lus en entier** : thèses d'Aquaro (Sapienza 2025), de Patti (2022) et d'Annibale (KCL 2007) ; Agliari et al. 2026 (Neural Networks 194, 108181) ; tri des **13 articles de Neural Networks 173 (2024) reçus hors liste de citation** (2 à lire en entier : 106203, 106204 ; 1 outil : 106179 ; 10 sans rapport direct).
+- **Relectures** : critique Claude Opus à contexte vierge, 123 constats reçus, 35 corrections appliquées ; passe croisée Codex gpt-6-astra, 148 constats reçus, 57 corrections appliquées. Chaque correction a été appliquée après réouverture du PDF.
+- **Limite** : Codex n'a relu ni Agliari 2026 ni le tri NN 173 (quota).
+- **Où sont les notes** : dépôt privé `hypneum-lab/library`, PR #2, commit 2b1e960. L'analyse de référence est `references/notes/ANALYSE-2026-11-04-documents-vs-analyse-profonde.md` ; le suivi des relectures est `integration-0411.md`.
+
+### (b) Constats du rapport touchés
+
+| Constat du rapport | Ce que le 04/11 change | Source (document, page) | Manuscrit fichier:ligne |
+|---|---|---|---|
+| **B21**, convention de diagonale (§0 point 3, §7 Q1) | Fait : les algorithmes de dynamique séquentielle du groupe en 2024-2025 commencent par « Remove the diagonal terms from J ». Fait : le champ imprimé en 2019 somme sur j = 1…N ; Agliari 2026 garde la diagonale dans l'énergie (2.1) et le champ (4.3). Fait : `dream_offdiag`/Hebb sans diagonale = 3,90 ; `dream_diag`/Hebb avec diagonale = 1,90 ; `dream_diag`/Hebb sans diagonale = 3,05. Inférence : **trois conventions, trois rapports** — 3,90 suit la convention 2024-2025 (celle de l'article gelé), 1,90 celle du champ de 2019, et 3,05 mêle les deux, sans équivalent dans aucun protocole de rêve lu. Aucun document lu ne donne de valeur à l'appui de 1,90 ou de 3,05. Le résultat externe va dans le sens de J_ii = 0 comme convention de protocole du groupe ; il est sans rapport direct avec la valeur de C1 | 106174 alg. 1 p. 4 ; 106389 alg. 2 (préprint arXiv:2308.01421v2, p. 23) ; Aquaro alg. 4 p. 104 et alg. 7 p. 120 ; Fachechi 2019 éq. 2.16 p. 16 ; Agliari 2026 p. 2 et 4 (annexe H p. 17 : i < j, autre objet) | `rescience-nh01/article/article.md:96,196-200` ; `content.tex:220-222` ; `catalogue-v2.md:50` ; `README.md:294` (Q1) |
+| **B21**, mécanisme | Fait : la prop. 1.3.1 d'Aquaro pose que l'équilibre détaillé en séquentiel exige J_ii = 0 ; le rapprochement avec l'étape 1 des algorithmes est une lecture personnelle, la thèse ne le fait pas. Fait : la note 1 d'Aquaro (p. 115) porte sur la construction de J (critère de Personnaz avec j = i), sans valeur ; elle n'est pas liée à 1,90 / 3,05. Fait : l'alg. 7 imprime « sign(Σ_j J_ij σ_j + h_i σ_i) », rapporté tel quel. Le résultat va dans le sens de « la diagonale n'agit que par la règle de mise à jour et l'estimateur » | Aquaro prop. 1.3.1 p. 11, note 1 p. 115 (PDF 119), alg. 7 p. 120 ; Patti (8) p. 14, p. 57 ; 106389 note 4 p. 5 | `article.md:96-99` ; `nerve-wml/docs/milestones/2026-10-31-nh01-diagonal-ablation.md:37-40` |
+| **M32**, C3′ « calibrated null » | Fait : l'équivalence (1+t) ↔ changement de β est publiée par le groupe, pour un facteur fini et non nul, à convention de C près (1/N en (1.244), 1/P en (2.197)) ; elle ne dit rien de T = 0. Le verdict de M32 ne change pas ; le résultat va dans le sens de M32 | Aquaro p. 117 note 2 ; 106389 note 9 p. 7 | `article.md:136-141` |
+| **M34**, « la cloche de C2′ contredit la monotonie du noyau » | Fait : dans 106389, la distance de rappel est minimale à t_d intermédiaire sur exemples bruités, avec un spectre de noyau monotone. Inférence : « contredit » est trop fort ; écrire « la monotonie du noyau n'implique pas celle de la capacité ». Formulation **affaiblie** | Aquaro p. 123-124, fig. 2.22 ; 106389 §4 | `README.md:119` ; `article.md:350-361` |
+| **M38**, 106389 absent partout | Fait : identité ridge t_d = 1/ε_J et arrêt précoce t*(t_d) ≈ (1/2λ̄) log(1 + t_d λ̄). Inférence : M38 est renforcé et les emplacements de citation se précisent | Aquaro p. 115-119, (4.50) p. 154 | `article.md:363-374` ; `dok/docs/papers/paper1/full-draft.md:225-231` |
+| **§0 point 4** et §5 (NH-01) : « optimum fini pour Benedetti, pas pour Fachechi » | Fait : en supervisé le gain sature ; en non supervisé, un optimum intérieur en t_d existe pour ce noyau sur exemples bruités, par surapprentissage. Inférence : écrire « pas pour le noyau de Fachechi sur motifs propres ». L'inférence du 02/11 tient : t* = 7 n'est ni une prédiction de l'original ni une propriété générale du rêve | Aquaro p. 108, p. 123-125, rem. 2.3.3 p. 117 ; 106174 | `article.md:351-361` ; `README.md:10,241` |
+| **B4**, mKNN 18,8× | Inférence : l'alignement par permutation et le dérangement donnent une forme publiée au nul intra-cluster demandé. Le chiffre de B4 ne change pas | 106204 §6.3 p. 8-9 ; Csiszárik et al. 2021, arXiv:2110.14633 | `nerve/papers/paper1/main.tex:467-471` ; `catalogue-v2.md:140` |
+| **M25, M26, M29** (et M8, suppositions transversales 2-3) | Fait : un score sur un seul jeu test mesure au mieux une couverture marginale ; un dérangement complet peut laisser le modèle fonctionnel. Inférence : 106203 et 106204 sont à citer à l'appui de « simuler le nul par blocs » (M25), « refaire le contrôle 2 » (M26) et « permutation plus TOST » (M29). Aucune valeur de Me6 n'a été lue | 106203 p. 1, p. 4 (fig. 1), §3.3 p. 5, p. 11-12 ; 106204 §6.3 p. 8-9 | `bouba/docs/prereg/me6-large-n/amendment-2026-10-31-diagnostic.md:39-42` ; `bouba/docs/osf/amendment-v0.7-actionsense.md:442-453` ; `baby-brain/docs/paper/2026-05-22-ontogenetic-wml-draft.md:512-516` |
+| **§5 Rome « où citer »** (et M7) | Fait : ni kiki-flow ni dream-of-kiki ne citent 108181. Inférence : « infirme partiellement » (veille Rome l. 45) enfreint la règle du verrou ; écrire « va dans le sens de : spécialisation quand une répulsion inter-modules est posée ; sans rapport direct avec un apprenant par transport sans ce terme » | Agliari 2026 p. 2-8 (bruit nécessaire p. 4, γ = 0 p. 3 et 6, ni graines ni IC) | `kiki-flow-research/paper/main.tex:28-35,496-498,954-959` ; `catalogue-v2.md:32,39` ; `reviews/_veille-session/rome-2026-11-01.md:45` |
+
+**Bilan** : 7 constats renforcés (B21 comme paramètre de protocole, M32, M38, M7 et les emplacements Rome, l'inférence du 02/11 sur t\* = 7, les suppositions 2-3, l'action de B4) ; 3 affaiblis (la formulation de M34, « pas pour le noyau de Fachechi », la présentation « deux bases 1,90 / 3,05 » de Q1 et Q3).
+
+### (c) Nouveaux points
+
+- **N1 — Trois conventions, trois rapports** : voir B21 ci-dessus. Q1 et Q3 étaient à réexaminer par le PI ; Q1 est révisée le 04/11 (§7).
+- **N2** — Les deux sources éditoriales de J_ii = 0 (106174, 106389) étaient déjà dans le rapport, mais pas utilisées pour B21.
+- **N3 — Homonymie de t\*.** Fait : le t\*(t_d) de 106389 et d'Aquaro (4.50) est un temps d'entraînement ; le t\* = 7 de NH-01 est un temps de rêve. Inférence, à recouper : par l'identité ridge, t\* = 7 se lirait comme une force de régularisation ε_J = 1/t\*, au facteur N/P près.
+- **N4** — Non-monotonie interne à 106389 sur exemples bruités (nuance M34 et §0 point 4).
+- **N5 — (1+t) ↔ β.** Fait : l'équivalence vaut pour un facteur fini et non nul. Lecture personnelle : la note Fachechi du 02/11 est à restreindre à T > 0 ; à T = 0, un facteur global est sans effet sous dynamique de signe (`article.md:136-138`), mais changer J seul à champ externe fixé peut modifier une trajectoire.
+- **N6 — Le « saving » de 106174 dépend de la grille.** Fait : M_max est défini sur t ∈ ℝ⁺ mais calculé sur la grille d'entrée (106174 alg. 2, l. 11). Inférence : toute citation du « ≈ 90 % » (`README.md:246`) doit porter la réserve de la grille et du seuil m_× choisi à la main.
+- **N7 — Annibale touche kiki-flow (NH-58, NH-60), pas nerve-wml.** Fait : T/X n'est une température que si elle ne dépend pas de l'observable (p. 17). Inférence : sans rapport direct avec NH-58 tant qu'il identifie une mesure de Gibbs stationnaire ; à l'encontre d'une extension à une T_eff tirée de transitoires par une seule observable.
+- **N8** — 106179 donne un algorithme de spectre de Lyapunov (annexe A, p. 12) pour `nerve/papers/paper1/main.tex:1088-1094`.
+- **N9** — Patti mesure la capacité par moyenne trempée et extrapolation en 1/N, avec un contrôle positif α_c(p = 0) = 0,1404 ± 0,0010 (p. 62-67) : outil pour #90.
+- **N10 — Cinquième texte à aligner sur B21** : `dream-of-kiki/docs/papers/paper1/full-draft.md:108-110` affirme une réplication indépendante sans réserve. Le rapport n'en comptait que quatre (§0 point 3).
+- **N11 — Homonymie de « désapparié »** : le p de Patti n'est ni le bruit d'indice de NH-01, ni le message désapparié de NH-32, ni le mismatch de NH-33.
+
+### (d) ReScience #147
+
+- **Commentaire posté le 04/11** : [ReScience/submissions#147, commentaire 6637786196](https://github.com/ReScience/submissions/issues/147#issuecomment-6637786196). Il présente les trois conventions : 3,90 (J_ii = 0 des deux côtés, protocole de l'article, algorithmes 2024-2025 du groupe de Rome), 1,90 (diagonale gardée des deux côtés, champ imprimé en 2019), 3,05 (rapport mixte, sans protocole publié). La décision Q1 du 01/11 « deux bases 1,90 et 3,05 » est **dépassée**.
+- **Deux relectures demandées** : l'éditeur (rougier, 01/11) demande deux relectures ReScience en échange ; la réponse est à écrire par le PI.
+- **v2** : en branche `v2-diagonal` (PR brouillon, en cours).
+- **FOSDEM** : plan aligné le 04/11 sur la formulation Q3 (a), PDF régénéré.
+
+### (e) AMI / JEPA
+
+- Fait : AMI Labs n'a publié aucun modèle ni papier sous son nom.
+- Papiers du cercle LeCun à lire (lot L40) : LeJEPA (arXiv:2511.08544), LeWorldModel (2603.19312), H-JEPA (2610.06805), 2610.07540, 2610.39302, LeWAM (2610.12818, 2610.12407). Fait : 2606.27014 n'est pas de LeCun.
+- À lire contre micro-kiki (Aeon présenté comme module 7 d'AMI, avec l'identifiant faux de B11) et contre baby-brain.
+- Le PI a décidé le 04/11 la lecture intégrale de la bibliothèque : 372 documents, 39 lots + L40 (`library/references/notes/PLAN-lecture-integrale-2026-11-04.md`).
+
+### (f) À recouper
+
+- Effet sur α_c du traitement de l'auto-couplage selon Kanter-Sompolinsky 1987 (doi:10.1103/physreva.35.380) : non relu.
+- 106389 : le PDF de la bibliothèque est le préprint arXiv:2308.01421v2 ; la pagination éditeur est à recouper.
+- Le bras Hebb (t = 0) des simulations de 2019 gardait-il la diagonale ? Inféré de l'éq. 2.16, à recouper.
+- Diagonale moyenne de J(t) en fonction de t : non calculée (verrou).
+- α_c(t → ∞) = 1,00 chez Aquaro (p. 105) contre 1,07 chez Fachechi : à recouper avant citation.
+- Agliari 2026 : référence [6] (Agliari, Fachechi, Duarte Mourão 2025b) non résolue ; dépôt de code non visité.
+- 106174 serait « cité par un manuscrit du labo » selon le tri, mais aucune occurrence n'a été trouvée dans les clones (grep du 04/11).
+
+### (g) Provenance
+
+- Analyse rédigée par un sous-agent Claude Opus 5.5, sans calcul, sans téléchargement ; chaque point retenu rouvert dans le PDF (`pdftotext`). Rapports 3,90 / 1,90 / 3,05 et IC repris du rapport et du jalon d'ablation, non recalculés.
+- Relectures : critique Claude Opus 5.5 à contexte vierge (123 constats, 35 appliqués) ; Codex gpt-6-astra en passe partielle (148 constats, 57 appliqués), limitée par le quota aux trois thèses. Non appliqué, par décision de la session principale : la lecture de l'alg. 7 comme réintroduction d'un auto-couplage.
+- Addendum rédigé le 04/11 par un sous-agent Claude (session de publication) à partir de l'analyse et du suivi des relectures ; aucun chiffre nouveau.
