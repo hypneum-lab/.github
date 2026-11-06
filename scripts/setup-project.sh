@@ -106,7 +106,7 @@ axe_label_to_name() {
 
 compose_body() { # $1 = index dans le manifeste
   local i="$1" labels milestone due cost note host src body
-  labels=$(jq -r --argjson i "$i" '.issues[$i] | [.phase, .type] + .axes + [.host, "a-valider-pi"] | map("`" + . + "`") | join(" · ")' "$MANIFEST")
+  labels=$(jq -r --argjson i "$i" '.issues[$i] | [.phase, .type] + .axes + [.host, "a-valider-pi"] + (.extra_labels // []) | map("`" + . + "`") | join(" · ")' "$MANIFEST")
   milestone=$(jq -r ".issues[$i].milestone" "$MANIFEST")
   due=$(milestone_due_date "$milestone")
   cost=$(fr_number "$(jq -r ".issues[$i].cost_h" "$MANIFEST")")
@@ -133,7 +133,7 @@ step_issues() {
     slug=$(jq -r ".issues[$i].slug" "$MANIFEST")
     title=$(jq -r ".issues[$i].title" "$MANIFEST")
     milestone=$(jq -r ".issues[$i].milestone" "$MANIFEST")
-    labels_csv=$(jq -r --argjson i "$i" '.issues[$i] | [.phase, .type] + .axes + [.host, "a-valider-pi"] | join(",")' "$MANIFEST")
+    labels_csv=$(jq -r --argjson i "$i" '.issues[$i] | [.phase, .type] + .axes + [.host, "a-valider-pi"] + (.extra_labels // []) | join(",")' "$MANIFEST")
     found=$(jq -r --arg t "$title" '[.[] | select(.title==$t)][0] // empty' <<<"${EXISTING[$repo]}")
     if [[ -n "$found" ]]; then
       url=$(jq -r .url <<<"$found"); num=$(jq -r .number <<<"$found")

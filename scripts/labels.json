@@ -35,5 +35,6 @@
   {"name": "verdict:retracte",      "color": "BCA3F1", "description": "Verdict : rétracté"},
   {"name": "verdict:amende",        "color": "DACBF8", "description": "Verdict : amendé"},
 
+  {"name": "sous-verrou",         "color": "5319E7", "description": "Soumis au verrou de lecture : aucun gel sans note, contradicteur et trois tests"},
   {"name": "a-valider-pi",          "color": "FBCA04", "description": "À valider par le chercheur avant exécution ou fusion"}
 ]
