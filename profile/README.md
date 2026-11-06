@@ -34,7 +34,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 
 ### Upstream — numerical engine
 
-- [**kiki-flow-research**](https://github.com/hypneum-lab/kiki-flow-research) — Wasserstein-gradient-flow engine for LLM consolidation, grounded in the Levelt–Baddeley model of language production. Four psycholinguistic species evolve under a JKO-regularised flow on commodity Apple Silicon ; three tracks (nightly consolidation of a LoRA stack, N-particle Langevin × JKO paper proxy, pure-NumPy streaming surrogate for advisory routing).
+- [**kiki-flow-research**](https://github.com/hypneum-lab/kiki-flow-research) — engine for LLM consolidation, grounded in the Levelt–Baddeley model of language production. Four psycholinguistic species evolve on commodity Apple Silicon under a legacy split scheme (projected Euclidean descent of F, then an entropic KL prox anchored on the previous histogram), which the repository's [ERRATUM](https://github.com/hypneum-lab/kiki-flow-research/blob/main/ERRATUM.md) §12 states is not a JKO step of F ; three tracks (nightly consolidation of a LoRA stack, N-particle Langevin paper proxy, pure-NumPy streaming surrogate for advisory routing).
   `main`, 227 commits ; latest release **`paper-v0.13-draft`** (2026-10-25) — Zenodo [10.5281/zenodo.23636477](https://doi.org/10.5281/zenodo.23636477), concept DOI [10.5281/zenodo.19666755](https://doi.org/10.5281/zenodo.19666755). October 2026 : two reproducibility bugs found and documented as errata (MLX `prox_w2`, solver `max_iter` ; the second changes no reported number, impact ≤ 1.7e-5), CI pinned (`uv --locked`), rigorous specialisation measure. MIT.
 
 ### Reference cross-substrate measurement
@@ -52,7 +52,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 
 ### Deployable artefact
 
-- [**micro-kiki**](https://github.com/hypneum-lab/micro-kiki) — multi-LoRA runtime with a cognitive layer on **Qwen3.6-35B-A3B** (native MoE, 256 experts, 3 B active, 262 K context) : 35 domain-expert V4 adapters (rank 16, scale 20), sigmoid router (top-1 70.7 %, top-3 89.5 %), **Aeon** episodic memory, **CAMP** negotiator, **KnowBias** double filter, `kiki-flow` advisory-routing bridge. October 2026 : MLX prompt-cache reuse fixed ([#6](https://github.com/hypneum-lab/micro-kiki/pull/6)). The Mac Studio that served it is powered down ; adapters and datasets are preserved, and the review lists a RAG-vs-Aeon baseline (NH-85) for phase 2.
+- [**micro-kiki**](https://github.com/hypneum-lab/micro-kiki) — multi-LoRA runtime with a cognitive layer on **Qwen3.6-35B-A3B** (native MoE, 256 experts, 3 B active, 262 K context) : 35 domain-expert V4 adapters (rank 16, scale 20), sigmoid domain router (its earlier accuracy figures are withdrawn, see erratum [E-2026-10-25-03](https://github.com/hypneum-lab/micro-kiki/blob/main/docs/ERRATA.md)), **Aeon** episodic memory, `kiki-flow` advisory-routing bridge. October 2026 : MLX prompt-cache reuse fixed ([#6](https://github.com/hypneum-lab/micro-kiki/pull/6)). The Mac Studio that served it is powered down ; adapters and datasets are preserved, and the review lists a RAG-vs-Aeon baseline (NH-85) for phase 2.
   `main`, 598 commits ; release `v0.3.0` (2026-04-20). Zenodo concept DOI [10.5281/zenodo.19666759](https://doi.org/10.5281/zenodo.19666759). Apache-2.0.
 
 ### Embodied — World-Model Learners *(private)*
@@ -70,7 +70,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
 ```
       ┌─────────────────────────────────────┐
       │  kiki-flow-research                 │  upstream numerical engine
-      │  Wasserstein JKO + 4 species        │  paper-v0.13-draft · Zenodo
+      │  legacy split scheme + 4 species    │  paper-v0.13-draft · Zenodo
       └──────────────┬──────────────────────┘
                      │ numerical primitives
                      ▼
@@ -86,7 +86,7 @@ Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one
    │  nerve-wml  v1.9     │   │  micro-kiki  v0.3    │
    │  GTM tied-stable     │   │  Qwen3.6-35B-A3B     │
    │  N10-C → N10-C-bis   │   │  35 LoRA · Aeon ·    │
-   │  Zenodo              │   │  CAMP · KnowBias     │
+   │  Zenodo              │   │  domain router       │
    └──────────┬───────────┘   └──────────────────────┘
               │ shared codebook (γ/θ)
               ▼
