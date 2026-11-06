@@ -2,6 +2,8 @@
 
 Version 2.1 du 6 novembre 2026 (point de reprise anticipé, voir §« Point de reprise » ; remplace la v2 du 1er novembre pour S3 à S13). La v2 remplaçait la version 1 du 25 octobre pour les semaines S2 à S13. Chercheur : Clément Saillant (indépendant). Sources : conception « Verrou de lecture et plan du trimestre » (`docs/superpowers/specs/2026-11-01-verrou-lecture-plan-trimestre-design.md`, ci-après **spec**) ; analyse profonde du 01/11 (PR hypneum-lab/.github #23, `docs/research/2026-11-01-analyse-profonde/README.md`, ci-après **rapport**) ; décisions du PI du 01/11 (QCM 20:15-20:30 et 21:00 CET). Suivi : GitHub Projects « Hypneum — Programme 2026-27 » + ce fichier + page Outline.
 
+> Note de révision — 2026-11-06 : NH-91 « quand dormir » renuméroté NH-102 (collision avec la liste du 30/10 ; catalogue v3, PR #30, décision PI).
+
 Ce qui change par rapport à la v1 : un **verrou de lecture** conditionne désormais tout gel (spec §4) ; la phase « Dix hypothèses » disparaît ; le trimestre se répartit en 185 h décidées par le PI (rapport:303) autour de ce verrou, des corrections et de l'écriture (spec:74-79). Les semaines S2 à S5 sont écrites en détail ; S6 à S13 sont **provisoires** et seront réécrites au point de reprise « roadmap v2 » (spec:118).
 
 ## Principes
@@ -94,13 +96,13 @@ Budget : ≈ 14 h par semaine (rapport:303), soit 56 h pour S2-S5. Postes (spec:
 
 Somme S2-S5 : 56 h = 14 × 4. Par poste (v2.1) : É 40 (#147 18 sur 18, FOSDEM 1, PR 3, citations 3, méthodo 15 sur 45), V 8, A 4, R 2, Rés 2, C 0.
 
-**Report explicite** (ce qui ne tient pas dans S2-S5 et part en S6-S13, à 14 h par semaine soit ≈ 112 h) : note méthodo 30 h (arXiv avant le 15/12, donc S6-S7) ; NH-91 (ex-NH-03 « quand dormir ») en section de la note 4 h ; amendement bouba v0.7.1 6 h ; verrou N10-D 19 h, bouba 15 h, NH-20 10 h ; analyse Me6 4 h ; retraits textuels 8 h (micro-kiki « +7 pp » et table des latences, bouba `main.tex`, bannières) ; calcul 15 h ; réserve 18 h. Total 129 h contre ≈ 112 h de capacité : l'écart (≈ 17 h) correspond à ce que S1 a déjà couvert, non mesuré, ou à la réserve. Au 06/11 (v2.1) : le verrou N10-D a reçu en S2, en heures-agent, ce qui était prévu pour S3-S4 (note, contradicteur, vérification, PR #100 corrigée) ; il ne reste au PI que les tours de veille, les trois tests et la décision de gel. Les échéances externes tiennent (v2 ReScience, FOSDEM, arXiv 15/12) ; M1 reste au 29 nov ; le calcul (N10-D ou N10-C-bis, une seule) au plus tôt S6.
+**Report explicite** (ce qui ne tient pas dans S2-S5 et part en S6-S13, à 14 h par semaine soit ≈ 112 h) : note méthodo 30 h (arXiv avant le 15/12, donc S6-S7) ; NH-102 (ex-NH-03 « quand dormir ») en section de la note 4 h ; amendement bouba v0.7.1 6 h ; verrou N10-D 19 h, bouba 15 h, NH-20 10 h ; analyse Me6 4 h ; retraits textuels 8 h (micro-kiki « +7 pp » et table des latences, bouba `main.tex`, bannières) ; calcul 15 h ; réserve 18 h. Total 129 h contre ≈ 112 h de capacité : l'écart (≈ 17 h) correspond à ce que S1 a déjà couvert, non mesuré, ou à la réserve. Au 06/11 (v2.1) : le verrou N10-D a reçu en S2, en heures-agent, ce qui était prévu pour S3-S4 (note, contradicteur, vérification, PR #100 corrigée) ; il ne reste au PI que les tours de veille, les trois tests et la décision de gel. Les échéances externes tiennent (v2 ReScience, FOSDEM, arXiv 15/12) ; M1 reste au 29 nov ; le calcul (N10-D ou N10-C-bis, une seule) au plus tôt S6.
 
 ## S6 à S13 — révisé au point de reprise du 06/11 (v2.1), à relire à M1
 
 | Sem. | Contenu indicatif | Postes | Jalon |
 |---|---|---|---|
-| S6 (30 nov-6 déc) | Note méthodo (NH-91 ex-NH-03 en section, sans run) ; retraits textuels restants ; gel de **N10-D ou N10-C-bis** (une seule, après trois tests) et lancement sur KXKM ; relecture ReScience C n° 2 | É, R, V, C, Rés | — |
+| S6 (30 nov-6 déc) | Note méthodo (NH-102 ex-NH-03 en section, sans run) ; retraits textuels restants ; gel de **N10-D ou N10-C-bis** (une seule, après trois tests) et lancement sur KXKM ; relecture ReScience C n° 2 | É, R, V, C, Rés | — |
 | S7 (7-13 déc) | Note méthodo soumise sur arXiv (cs.DL + stat.ME) avant le 15/12 ; note de lecture bouba v0.7.1 finie ; amendement v0.7.1 ; brief du contradicteur bouba (sans la note) | É, V | M1 au plus tard si glissé |
 | S8 (14-20 déc) | Verrou bouba (rapport du contradicteur, tours) ; verrou NH-20 (lecture mathématique) ; analyse Me6 selon sa préreg ; calcul N10-D/N10-C-bis en cours (lecture interdite) | V, A, C | — |
 | S9 (21-27 déc) | Tampon (Noël) : relectures ReScience, réponses éditeur, aucun gel | Rés | — |
@@ -118,7 +120,7 @@ Retirés de la phase 2 (S6-S10) de la roadmap v1, à reprendre après M3 et seul
 - NH-77 (WML-JEPA) ;
 - NH-07 (RECOMBINE inter-domaines) ;
 - R8-H1 (NcaWML) ;
-- NH-91 « quand dormir » (ex-NH-03, renumérotée le 01/11 pour lever la collision avec le NH-03 du 24/10) comme run (reste comme section de la note méthodo, décision PI Q6) ;
+- NH-102 « quand dormir » (ex-NH-03, renumérotée le 01/11 pour lever la collision avec le NH-03 du 24/10) comme run (reste comme section de la note méthodo, décision PI Q6) ;
 - NH-85 (RAG contre Aeon) : reporté après M3, décision PI du 01/11 21:00 (spec:143) — le routage de LoRA est saturé dans la littérature et Aeon est d'Arslan.
 
 Clos ou terminés : **NH-81** est clos par erratum, statut unifié main/PR #19/GB300, pas de run KXKM le 04/11 (décision PI Q7). **NH-01** est fait ; sa suite est la v2 ReScience, pas un nouveau run.
@@ -136,7 +138,7 @@ Rejeux reportés après M3, sous verrou (réponse 3 du §9) : mKNN intra-cluster
 | Q3 : FOSDEM corrigé avant le 16/11 | S3, M1 |
 | Q4 : note méthodo cs.DL + stat.ME, puis JOTE ; endossement cette semaine ; arXiv avant le 15/12 | S2-S7, M2, S11 |
 | Q5 : deux PR (`.github`, kiki-flow) + note Zenodo par le PI | S2, M0 |
-| Q6 : NH-91 (ex-NH-03) en section de la note méthodo, sans run | S6 ; « ne fait plus » |
+| Q6 : NH-102 (ex-NH-03) en section de la note méthodo, sans run | S6 ; « ne fait plus » |
 | Q7 : NH-81 clos par erratum, pas de run KXKM le 04/11 | « ne fait plus » |
 | Q8 : N10-C-bis à 3 graines appariées ou N10-D corrigé, avant tout gel ; N10-C-bis non gelée, sous verrou, issue nerve-wml #62 reformulée « geler après verrou » | M1 |
 | Q9 : bouba K1/K3 rien avant v0.7.1 taguée | S7-S10, M2 |
