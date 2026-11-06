@@ -229,32 +229,38 @@ Références hors fenêtre réintégrées ou ajoutées par l'intégration des re
 - (b) Le catalogue v2 fait foi ; les onze entrées du 30/10 deviennent NH-102 à NH-112 (NH-96 → NH-107), avec table de correspondance.
 - (c) Préfixe daté `P30-91` … `P30-101` jusqu'à leur entrée au catalogue.
 - (d) Préfixes de dépôt permanents ; « NH- » réservé à NH-01 … NH-91.
+- **Décision PI 2026-11-06 ~20:50 CET : (autre) « tu analyses et corriges » → l'attribution du 30/10 est antérieure (commit `337e7ed` du 30/10 contre `9c8f607` du 01/11) et NH-96 est déjà cité dans nerve-wml : NH-91 … NH-101 du 30/10 gardent leurs numéros et sont inscrites, « quand dormir » devient NH-102, les inscriptions du 06/11 prennent NH-103 … NH-113 ; appliquée dans `catalogue-v3.md` § Collision NH-91 : analyse et correction.**
 
 **Q2 — Comptage des lignes « clos par erratum ».** (indépendante)
 - (a) Garder la règle `cat:18` (verdict du 24/10 conservé) et ajouter une note sous chaque ligne concernée.
 - (b) Donner à chaque ligne close par erratum le verdict que l'erratum implique : BS-SF45 (confirmé) et BS-CBF (amendé) → rétracté ; KFR-H2 (amendé) → réfuté (excès sur Gibbs négatif, `kfr:ERRATUM.md:591-601`) ; KFR-H28 reste « confirmé », car la ligne est la critique du relecteur et l'erratum §12 lui donne raison (`cat:123`). Effet : confirmé −1, amendé −2, rétracté +2, réfuté +1. Si le PI aligne aussi les négatifs du pont Studyforrest (COMP, TAU, S14c, N12 : « réfuté » sans valeur de preuve, ADR-0024:56-60), réfuté −4 et rétracté +4 de plus. La v1 mappait KFR-H28 sur « rétracté », ce qui aurait compté comme retirée une critique validée (relecture X-B1).
 - (c) Créer une dixième classe « clos » hors des neuf verdicts.
+- **Décision PI 2026-11-06 ~20:50 CET : (b) verdict impliqué par l'erratum (BS-SF45, BS-CBF → rétracté ; KFR-H2 → réfuté ; KFR-H28 reste confirmé) ; COMP, TAU, S14c et N12 restent « réfuté », ADR-0024 ne les rétractant pas (`:3-4`, `:56-60`), ambiguïté notée ; appliquée dans `catalogue-v3.md` § Règles de lecture (règle P4), table A (colonne `Verdict v3`) et § Comptes finaux.**
 
 **Q3 — Primaire de N10-D.** (dépend de Q1 pour le nom de NH-96 ; doit précéder le tour 2 de veille, S4)
 - (a) Garder la H1 enregistrée (`eng − nocomm`) ; NWML-N1 en secondaire exploratoire déclaré.
 - (b) NWML-N1 primaire, NH-96 en porte de chaîne ; refaire k et la règle avant le gel (π à fixer : pour ≈ 0,90 en conjonction des deux backends, il faut ≈ 0,95 par backend, soit k = 28 à π = 0,6 et k = 18 à π = 0,7 ; la v1 donnait k = 23 et 16, valables pour 0,90 par backend seulement).
 - (c) Co-primaires par intersection-union (deux B → B global).
+- **Décision PI 2026-11-06 ~20:50 CET : (a) H1 enregistrée gardée ; NWML-N1 en secondaire exploratoire déclaré, inscrite NH-113 ; appliquée dans `catalogue-v3.md` table B (NH-96, NH-113) et table C (N10-D).**
 
 **Q4 — Concurrence sur KXKM : #92 (contrôles E1-small, 28-49 h GPU) et P8c (`p8c_nocap --confirmatory`, 8 workers CPU).** (indépendante ; aucun effet sur les runs en cours ; voir N-13, N-16)
 - (a) Enregistrer une dérogation datée aux principes 4 et 6 pour #92 et pour la concurrence des deux campagnes, sur le modèle d'ADR-0003 ; signer ADR-0003 ; aucune lecture de P8c, et aucune lecture « confirmatory », avant ces deux signatures.
 - (b) Ratifier `RM:57` comme dérogation datée aux principes 4 et 6 (l'exception du principe 3 ne couvre que le gel) ; signer ADR-0003 avant toute lecture de P8c.
 - La v1 proposait en (b) « considérer le run couvert par l'exception du principe 3 », lecture que le texte de la roadmap exclut (relecture C-M5).
+- **Décision PI 2026-11-06 ~20:50 CET : (a) dérogation datée aux principes 4 et 6 pour #92 et pour la concurrence #92/P8c, sur le modèle d'ADR-0003 ; signer ADR-0003 ; aucune lecture de P8c ni lecture « confirmatory » avant les deux signatures ; appliquée dans `catalogue-v3.md` (mention « sous dérogation à signer » : DOK-H14 en table A, H14 en table C, P1bis/P8c en § Hors catalogue suivis, NH-112).**
 
 **Q5 — Paquet (i) des nouvelles hypothèses ce trimestre.** (dépend de `RM:190`)
 - (a) Aucune avant le point de reprise.
 - (b) Seulement les préconditions et contrôles de lignes existantes : BOUBA-N1, BOUBA-N3, MK-N1 (réécrite, nul de sélection VEI-8), KFR-N1 (calibration), KFR-N3, et le contrôle BOUBA-N4 : ≈ 13-14 h humaines déclarées.
 - (c) Tout le paquet (i), 10 hypothèses et 2 contrôles : ≈ 23 h humaines déclarées pour les hypothèses, hors VEI-1 et VEI-2 (non chiffrées), ≈ 28-30 h avec BOUBA-N4 et BB-N1. La v1 annonçait « dans l'enveloppe C de 15 h » ; les coûts déclarés ne le permettent pas (relecture C-M6).
+- **Décision PI 2026-11-06 ~20:50 CET : (c) tout le paquet (i) : 10 hypothèses inscrites NH-103 … NH-112, 2 contrôles inscrits sans numéro ; paquets (ii) et (iii) restent proposés (13 après l'inscription de NWML-N1 par Q3) ; appliquée dans `catalogue-v3.md` table B, § Contrôles et tests de harnais, § Proposées, non inscrites.**
 
 **Q6 — Fermetures à accepter maintenant.** (indépendante)
 - (a) Aucune avant le point de reprise.
 - (b) Les 17 appuyées par un document du dépôt sans réserve : 14 errata (dont BS-Q3 et BS-N12 : rétractation et négatif préenregistrés, dans le régime d'ADR-0024:34-38) et 3 lignes de négatif selon préreg (2 hypothèses).
 - (c) Les 19 (ajoute les deux non-tests, NWML-N10C et MK-09, établis par la synthèse).
 - La v1 plaçait l'option prudente en dernier et comptait MK-01 parmi les fermetures « sans réserve », contre sa source (relectures C-B1, C-M7).
+- **Décision PI 2026-11-06 ~20:50 CET : (c) les 19 fermetures acceptées ; 58 reformulations et 25 « garder » appliqués ; DOK-E1 abandonné, hors fermetures ; appliquée dans `catalogue-v3.md` tables A, B, C (colonne `Étiquette v3`) et § Comptes finaux.**
 
 ### Au point de reprise
 
