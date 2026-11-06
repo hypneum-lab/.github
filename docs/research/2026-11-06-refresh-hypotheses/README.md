@@ -262,6 +262,8 @@ Références hors fenêtre réintégrées ou ajoutées par l'intégration des re
 - La v1 plaçait l'option prudente en dernier et comptait MK-01 parmi les fermetures « sans réserve », contre sa source (relectures C-B1, C-M7).
 - **Décision PI 2026-11-06 ~20:50 CET : (c) les 19 fermetures acceptées ; 58 reformulations et 25 « garder » appliqués ; DOK-E1 abandonné, hors fermetures ; appliquée dans `catalogue-v3.md` tables A, B, C (colonne `Étiquette v3`) et § Comptes finaux.**
 
+**MK-17 et DOK-E1 tranchés par analyse sur ordre du PI (21:10 CET) : voir `catalogue-v3.md` § Décisions PI du 06/11 appliquées, bloc « 21:10 CET ».** MK-17 : reformulé (le volet 35B Loihi-2 est retiré par l'erratum E-2026-10-25-01, `mk:docs/ERRATA.md:23-55` ; le « 3× SpikingBrain » reste écrit dans `mk:docs/papers/spikingkiki-v3-*.md`), verdict non testé → rétracté (« Withdrawn », `mk:README.md:331`). DOK-E1 : abandonné, verdict non testé retenu (aucun chiffre 35B rapporté ; exposition aux chiffres E1-small consignée, `dok:docs/osf-amendment-e1-small-2026-10-30.md:82-92`) ; règle P5 ajoutée pour les préregs retirées. Effet : reformulations 58 → 59, non touchées 188 → 187, fermetures inchangées (19) ; table A : non testé 18 → 17, rétracté 15 → 16.
+
 ### Au point de reprise
 
 - **R1 — Nul de Me6 / B-3.** (a) H0 sur tirages de réseaux (#66 révisée ; pilote 1,8-4,4 h, minimum 12,5-31 h, `iBS` l.54) : seule option qui garde B-3 comme hypothèse sur la plasticité (`iBS` §1.2) ; (b) H0 conditionnelle aux réseaux (transpose flip, sans calcul) ; (c) geler B-3 après le verrou sans nul réseau. Dépend de la révision de #66.
