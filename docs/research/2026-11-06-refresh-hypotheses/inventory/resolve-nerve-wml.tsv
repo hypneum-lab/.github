@@ -1,0 +1,25 @@
+identifiant	type	résolu	méthode (2026-11-06, soir)	titre renvoyé	année	usage dans nerve-wml.md
+arXiv:2410.18806	arXiv	oui	export.arxiv.org/api/query?id_list	A Combinatorial Approach to Neural Emergent Communication	2024	NWML-N1, NWML-N3 ; un ou deux symboles suffisent [résumé moteur au tour 1]
+OpenReview CQ5ivZEB4e	OpenReview	oui (forum)	api2.openreview.net/notes/search (notes?id= : HTTP 403)	A Combinatorial Approach to Neural Emergent Communication	2025	même travail que 2410.18806 (COLING 2025)
+arXiv:1903.05168	arXiv	oui	export.arxiv.org	On the Pitfalls of Measuring Emergent Communication	2019	Claim B, NH-32, NWML-N1
+arXiv:1912.05676	arXiv	oui	export.arxiv.org	Biases for Emergent Communication in Multi-agent Reinforcement Learning	2019	π instable 0 à 1 (Table 1) ; optima partiels (Table 2), lu par l'analyse 4 points
+arXiv:1612.07182	arXiv	oui	export.arxiv.org	Multi-Agent Cooperation and the Emergence of (Natural) Language	2016	99-100 % au jeu référentiel : nécessité par construction
+arXiv:1905.12561	arXiv	oui	export.arxiv.org	Anti-efficient encoding in emergent communication	2019	25/48 runs réussis (π d'un autre dessin)
+arXiv:2609.34373	arXiv	oui	export.arxiv.org	Emergence, Not Bandwidth: Physical Coupling and the Limits of Learned Multi-Agent Communication	2026	antériorité la plus proche de NWML-N1 (appris contre silence, tests appariés par graine)
+OpenReview OAmBy25HHg	OpenReview	oui (forum)	notes/search (notes?id= : 403)	Emergence, Not Bandwidth: Physical Coupling and the Limits of Learned Multi-Agent Communication	2026	version soumise ICLR 2027 de 2609.34373, non décidée
+arXiv:2606.10582	arXiv	oui	export.arxiv.org	Drawing with Strangers: Population Scaling Drives Zero-Shot Mutual Intelligibility in Emergent Sketching	2026	nuance NH-33 (cross-play en grande population) [résumé moteur]
+arXiv:2601.22041	arXiv	oui	export.arxiv.org	Learning to Communicate Across Modalities: Perceptual Heterogeneity in Multi-Agent Systems	2026	NWML-N2 (hétérogénéité de modalité, pas de substrat impulsionnel) [résumé moteur]
+arXiv:2602.14486	arXiv	oui	export.arxiv.org	Revisiting the Platonic Representation Hypothesis: An Aristotelian View	2026	plancher k/(n-1), NH-45, NWML-PRH
+arXiv:2610.33495	arXiv	oui	export.arxiv.org	Five Architectures, One Shared Space Cross-Model Representational Alignment Without Weight Merging	2026	NWML-PRH (déjà au catalogue, addendum 02/11)
+arXiv:1411.5279	arXiv	oui	export.arxiv.org	What Teachers Should Know about the Bootstrap: Resampling in the Undergraduate Statistics Curriculum	2014	méthode d'IC N10-D (TBD-16)
+doi:10.3390/technologies14070432	DOI	oui	api.crossref.org/works	In Pursuit of the Emergence Point: Extracting Phase Transitions in Multi-Agent Communication	2026	Chernyavskiy, bifurcation depuis le babillage [résumé moteur]
+doi:10.1016/j.jtbi.2008.07.010	DOI	oui	api.crossref.org	Feasibility of communication in binary signaling games	2008	bloc dynamique des jeux de signaux (non lu)
+doi:10.1016/j.geb.2007.08.009	DOI	oui	api.crossref.org	Why evolution does not always lead to an optimal signaling system	2008	idem (Pawlowitsch, non lu)
+doi:10.1073/pnas.1400838111	DOI	oui	api.crossref.org	Some dynamics of signaling games	2014	idem (Huttegger et al., non lu)
+doi:10.1016/j.spa.2008.02.014	DOI	oui	api.crossref.org	Learning to signal: Analysis of a micro-level reinforcement model	2009	idem (Argiento et al., non lu)
+doi:10.3389/fcomp.2026.1873726	DOI	oui	api.crossref.org	Dissociating communicative success from representational alignment in common ground formation	2026	Yamamoto ; succès ≠ alignement (NWML-N1 volet causal) [résumé moteur]
+OpenReview uyIn9jZ70C	OpenReview	oui (forum)	notes/search (notes?id= : 403)	Adversarially Robust Emergent Communication in Cooperative Multi-Agent Reinforcement Learning	2026	plus proche cas PPO + intervention (adverse, messages continus, sans nocomm)
+OpenReview dF1DqBmdgX	OpenReview	oui (forum)	notes/search (notes?id= : 403)	Revisiting White-Box Communication in Multi-Agent Reinforcement Learning	2026	émetteur conçu comme référence publiée (bras eng)
+OpenReview hukTsKYu8Y	OpenReview	NON	notes?id= : HTTP 403 ; titre inconnu, recherche par titre impossible	—	—	lu en PDF fourni par le PI (reading-note.md:20-26) ; ne tranche rien ici
+github:facebookresearch/EGG	dépôt	non revérifié ce soir	gh api au tour 1 (tour-1-2026-11-06.md:227-231)	archived=true, dernier push 2025-05-06	—	backend archivé
+github:bold-lab-ai/JaxMARL	dépôt	non revérifié ce soir	gh api au tour 1 (tour-1-2026-11-06.md:232-238)	v0.2.0 du 2026-09-10	—	version à épingler
