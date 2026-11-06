@@ -51,7 +51,13 @@ Décisions du PI du 06/11 (QCM, 13:45) :
 
 Ce que S2 a livré en plus du plan : lecture intégrale de la bibliothèque (417 notes, library #1-#3), passe croisée Codex sur 43 notes (143 constats, 0 bloquant), sept PR de corrections bibliographiques fusionnées le 06/11, notes NH-20 et bouba v0.7.1, veille thèses (#25), bouba #71 (localizer vérifié) et issues #72/#74.
 
-**Reste à arbitrer** (pas tranché le 06/11) : recalcul de B-2 bouba après #72/#74 ; tag d'analyse N10-C run 2 ; placement des 8-12 h de relectures ReScience C au-delà de S5-S6.
+Décisions du PI du 06/11, second tour (13:58) :
+
+- **Dérogation datée à la règle 4** (« aucune nouvelle campagne GPU avant S6 ») : la **porte A+ de N10-C-bis** (G2 rejouée à 3 graines + `nocomm_rep`, 9-12 runs) tourne en **S3-S5 comme runs de développement**, résultats non lus avant le gel ; hôte **mixte macM1 + KXKM** avec déviation de substrat déclarée a priori (nerve-wml PR #114 amendé, runbook, go PI daté au lancement). B' ensuite seulement si A+ passe et si le PI le choisit à M1.
+- **E1-small** : PR dream-of-kiki #91 fusionnée le 06/11 (analyse exploratoire) ; les deux contrôles GPU manquants (bras de même norme H14-B, « options seules ») sont lancés sur KXKM dès le 06/11 par **addendum de contrôle** (principe 3, exception « addendum sur une campagne en cours »), sans gel nouveau.
+- **B-2 bouba** : recalcul **maintenant** (S2-S3) avec le cache phase 1 régénéré (run 01, 900 s, code de la PR #75), même commande que l'ADR-0019 ; les valeurs §(d) seront mises à jour avant la note de lecture bouba v0.7.1. La case S9 « recalcul B-2 si décidé » disparaît.
+
+**Reste à arbitrer** : tag d'analyse N10-C run 2 ; placement des 8-12 h de relectures ReScience C au-delà de S5-S6 ; graines (9104, 9105 + neuve, hors pilote G7) et critère (G2 inchangé) de la porte A+, appliqués comme hypothèses de travail, à confirmer au go.
 
 ## S1 à S5 — détail semaine par semaine
 
@@ -97,7 +103,7 @@ Somme S2-S5 : 56 h = 14 × 4. Par poste (v2.1) : É 40 (#147 18 sur 18, FOSDEM 1
 | S6 (30 nov-6 déc) | Note méthodo (NH-91 ex-NH-03 en section, sans run) ; retraits textuels restants ; gel de **N10-D ou N10-C-bis** (une seule, après trois tests) et lancement sur KXKM ; relecture ReScience C n° 2 | É, R, V, C, Rés | — |
 | S7 (7-13 déc) | Note méthodo soumise sur arXiv (cs.DL + stat.ME) avant le 15/12 ; note de lecture bouba v0.7.1 finie ; amendement v0.7.1 ; brief du contradicteur bouba (sans la note) | É, V | M1 au plus tard si glissé |
 | S8 (14-20 déc) | Verrou bouba (rapport du contradicteur, tours) ; verrou NH-20 (lecture mathématique) ; analyse Me6 selon sa préreg ; calcul N10-D/N10-C-bis en cours (lecture interdite) | V, A, C | — |
-| S9 (21-27 déc) | Tampon (Noël) : relectures ReScience, réponses éditeur, aucun gel ; recalcul B-2 bouba **si** décidé (#72/#74) | Rés | — |
+| S9 (21-27 déc) | Tampon (Noël) : relectures ReScience, réponses éditeur, aucun gel | Rés | — |
 | S10 (28 déc-3 jan) | bouba v0.7.1 taguée après verrou ; K1/K3 sur electron-server ; NH-20 rejoué sous sa note (CPU) ; verdict N10-D/N10-C-bis rendu par script selon sa préreg | C, V, A | **M2 (3 jan)** |
 | S11 (4-10 jan) | Réponses aux relecteurs de la note méthodo ; soumission JOTE | É | — |
 | S12 (11-17 jan) | Rapport descriptif N10-C run 2 (issue #63) ; v2 ReScience (si pas encore soumise) | É, A | — |
@@ -172,9 +178,9 @@ Aucune nouvelle campagne GPU avant S6. Une seule campagne lourde à la fois. Ét
 
 | Hôte | S1-S2 (26 oct → 8 nov) | S3-S5 (9 → 29 nov) | S6-S10 (30 nov → 3 jan), provisoire | S11-S13 (4 → 24 jan), provisoire |
 |---|---|---|---|---|
-| KXKM GPU | fin d'E1-small (déjà gelée, aucune nouvelle campagne) puis libre | libre — aucune campagne | N10-D ou N10-C-bis (une seule) si son verrou est passé (au plus tôt S6 ; S8 si le verrou glisse) | verdict rendu par script (S10) ; rien de neuf avant M3 |
+| KXKM GPU | fin d'E1-small (déjà gelée, aucune nouvelle campagne) puis libre ; contrôles E1-small par addendum dès le 06/11 | porte A+ N10-C-bis en développement (dérogation du 06/11), partagée avec macM1 ; deux jobs seulement si VRAM cumulée < 22 Go | N10-D ou N10-C-bis (une seule) si son verrou est passé (au plus tôt S6 ; S8 si le verrou glisse) | verdict rendu par script (S10) ; rien de neuf avant M3 |
 | KXKM CPU (`nice 19`) | libre | libre | NH-20 CPU possible sous sa note | selon le point de reprise |
-| macM1 | N10-C run 2 (≈ 02/11), puis second cerveau | second cerveau (RAM serrée) | second cerveau | second cerveau |
+| macM1 | N10-C run 2 (≈ 02/11), puis second cerveau ; cache bouba phase 1 régénéré (06/11) | second cerveau + part macM1 de la porte A+ (un job lourd à la fois, `lockf`, jour de modèle en pause) | second cerveau | second cerveau |
 | electron-server (CPU sans AVX) | aucune campagne | aucune campagne | K1/K3 bouba après v0.7.1 taguée ; NH-20 CPU possible | selon le point de reprise |
 | Studio | allumé au 01/11 18:10 (corrigé le 02/11 : 7 j d'uptime, processus tiers actif, a servi au rejeu M5 secondaire fini le 31/10 18:42 ; `docs/research/2026-11-02-veille-theses/dossier-relecture.md:26`, PR #25) ; aucune campagne prévue | aucune campagne prévue | aucune campagne prévue | aucune campagne prévue |
 | GrosMac | rien | rien | rien | rien |
