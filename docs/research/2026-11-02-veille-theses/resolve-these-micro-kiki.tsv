@@ -1,0 +1,22 @@
+arXiv:2411.19379	ok	Marconi: Prefix Caching for the Era of Hybrid LLMs	Pan, Rui
+arXiv:2602.01053	ok	LRAgent: Efficient KV Cache Sharing for Multi-LoRA LLM Agents	Jeon, Hyesung
+arXiv:2409.08290	ok	Reconsidering the Energy Efficiency of Spiking Neural Networks Inference from Analytical Perspectives	Yan, Zhanglu
+arXiv:2610.41508	ok	HiState: Hierarchical Prefix Cache Management for Hybrid LLM Serving in Agentic Workloads	Pan, Zaifeng
+arXiv:2605.11999	ok	The Illusion of Power Capping in LLM Decode: A Phase-Aware Energy Characterisation Across Attention Architectures	Ma, Bole
+arXiv:2511.11051	ok	NP-LoRA: Null Space Projection for Subject-Style LoRA Fusion	Chen, Chuheng
+arXiv:2609.03150	ok	Routing Is Not Enough: Diagnosing Intra-Adapter Subspace Contention in MoE+LoRA Fine-Tuning	Chowdhury, Mehreen Hossain
+arXiv:2608.28667	ok	GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon	Kannan, Rajeswari
+arXiv:2609.33477	ok	Just Let Linear States Forget the Distant Past: Prefix Caching via Suffix Replay for Hybrid LLMs	Liu, Yirui
+arXiv:2610.41480	ok	KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise	Loos, Jonas
+arXiv:2602.06204	ok	Learning Rate Scaling across LoRA Ranks and Transfer to Full Finetuning	Chen, Nan
+arXiv:2606.12883	ok	The Hidden Power of Scaling Factor in LoRA Optimization	Zhang, Zicheng
+arXiv:2610.38796	ok	Routed Continual Learning	Philip, Michael
+arXiv:2610.38356	ok	Encode Once, Answer Many: Internalizing Context via Parametric Flow	Zhong, Xinhao
+arXiv:2609.17109	ok	Shared-Prefix KV Reuse Across Standard LoRA Adapters: Quality and Serving Tradeoffs	Rajput, Dushyant
+arXiv:2608.13204	ok	Counterexamples to the Tensorization Property of Strong Data Processing Inequalities for Quantum Divergences	Cao, Yu
+arXiv:2405.11157	ok	Towards Modular LLMs by Building and Reusing a Library of LoRAs	Ostapenko, Oleksiy
+arXiv:2402.05859	ok	Learning to Route Among Specialized Experts for Zero-Shot Generalization	Muqeeth, Mohammed
+10.1016/j.joule.2026.102430	ok	Energy use of AI inference, efficiency pathways, and test-time scaling	Felipe Oviedo
+10.1109/tcad.2026.3718799	ok	Reconsidering the Energy Efficiency of Spiking Neural Networks Inference from Analytical Perspectives	Zhanglu Yan
+10.26240/heal.ntua.33427	ok	Attention-aware routing in mixture of experts language models	Kosmopoulou, Despoina Kallirroi
+10.1007/s11128-026-05356-1	ok	Quantum statistical learning theory: concepts, regimes, and open problems	Ferhat Ozgur Catak
