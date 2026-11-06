@@ -1,0 +1,45 @@
+type	identifiant	statut	titre	premier_auteur_ou_lieu
+arXiv	2610.30755	résolu	Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought	Zhengye Bao ; 2026-10-22
+arXiv	2601.15311	résolu	Aeon: High-Performance Neuro-Symbolic Memory Management for Long-Horizon LLM Agents	Mustafa Arslan ; 2026-01-14
+arXiv	2606.29914	résolu	MemDelta: Controlled Baselines and Hidden Confounds in Agent Memory Evaluation	Kuan Wang ; 2026-06-29
+arXiv	2605.27762	résolu	PEAM: Parametric Embodied Agent Memory through Contrastive Internalization of Experience in Minecraft	Yuchen Guo ; 2026-05-26
+arXiv	2405.11157	résolu	Towards Modular LLMs by Building and Reusing a Library of LoRAs	Oleksiy Ostapenko ; 2024-05-18
+arXiv	2402.05859	résolu	Learning to Route Among Specialized Experts for Zero-Shot Generalization	Mohammed Muqeeth ; 2024-02-08
+arXiv	2609.03150	résolu	Routing Is Not Enough: Diagnosing Intra-Adapter Subspace Contention in MoE+LoRA Fine-Tuning	Mehreen Hossain Chowdhury ; 2026-09-02
+arXiv	2409.08290	résolu	Reconsidering the Energy Efficiency of Spiking Neural Networks Inference from Analytical Perspectives	Zhanglu Yan ; 2024-08-29
+arXiv	2605.11999	résolu	The Illusion of Power Capping in LLM Decode: A Phase-Aware Energy Characterisation Across Attention Architectures	Bole Ma ; 2026-05-12
+arXiv	2610.38796	résolu	Routed Continual Learning	Michael Philip ; 2026-10-28
+arXiv	2610.38356	résolu	Encode Once, Answer Many: Internalizing Context via Parametric Flow	Xinhao Zhong ; 2026-10-28
+arXiv	2610.04585	résolu	Frozen in a Frame: The Velocity Blind Spot in JEPA World Models	Tinghe Zhang ; 2026-10-03
+arXiv	2610.06805	résolu	H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning	Wancong Zhang ; 2026-10-05
+arXiv	2610.07540	résolu	Preserving Unstable Modes Through Inverse Dynamics in JEPA World Models	Leonardo F. Toso ; 2026-10-06
+arXiv	2507.03168	résolu	Adopting a human developmental visual diet yields robust, shape-based AI vision	Zejin Lu ; 2025-07-03
+arXiv	2511.14440	résolu	Learning to See Through a Baby's Eyes: Early Visual Diets Enable Robust Visual Intelligence in Humans and Machines	Yusen Cai ; 2025-11-18
+arXiv	2606.05115	résolu	Continual Visual and Verbal Learning Through a Child's Egocentric Input	Xiaoyang Jiang ; 2026-06-03
+arXiv	2604.10333	résolu	Zero-shot World Models Are Developmentally Efficient Learners	Khai Loong Aw ; 2026-04-11
+arXiv	2610.41130	résolu	One Verdict Is Not Enough: Regression Testing Learned World Models and Their Test Harnesses	Junyu Huo ; 2026-10-30
+arXiv	2602.08428	résolu	Analysis of the Hopfield Model Incorporating the Effects of Unlearning	Shuta Takeuchi ; 2026-02-09
+arXiv	2308.01421	résolu	Regularization, early-stopping and dreaming: a Hopfield-like setup to address generalization and overfitting	Elena Agliari ; 2023-08-01
+arXiv	2606.11217	résolu	Preregistration for Experiments with AI Agents	Michelle Vaccaro ; 2026-05-03
+arXiv	2606.27687	résolu	Mitigating LLM-based p-Hacking by Preregistering for the Next LLM	Maria Thomas ; 2026-06-26
+arXiv	2610.34379	résolu	Officially corrected errors persist in AI training data: preregistered measurements on EU law, Internet standards and retracted science	Sébastien Gracia ; 2026-10-25
+arXiv	2610.33980	résolu	The Hidden Costs of Gatekeeping in Open Science: Quasi-Experimental Evidence from arXiv's Endorsement Policy Tightening	Wenchang Wang ; 2026-10-25
+arXiv	2201.00032	résolu	Supervised perceptron learning vs unsupervised Hebbian unlearning: Approaching optimal memory retrieval in Hopfield-like networks	Marco Benedetti ; 2021-12-31
+arXiv	1810.12217	résolu	Dreaming neural networks: forgetting spurious memories and reinforcing pure ones	Alberto Fachechi ; 2018-10-29
+arXiv	2012.03107	résolu	When Do Curricula Work?	Xiaoxia Wu ; 2020-12-05
+arXiv	2603.19312	résolu	LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels	Lucas Maes ; 2026-03-13
+arXiv	2602.03604	résolu	A Lightweight Library for Energy-Based Joint-Embedding Predictive Architectures	Basile Terver ; 2026-02-03
+arXiv	2610.41480	résolu	KV-Cache Patching: Tracing How and Where Fine-Tuned Behaviors Arise	Jonas Loos ; 2026-10-30
+DOI	10.1038/s41586-024-07711-7	résolu	Loss of plasticity in deep continual learning	Dohare Shibhansh ; Nature 2024
+DOI	10.1111/cogs.12390	résolu	Why Are There Developmental Stages in Language Learning? A Developmental Robotics Model of Language Development	Morse Anthony F. ; Cognitive Science 2016
+DOI	10.18653/v1/2026.conll-main.8	résolu	Cognitively Inspired Developmental Trajectories Improve Explore-Exploit Dynamics in Neural Agent Emergent Communication	Dziewoński Jan ; Proceedings of the 30th Conference on Computational Natural Language Learning 2026
+DOI	10.1038/s42256-026-01228-6	résolu	Adopting a human developmental visual diet yields robust and shape-based AI vision	Lu Zejin ; Nature Machine Intelligence 2026
+DOI	10.1016/j.neunet.2024.106389	résolu	Regularization, early-stopping and dreaming: A Hopfield-like setup to address generalization and overfitting	Agliari E. ; Neural Networks 2024
+DOI	10.1016/j.neunet.2024.106174	résolu	Hebbian dreaming for small datasets	Agliari Elena ; Neural Networks 2024
+DOI	10.1016/j.neunet.2019.01.006	résolu	Dreaming neural networks: Forgetting spurious memories and reinforcing pure ones	Fachechi Alberto ; Neural Networks 2019
+DOI	10.1109/tcad.2026.3718799	résolu	Reconsidering the Energy Efficiency of Spiking Neural Networks Inference from Analytical Perspectives	Yan Zhanglu ; IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems 2026
+OpenReview	QFw0sg52VV	résolu (recherche)	Rethinking Developmental Curricula for Contrastive Visual Learning	Under review for TMLR (notes/search ; notes?id= 403)
+OpenReview	KdVy927FLx	résolu (recherche)	Continual World Modeling via Sleep	NeurIPS 2026 Workshop CWM (notes/search ; notes?id= 403)
+OpenReview	0OjuBwn9tu	résolu (recherche)	Layer-Selective Utility Gating for Continual Learning	ICLR 2027 Conference Submission (notes/search ; notes?id= 403)
+OpenReview	EaGbKYSNTf	NON RÉSOLU	notes?id= 403 ; non recherché par titre à ce tour (résolu par notes/search le 02/11, these-baby-brain.md:48)	ne tranche rien ici
+OpenReview	r0fc1l2JMi	NON RÉSOLU	notes?id= 403 ; titre non retrouvé par notes/search	ne tranche rien

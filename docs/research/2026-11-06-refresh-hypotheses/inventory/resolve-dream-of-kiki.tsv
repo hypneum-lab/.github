@@ -1,0 +1,17 @@
+id	type	status	title	first_author	date	resolver	checked_utc
+10.1103/PhysRevLett.109.268101	DOI	resolved	Multitasking Associative Networks	Agliari	2012-12-26	api.crossref.org/works	2026-11-06T18:01Z
+arXiv:2609.32605	arXiv	resolved	Dense auto-hetero associative memories applied to noisy communication channels	Elena Agliari	2026-09-26	export.arxiv.org/api/query	2026-11-06T18:01Z
+arXiv:2501.16789	arXiv	resolved	Networks of neural networks: more is different	Elena Agliari	2025-01-28	export.arxiv.org/api/query	2026-11-06T18:01Z
+OpenReview O2IGIHRtWc	?	UNRESOLVED (notes?id 403 ; notes/search par id et par thème : 0 résultat) — ne tranche rien					2026-11-06T18:04Z
+OpenReview 3gCeBuNNyT	OpenReview	resolved (notes/search ; notes?id en 403)	When to Sleep: Consolidation Timing as a Stability-Plasticity Problem for Self-Improving Agents	Shulin Lu (d'après la veille 02/11)	2026-09-08 (créé, veille 02/11)	api2.openreview.net/notes/search?term="When to Sleep"	2026-11-06T18:03Z
+arXiv:2303.10725	arXiv	resolved	SIESTA: Efficient Online Continual Learning with Sleep	Md Yousuf Harun	2023-03-19	export.arxiv.org/api/query	2026-11-06T18:01Z
+arXiv:2606.00732	arXiv	resolved	SHARP: Sleep-based Hierarchical Accelerated Replay for Long Range Non-Stationary Temporal Pattern Recognition	Jayanta Dey	2026-05-30	export.arxiv.org/api/query	2026-11-06T18:01Z
+arXiv:2603.14517	arXiv	resolved	Learning to Forget: Sleep-Inspired Memory Consolidation for Resolving Proactive Interference in Large Language Models	Ying Xie	2026-03-15	export.arxiv.org/api/query	2026-11-06T18:01Z
+arXiv:2610.36109	arXiv	resolved	Beyond Update Counts: A Control Map for Evaluating Test-Time Model Updates	Zehao Zhao	2026-10-26	export.arxiv.org/api/query	2026-11-06T18:01Z
+10.64898/2026.10.11.757684	DOI	resolved	Firing Without Wiring: How REM-like Sleep Reactivation Rebalances Excitation and Inhibition to Orthogonalize Memories	Kubo	2026-10-18	api.crossref.org/works	2026-11-06T18:02Z
+10.7554/elife.76384	DOI	resolved	Learning cortical representations through perturbed and adversarial dreaming	Deperrois	2022-4-6	api.crossref.org/works	2026-11-06T18:02Z
+10.1073/pnas.2123432119	DOI	resolved	A model of autonomous interactions between hippocampus and neocortex driving sleep-dependent memory consolidation	Singh	2022-10-24	api.crossref.org/works	2026-11-06T18:02Z
+arXiv:2605.26097	arXiv	resolved	Forgetting in Language Models: Capacity, Optimization, and Self-Generated Replay	Martin Marek	2026-05-25	export.arxiv.org/api/query	2026-11-06T18:02Z
+arXiv:2308.01421	arXiv	resolved	Regularization, early-stopping and dreaming: a Hopfield-like setup to address generalization and overfitting	Elena Agliari	2023-08-01	export.arxiv.org/api/query	2026-11-06T18:02Z
+dok internal	file	read	E1-small analysis (PR #91)	—	2026-11-06	dream-of-kiki 365bf14 docs/results/2026-11-06-e1-small-analysis.md	2026-11-06T17:50Z
+dok PR #92	PR	read (draft, head 9333898)	E1-small controls addendum	—	2026-11-06	gh pr view/diff 92	2026-11-06T17:55Z

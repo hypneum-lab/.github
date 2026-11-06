@@ -1,0 +1,49 @@
+id	endpoint	status	date_or_venue	title_from_api
+arXiv:2611.02216	export.arxiv.org/api/query?id_list	ok	2026-11-01	Do agents need to sleep?
+arXiv:2611.04181	export.arxiv.org/api/query?id_list	ok	2026-11-03	Clocks all the way down: does sequence-processing AI need endogenous temporal structure?
+arXiv:2611.01952	export.arxiv.org/api/query?id_list	ok	2026-11-01	Hippocampal consolidation without replay in fully fine-tuned networks
+arXiv:2610.39840	export.arxiv.org/api/query?id_list	ok	2026-10-29	Surprise Alone Learns Lies: Evidence-Gated Continual Learning for LLMs from Streaming Claims
+arXiv:2611.03443	export.arxiv.org/api/query?id_list	ok	2026-11-02	Newtonian Dynamics in Metric Spaces
+arXiv:2611.03883	export.arxiv.org/api/query?id_list	ok	2026-11-02	A holomorphic Lie-Trotter product formula for nonlinear local semigroup
+arXiv:2610.35369	export.arxiv.org/api/query?id_list	ok	2026-10-26	Initialization Stability and Convergence of Projected Langevin Dynamics
+arXiv:2610.41127	export.arxiv.org/api/query?id_list	ok	2026-10-30	MotorSense: A Video-EMG Dataset of Motoric Representations for Action Understanding
+arXiv:2611.05097	export.arxiv.org/api/query?id_list	ok	2026-11-03	The Platonic Brain: Representational Convergence in EEG Foundation Models
+arXiv:2610.37979	export.arxiv.org/api/query?id_list	ok	2026-10-27	Separability Is Not Alignability: Representations for Spectrum-to-Molecule Retrieval
+arXiv:2610.40511	export.arxiv.org/api/query?id_list	ok	2026-10-29	A Low-Rank Space Captures Linear Alignment Between LLM and Human Neural Activity During Naturalistic Language Listening
+arXiv:2611.08258	export.arxiv.org/api/query?id_list	ok	2026-11-05	Thermodynamics of Forgetting in a Bounded Hopfield Network
+arXiv:2611.00516	export.arxiv.org/api/query?id_list	ok	2026-10-31	Fast Neural Noise Stabilizes Associative Memory against Slow Synaptic Noise
+arXiv:2610.41938	export.arxiv.org/api/query?id_list	ok	2026-10-30	Existence of the thermodynamic limit for the Hopfield model
+arXiv:2611.03306	export.arxiv.org/api/query?id_list	ok	2026-11-02	Free energy of the Hopfield model
+arXiv:2611.01564	export.arxiv.org/api/query?id_list	ok	2026-11-01	Meta-memorization and memorization scaling laws in transformers
+arXiv:2611.05636	export.arxiv.org/api/query?id_list	ok	2026-11-03	Route to Remember: Adaptive Memory Selection for LLM Agents
+arXiv:2611.00450	export.arxiv.org/api/query?id_list	ok	2026-10-30	From Lookups to Lessons: Turning Retrieved Knowledge into Parametric Memory
+arXiv:2611.02361	export.arxiv.org/api/query?id_list	ok	2026-11-02	Agent Memory as Rate-Limited Filtering: Explicit State Outlasts Long Context Beyond a Reader-Dependent Horizon
+arXiv:2611.03930	export.arxiv.org/api/query?id_list	ok	2026-11-02	What Is This Memory Useful For? Measuring Task-Conditioned Utility in Long-Term Agent Memory
+arXiv:2611.07631	export.arxiv.org/api/query?id_list	ok	2026-11-05	MEMOIR: A Training-Free Memory Lifecycle for Long-Horizon LLM Agents
+arXiv:2610.40091	export.arxiv.org/api/query?id_list	ok	2026-10-29	Upcycling Language Models for Multiple Specialized Domains
+arXiv:2610.34977	export.arxiv.org/api/query?id_list	ok	2026-10-26	Adaptive Memory Index Evolution for Agents
+arXiv:2611.04338	export.arxiv.org/api/query?id_list	ok	2026-11-03	Patching the Protocol: A Taxonomy of Pre-Registration Repairs in LLM-Proposer Experiments
+arXiv:2611.05577	export.arxiv.org/api/query?id_list	ok	2026-11-03	Readable Is Not Steerable: Pre-Registered Tests of Physical Structure in Learned Fluid Representations
+arXiv:2611.01262	export.arxiv.org/api/query?id_list	ok	2026-10-31	Does Random Search Discover Task Experts? Revisiting Neural Thickets
+arXiv:2611.01313	export.arxiv.org/api/query?id_list	ok	2026-10-31	Are Fake Citations a Form of Reward Hacking? A Pre-Registered Study of Post-Training and Citation Cues
+arXiv:2611.01666	export.arxiv.org/api/query?id_list	ok	2026-11-01	Stand-In Effects and Pooling Amplification: Design-Based Tests of Whether Biological World Models Use Actions
+arXiv:2610.41268	export.arxiv.org/api/query?id_list	ok	2026-10-30	Testing hardware quantum machine learning claims with a null circuit: fill prediction on Binance futures with 129 qubits of an IBM Heron processor
+arXiv:2611.07378	export.arxiv.org/api/query?id_list	ok	2026-11-05	Adversarial Multiplicity: Cherry-Picked Models and the Limits of Disclosure
+doi:10.7554/elife.112891.1	api.crossref.org/works	ok	2026-11-4	A complementary learning system for continual episodic memory in large language models
+doi:10.1073/pnas.2607559123	api.crossref.org/works	ok	2026-10-27	Neuromodulation-inspired gated associative memory networks: Extended memory retrieval and emergent multistability
+doi:10.1523/jneurosci.0690-26.2026	api.crossref.org/works	ok	2026-11-2	Adult-onset auditory deprivation enhances attenuation of neural responses in the visual cortex and improves peripheral visual acuity
+doi:10.1101/2025.09.15.675587	api.biorxiv.org/details	ok	2026-11-04 v3	Disruption of theta-timescale spiking impairs learning but spares hippocampal replay
+doi:10.1101/2025.08.18.670780	api.biorxiv.org/details	ok	2026-11-01 v3	Sleep Renormalizes Negative Emotional Generalization
+doi:10.64898/2026.10.22.760953	api.biorxiv.org/details	ok	2026-10-27 v1	Scalp EEG detects motor sequence replay signatures during wakeful rest
+doi:10.64898/2026.05.31.729097	api.biorxiv.org/details	ok	2026-11-04 v4	Homeostatic Plasticity Enables Stable, Flexible, and Tunable Assemblies
+doi:10.64898/2026.10.28.762567	api.biorxiv.org/details	ok	2026-10-29 v1	Affective representations and brain-body dynamics during emotional video viewing
+doi:10.64898/2026.10.28.762537	api.biorxiv.org/details	ok	2026-11-03 v1	Circadian multimodal physiological, ocular and behavioural data from a 40-hour forced-desynchrony protocol
+doi:10.64898/2026.10.26.762007	api.biorxiv.org/details	ok	2026-10-28 v1	Naturalistic Movie Viewing Reveals a Distributed Network Supporting Audiovisual Speech Processing
+doi:10.64898/2026.10.24.761502	api.biorxiv.org/details	ok	2026-10-30 v1	Does a map-level insulation constraint improve sequence-based prediction of 3D genome folding? A Stage 1 Registered Report with a reverse-complement-equivariant state-space model (HiFold-Mamba)
+openreview:jQAOksG9Bd	api2.openreview.net/notes/search (term)	ok	robot-learning.org/CoRL/2026/Conference	When Robots Sleep: Offline Skill Consolidation for Shared-Policy Robot Learning
+openreview:QkJkp8E5EA	api2.openreview.net/notes/search (term)	ok	OpenReview.net/Public_Article	PEAM: Parametric Embodied Agent Memory through Contrastive Internalization of Experience in Minecraft
+openreview:37hXa84Adj	api2.openreview.net/notes/search (term)	ok	OpenReview.net/Public_Article	Auto-Dreamer: Learning Offline Memory Consolidation for Language Agents
+openreview:2T0Ja28jY5	api2.openreview.net/notes/search (term)	ok	ICLR.cc/2027/Conference/Submission	Unimodal Augmentation-based SSL Objectives Induce Cross-Modal Alignment
+openreview:QymIztVZzO	api2.openreview.net/notes/search (term)	ok	ICLR.cc/2027/Conference/Submission	Which Memories Are Worth Consolidating? Selective Memory Consolidation for Language Model Agents
+openreview:AiTVmLVnt1	api2.openreview.net/notes/search (term)	ok	ICLR.cc/2027/Conference/Submission	When Does Memory Become Capability? Agent Self-Improvement through Memory Evolution and Consolidation
+openreview:KPrnM9foLy	api2.openreview.net/notes/search (term)	ok	ICLR.cc/2027/Conference/Submission	Parametric Memory Decoding for Zero-Shot Routing in LoRA-Based External Parametric Memory

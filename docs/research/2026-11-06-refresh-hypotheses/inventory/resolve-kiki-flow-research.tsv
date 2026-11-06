@@ -1,0 +1,24 @@
+identifiant	statut	titre (API)	premier auteur (API)
+arXiv:2511.14827	ok	Implicit Bias of the JKO Scheme	Peter Halmos
+arXiv:2109.02792	ok	A second-order accurate, operator splitting scheme for reaction-diffusion systems in an energetic variational formulation	Chun Liu
+arXiv:2506.22947	ok	Monotone Multispecies Flows	Lauren Conger
+arXiv:2604.08283	ok	A convergence rate for the entropic JKO scheme	Aymeric Baradat
+arXiv:2511.10884	ok	Guaranteeing Higher Order Convergence Rates for Accelerated Wasserstein Gradient Flow Schemes	Raymond Chu
+arXiv:1512.02783	ok	Convergence of Entropic Schemes for Optimal Transport and Gradient Flows	Guillaume Carlier
+arXiv:2401.01722	ok	Splitting Methods for differential equations	Sergio Blanes
+arXiv:2501.16789	ok	Networks of neural networks: more is different	Elena Agliari
+arXiv:2502.12666	ok	Using Sinkhorn in the JKO scheme adds linear diffusion	Aymeric Baradat
+arXiv:2511.18060	ok	An operator splitting analysis of Wasserstein--Fisher--Rao gradient flows	Francesca Romana Crucinio
+arXiv:2209.14622	ok	From geodesic extrapolation to a variational BDF2 scheme for Wasserstein gradient flows	Thomas Gallouët
+arXiv:2002.03035	ok	The Wasserstein Proximal Gradient Algorithm	Adil Salim
+arXiv:1704.04541	ok	An unbalanced Optimal Transport splitting scheme for general advection-reaction-diffusion problems	Thomas Gallouët
+arXiv:1802.08089	ok	Sampling as optimization in the space of measures: The Langevin dynamics as a composite optimization problem	Andre Wibisono
+arXiv:1602.04457	ok	A JKO splitting scheme for Kantorovich-Fisher-Rao gradient flows	Thomas Gallouët
+arXiv:2603.23901	ok	Deep Kinetic JKO schemes for Vlasov-Fokker-Planck Equations	Wonjun Lee
+arXiv:2610.38129	ok	Graph-diameter criteria and sharp dissipation in discrete Wasserstein-Fisher geometry	Rubin Zhang
+10.4208/csiam-am.so-2025-0124	ok	Ergodicity and Error Estimate of Laws for a Random Splitting Langevin Monte Carlo Method	Li
+10.1137/15m1050264	ok	Convergence of Entropic Schemes for Optimal Transport and Gradient Flows	Carlier
+10.1137/16m106666x	ok	A JKO Splitting Scheme for Kantorovich--Fisher--Rao Gradient Flows	Gallouët
+openreview:pmRC8xTiym	ok (titre, notes/search ; PDF et notes?id en 403)	Gaussian Mixture Variational Inference with Wasserstein--Fisher--Rao Gradient Flows	anonymes
+openreview:ogeya5rzdE	ok (titre, notes/search ; notes?id en 403)	Annealed Sinkhorn with Momentum: Certified Unregularized Optimal Transport in Linear Memory	anonymes
+openreview:retgbahmng	ok (titre, notes/search ; notes?id en 403)	PopFloor: Split-Half Diagnostics for Finite-Sample Wasserstein Bias in Single-Cell Perturbation Benchmarks	anonymes
