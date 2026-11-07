@@ -266,15 +266,28 @@ Références hors fenêtre réintégrées ou ajoutées par l'intégration des re
 
 ### Au point de reprise
 
-- **R1 — Nul de Me6 / B-3.** (a) H0 sur tirages de réseaux (#66 révisée ; pilote 1,8-4,4 h, minimum 12,5-31 h, `iBS` l.54) : seule option qui garde B-3 comme hypothèse sur la plasticité (`iBS` §1.2) ; (b) H0 conditionnelle aux réseaux (transpose flip, sans calcul) ; (c) geler B-3 après le verrou sans nul réseau. Dépend de la révision de #66.
-- **R2 — Correctif physio #72.** (a) #83 (`ValueError` sans sidecar) ; (b) #82 (repli phase 2 + avertissement). Fermer l'autre.
-- **R3 — Recalcul §16.** (a) garder la bannière, ne rien recalculer ; (b) γ ≤ 5 + pilote grille 64, γ ≥ 10 bloqué jusqu'à KFR-N4 ; (c) maintenir la décision du 28/10. Dépend de KFR-N4 pour (c).
-- **R4 — Verrou NH-20.** (a) attendre la décision sur le contradicteur (issue #63) ; (b) déclarer le verrou sur lecture mathématique seule (autorisé par `RM:24`).
-- **R5 — Texte de Paper 1 nerve-wml (« spiking LIF »).** (a) écrire que l'embedding du Test 6 est pris avant le pas impulsionnel (le LIF est bien entraîné avec `spike_with_surrogate`, `platonic_rh_alignment.py:85` ; « retirer spiking » serait inexact) ; (b) attendre NH-35 reformulée (embedding après dynamique).
-- **R6 — BB-N1 hors du report de `RM:128`.** (a) non ; (b) oui, CPU sur electron-server.
-- **R7 — NH-85 H9 après lecture de l'eLife 112891.** (a) fermer comme contribution neuve si la lecture confirme l'antériorité ; (b) garder comme réplication ciblée.
-- **R8 — Jalon Q3 de la roadmap (22 février-7 mars, `RM:160`) et issue #24 (B-1/B-2).** (a) reformuler en « non-test / non mesurable » dans la note ; (b) garder la TOST si des marges sont justifiées.
-- **R9 — T-N1, T-N3, T-N4.** (a) sections de la note, sans préreg ; (b) T-N1 préenregistrée en L1 avant comptage, les deux autres en sections.
+- **R1 — Nul de Me6 / B-3.** (a) H0 sur tirages de réseaux (#66 révisée ; pilote 1,8-4,4 h, minimum 12,5-31 h, `iBS` l.54) : seule option qui garde B-3 comme hypothèse sur la plasticité (`iBS` §1.2) ; (b) H0 conditionnelle aux réseaux (transpose flip, sans calcul) ; (c) geler B-3 après le verrou sans nul réseau. Dépend de la révision de #66. **Tranchée le 07/11 (bloc ci-dessous).**
+- **R2 — Correctif physio #72.** (a) #83 (`ValueError` sans sidecar) ; (b) #82 (repli phase 2 + avertissement). Fermer l'autre. **Tranchée le 07/11 (bloc ci-dessous).**
+- **R3 — Recalcul §16.** (a) garder la bannière, ne rien recalculer ; (b) γ ≤ 5 + pilote grille 64, γ ≥ 10 bloqué jusqu'à KFR-N4 ; (c) maintenir la décision du 28/10. Dépend de KFR-N4 pour (c). **Tranchée le 07/11 (bloc ci-dessous).**
+- **R4 — Verrou NH-20.** (a) attendre la décision sur le contradicteur (issue #63) ; (b) déclarer le verrou sur lecture mathématique seule (autorisé par `RM:24`). **Tranchée le 07/11 (bloc ci-dessous).**
+- **R5 — Texte de Paper 1 nerve-wml (« spiking LIF »).** (a) écrire que l'embedding du Test 6 est pris avant le pas impulsionnel (le LIF est bien entraîné avec `spike_with_surrogate`, `platonic_rh_alignment.py:85` ; « retirer spiking » serait inexact) ; (b) attendre NH-35 reformulée (embedding après dynamique). **Tranchée le 07/11 (bloc ci-dessous).**
+- **R6 — BB-N1 hors du report de `RM:128`.** (a) non ; (b) oui, CPU sur electron-server. **Tranchée le 07/11 (bloc ci-dessous).**
+- **R7 — NH-85 H9 après lecture de l'eLife 112891.** (a) fermer comme contribution neuve si la lecture confirme l'antériorité ; (b) garder comme réplication ciblée. **Tranchée le 07/11 (bloc ci-dessous).**
+- **R8 — Jalon Q3 de la roadmap (22 février-7 mars, `RM:160`) et issue #24 (B-1/B-2).** (a) reformuler en « non-test / non mesurable » dans la note ; (b) garder la TOST si des marges sont justifiées. **Tranchée le 07/11 (bloc ci-dessous).**
+- **R9 — T-N1, T-N3, T-N4.** (a) sections de la note, sans préreg ; (b) T-N1 préenregistrée en L1 avant comptage, les deux autres en sections. **Tranchée le 07/11 (bloc ci-dessous).**
+
+**Décisions du PI du 07/11 (QCM 08:55-09:05 CET).** Application : `catalogue-v3.md` § Décisions PI du 07/11 appliquées ; `docs/ROADMAP.md`, note de révision du 2026-11-07 et jalon Q3. Numéros de ligne de la roadmap : les renvois `RM:24`, `RM:128` et `RM:160` de cette sous-section suivent la v2.1 de la baseline (`c8967a2`) ; sur `main` après cette PR, ce sont `docs/ROADMAP.md:28`, `:132` et `:164` (deux notes de révision ajoutées en tête).
+
+- **R1** — reporté : attendre la révision de bouba_sens PR #66 ; aucune des options (a), (b), (c) n'est tranchée aujourd'hui. Conséquence : note datée sur BS-B3, NH-66 et Me6 large-n dans `catalogue-v3.md` ; aucune autre action.
+- **R2** — #83 garde la base ; les apports de #82 y sont portés (docstrings, tests manquants, provenance et SHA-256 du `force.pt` phase 2 régénéré) ; #82 fermée. Conséquence : travail dans bouba_sens (PR #83 ouverte, PR #82 fermée au 07/11, constat `gh`) ; aucune ligne du catalogue ne porte #72 : aucune modification ici.
+- **R3** — (a) garder la bannière, ne rien recalculer. Conséquence : note sur M5 (table C) et décision écrite dans la ligne « Recalcul certifié §16 » (§ Hors catalogue) ; aucun calcul, aucune action dans kiki-flow-research.
+- **R4** — (a) attendre la décision sur le contradicteur (kiki-flow-research issue #63, ouverte). Conséquence : note sur NH-20 (tables B et C) ; le verrou NH-20 n'est pas déclaré ; la ligne S8 de la roadmap est inchangée.
+- **R5** — (a) écrire que l'embedding du Test 6 est pris avant le pas impulsionnel ; le LIF reste entraîné avec `spike_with_surrogate` (`nerve-wml:scripts/platonic_rh_alignment.py:85`). Conséquence : note sur mKNN (table C), NWML-PRH, NH-35, NH-45 ; texte de Paper 1 : PR nerve-wml à venir.
+- **R6** — (a) non, BB-N1 reste reporté. Conséquence : note sur BB-N1 (§ Contrôles) ; la roadmap le dit dans sa note de révision du 07/11 ; aucun run.
+- **R7** — lecture complète de l'eLife 112891 d'abord, décision ensuite (lecture en cours le 07/11). Conséquence : NH-85 porte le statut « en attente de lecture » ; ni (a) ni (b) n'est tranchée.
+- **R8** — (a) reformuler en « non-test / non mesurable » dans la note. Conséquence : jalon Q3 de `docs/ROADMAP.md` réécrit (B-1/B-2 en section de la note méthodo, plus de TOST) ; note sur BS-B1 et BS-B2, dont les classes ne changent pas (déjà « non concluant », règle P1) ; commentaire sur bouba_sens issue #24, laissée ouverte. Cohérent avec la clôture B-2 Studyforrest du 06/11 (sonde stratifiée, erratum 12).
+- **R9** — (a) sections de la note méthodo, sans préreg. Conséquence : note sur T-N1, T-N3, T-N4 (§ Proposées) ; elles restent proposées, sans numéro NH.
+- **Enregistré le même jour.** La PR `.github` #32 (NH-91 → NH-102 dans la spec du verrou) est fusionnée (commit `1732065`). La passe croisée Codex du rapport du refresh est prévue après ce portage (§8, étapes restantes).
 
 ## §8 Provenance et limites
 

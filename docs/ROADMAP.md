@@ -4,6 +4,8 @@ Version 2.1 du 6 novembre 2026 (point de reprise anticipé, voir §« Point de r
 
 > Note de révision — 2026-11-06 : NH-91 « quand dormir » renuméroté NH-102 (collision avec la liste du 30/10 ; catalogue v3, PR #30, décision PI).
 
+> Note de révision — 2026-11-07 : décisions R1-R9 du point de reprise (refresh README §7) ; jalon Q3 (B-1/B-2) reformulé en non-test / non mesurable ; BB-N1 reste reporté ; §16 non recalculé.
+
 Ce qui change par rapport à la v1 : un **verrou de lecture** conditionne désormais tout gel (spec §4) ; la phase « Dix hypothèses » disparaît ; le trimestre se répartit en 185 h décidées par le PI (rapport:303) autour de ce verrou, des corrections et de l'écriture (spec:74-79). Les semaines S2 à S5 sont écrites en détail ; S6 à S13 sont **provisoires** et seront réécrites au point de reprise « roadmap v2 » (spec:118).
 
 ## Principes
@@ -159,7 +161,7 @@ Tableau gardé tel quel depuis la v1 ; plusieurs lignes dépendent d'hypothèses
 |---|---|---|
 | Q1 (25 jan–7 fév) | Réponses aux relectures de la note méthodo ; préreg des hypothèses survivantes de la phase 2 (niveau L3 : Octopus ou OSF) | verdicts phase 2 |
 | Q2 (8–21 fév) | Paper 1 GENIAL reformulé : DR-0 budget, DR-1 sélective, DR-3 avec test H13 + indice relationnel, DR-4 inter-domaines, prior art Hopfield rêveurs ; « axiomes » gardés comme hypothèses de cadre à portée empirique délimitée | H13 (S3), NH-01, NH-20 |
-| Q3 (22 fév–7 mars) | bouba_sens : publication de B-1/B-2 comme nuls (équivalence TOST seulement si marges justifiées) + calibration appariée de Me6 ; v0.7 exécutée si déposée en S5 | S5 |
+| Q3 (22 fév–7 mars) | bouba_sens : B-1/B-2 rapportés comme **non-test / non mesurable** (régime qui n'apprend pas, ADR-0024 ; B-2 non mesurable sur Studyforrest), pas comme nuls et sans TOST ; livrable : une section de la note méthodo (décision PI R8 du 07/11, refresh README §7 ; bouba_sens issue #24) + calibration appariée de Me6 ; v0.7 exécutée si déposée en S5 | S5 |
 | Q4 (8–21 mars) | nerve-wml : papier N10-C/N10-C-bis ; décision sur le GTM (garder comme porteuse physique ou retirer) | N10-C-bis |
 | Q5 (22 mars–4 avr) | baby-brain : premier résultat WML-JEPA à 5 graines ; décision Path-B | NH-77 |
 | Q6 (5–18 avr) | Si GO matière : deuxième vague (machine d'Ising à oscillateurs simulée comme porteuse du GTM, NH-28/NH-31) ; sinon fermeture documentée | S13 |
