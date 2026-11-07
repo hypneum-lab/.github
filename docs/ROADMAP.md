@@ -122,7 +122,7 @@ Retirés de la phase 2 (S6-S10) de la roadmap v1, à reprendre après M3 et seul
 - NH-77 (WML-JEPA) ;
 - NH-07 (RECOMBINE inter-domaines) ;
 - R8-H1 (NcaWML) ;
-- NH-102 « quand dormir » (ex-NH-03, renumérotée le 01/11 pour lever la collision avec le NH-03 du 24/10) comme run (reste comme section de la note méthodo, décision PI Q6) ;
+- NH-102 « quand dormir » (ex-NH-03 de la spec ; devenue NH-91 le 01/11 pour lever la collision avec le NH-03 du 24/10, puis NH-102 le 06/11, collision avec la liste du 30/10 ; corrigé le 07/11) comme run (reste comme section de la note méthodo, décision PI Q6) ;
 - NH-85 (RAG contre Aeon) : reporté après M3, décision PI du 01/11 21:00 (spec:143) — le routage de LoRA est saturé dans la littérature et Aeon est d'Arslan.
 
 Clos ou terminés : **NH-81** est clos par erratum, statut unifié main/PR #19/GB300, pas de run KXKM le 04/11 (décision PI Q7). **NH-01** est fait ; sa suite est la v2 ReScience, pas un nouveau run.
