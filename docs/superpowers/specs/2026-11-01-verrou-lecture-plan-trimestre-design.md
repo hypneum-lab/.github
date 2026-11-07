@@ -2,6 +2,8 @@
 
 Statut : v1 soumise au PI le 01/11 21:05 après relecture bâtisseur (agent à contexte vierge, 8 questions, traitées au §9). Auteur : session electron-94 (Claude Fable 5.1), à partir du brainstorming avec le PI du 01/11 20:43-20:55 CET, de l'analyse profonde du 01/11 (PR hypneum-lab/.github #23) et de ses trois veilles (`docs/research/2026-11-01-analyse-profonde/veille/`). Remplace, pour les semaines S3 à S13, les tableaux de phases de `docs/ROADMAP.md` v1 (25/10).
 
+> Note de révision — 2026-11-07 : NH-91 « quand dormir » (§6) renuméroté NH-102 (collision avec la liste du 30/10 ; catalogue v3, PR #30, décision PI du 06/11). Le texte du 01/11 est sinon inchangé.
+
 ## 1. Intention et pourquoi
 
 Le labo lance ses calculs avant d'avoir lu. Le PI l'a nommé comme la dérive principale : « trop vite des calculs et pas assez de lecture scientifique ». L'analyse du 01/11 le mesure : onze thèses, chacune devancée au moins en partie par un travail antérieur vérifié ; 21 papiers du groupe de Rome 2024-2026, aucun cité dans un `.tex` ; 77 références sur 332 avec un défaut, écrites depuis des résumés de veille ; Plakhov-Semenov 1992, le papier qui fixe la limite projecteur du noyau de rêve, absent de toutes les veilles et arrivé de seconde main.
@@ -89,7 +91,7 @@ Retirés de la phase 2 (S6-S10) de la roadmap v1, à reprendre après M3 et seul
 | dream-of-kiki | `recombine` = séparation de mélanges | découverte | réplication inter-substrats ; GENIAL = axiomatisation | Agliari 2012 PRL ; Rome 2609.32605 |
 | dream-of-kiki | H14-A/B/C (E1-small) | confirmatoires | exploratoires (déclaré le 30/10) ; réplication de l'ordre des phases | Deperrois 2022, Singh 2022 ; amendement 30/10 |
 | dream-of-kiki | DR-2 théorème ; DR-4 ordre en espérance | théorèmes | propriété sous précondition ; garantie d'espace de recherche | B1, C3 du rapport |
-| dream-of-kiki | NH-91 (ex-NH-03, renumérotée le 01/11 21:50 : collision avec le NH-03 du 24/10) « quand dormir » | hypothèse à tester | politiques de déclenchement comparées à budget égal ; section de la note, pas de run ce trimestre | SIESTA 2303.10725 ; SleepGate ; SHARP 2606.00732 |
+| dream-of-kiki | NH-102 (ex-NH-03, renumérotée NH-91 le 01/11 21:50 pour collision avec le NH-03 du 24/10, puis NH-102 le 06/11 pour collision avec le NH-91 du 30/10 ; catalogue v3) « quand dormir » | hypothèse à tester | politiques de déclenchement comparées à budget égal ; section de la note, pas de run ce trimestre | SIESTA 2303.10725 ; SleepGate ; SHARP 2606.00732 |
 | nerve-wml | Claim B (MI/H 0,91-0,96, codes « post-VQ ») | résultat | accord de classifieurs ≠ canal ; à refaire avec test causal | B3 ; Lowe 1903.05168 ; `hukTsKYu8Y` |
 | nerve-wml | mKNN 18,8× le nul | résultat | excès ≈ 2,5-3× sous nul intra-cluster (agent seul, à refaire) | B4 |
 | nerve-wml | canal PSK γ/θ (Test 12) | neuf | neuf mais recouvert en partie par 2609.32605 ; association π→γ, ε→θ inverse de Bastos | M5, M7 |
