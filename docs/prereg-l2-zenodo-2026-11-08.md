@@ -64,6 +64,24 @@ Listed in the inventory next to their study but absent at the tag, hence not in 
 
 Three dream-of-kiki studies (DR-3, E1-small, G4-nono) had a lock commit (PRs #71 and #72, late October 2026) but no annotated tag. Tags `prereg-dr3-20261028`, `prereg-e1-small-20261028` and `prereg-g4-nono-20261028` were created on 2026-11-08 on those lock commits (`14c3d5f864430649ea860e3b49d10528065af798` for DR-3 and G4-nono, `963bb245db6bf1d5437527675eb9a64e66c9f7aa` for E1-small). The tag date is 2026-11-08; the lock commits predate it. For these three studies L1 and L2 therefore carry the same date, and the earlier lock is attested only by the merge commit.
 
+## Documents frozen at a tag but absent from the default branch
+
+The following documents are in the deposit (they exist at the tag) but have no live copy on the default branch on 2026-11-08, so no annotation could be added to a live file. The repository-level registry lists them; the PI decides whether to merge the branch that carries them.
+
+| Repository | Document | Tag | Where it lives |
+|---|---|---|---|
+| kiki-flow-research | `docs/prereg/2026-10-27-turing-strong-implicit.md` | `prereg-turing-strong-implicit-20261027` | branch `exp/implicit-recompute` |
+| micro-kiki | `docs/prereg/2026-10-28-nh81-kxkm-replication.md`, `docs/prereg/2026-10-29-nh81-kxkm-replication-r3.md`, `docs/prereg/2026-10-30-nh81-kxkm-amendment-r4.md` | `prereg-nh81-kxkm-20261030-r4` | branch `exp/nh81-kxkm-nvml` |
+| micro-kiki | `docs/prereg/2026-10-30-nh81-m3pro-replication.md` | `prereg-nh81-m3pro-20261030` | not on `main` |
+
+## Provenance exception: NH-81 amendment 1
+
+`docs/prereg/2026-10-28-nh81-amendment-1.md` (micro-kiki) is packed in `prereg-nh81-20261025.zip` although it is absent at the base tag `prereg-nh81-20261025`: the deposited copy was extracted from the tag `prereg-nh81-kxkm-20261028` (commit `e85cdb8c192b9388f39654d06c02b615ca2f9c7c`), the first annotated tag that contains it. It is not in `prereg-nh81-kxkm-20261030-r4.zip`. The `SHA256SUMS.txt` of the base zip covers it.
+
+## Software Heritage status of the three tags created on 2026-11-08
+
+The save request for the dream-of-kiki tags `prereg-dr3-20261028`, `prereg-e1-small-20261028` and `prereg-g4-nono-20261028` was accepted on 2026-11-08 and was still `pending` at the time of this file; the revisions themselves (`14c3d5f8…`, `963bb245…`) were already archived (HTTP 200 on 2026-11-08). Re-check the tag objects later.
+
 ## Per-repository registries
 
 Each repository receives `docs/prereg-l2-zenodo-2026-11-08.md` with the same table restricted to its own zips, and each live pre-registration document carries a dated annotation line pointing to the record (draft PRs of 2026-11-08, merged by the PI).
