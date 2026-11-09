@@ -63,6 +63,10 @@ Décisions du PI du 06/11, second tour (13:58) :
 
 **Reste à arbitrer** : tag d'analyse N10-C run 2 ; placement des 8-12 h de relectures ReScience C au-delà de S5-S6 ; graines (9104, 9105 + neuve, hors pilote G7) et critère (G2 inchangé) de la porte A+, appliqués comme hypothèses de travail, à confirmer au go.
 
+## Études en cours (pré-enregistrées, hors campagne lourde)
+
+- **Zuse-2** — miscalibration structurée par la tâche des modèles de décision : étude confirmatoire pré-enregistrée (L0 rév. 2 le 2026-11-09, dépôt privé `hypneum-lab/zuse-2`, passage public au gel L1). Pilote exploratoire = banc public clef-mlx L2c (11 modèles × 6 bases, 2026-11-09) : motif suggestif non confirmé (p apparié 0,041), fragilité à la rotation des identifiants d'options. Statistique primaire : part de variance famille (nuls appariés N1/N2/N2s/N3, Holm). Décision PI n° 15 : ≈ 12 bases par famille (puissance simulée 85 %). Prochaines étapes : inventaire des 60 bases, gel L1 (tag + SWH), OSF (PI).
+
 ## S1 à S5 — détail semaine par semaine
 
 S1 (26 oct-1 nov) est consommée : fusions du 25/10, revue des hypothèses, analyse profonde du 01/11, décisions du PI. Ses heures ne sont pas mesurées dans ce fichier ; le bilan de novembre les reportera.
