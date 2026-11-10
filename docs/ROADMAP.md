@@ -89,7 +89,7 @@ Avant tout gel de Zuse-2 (relecture du 10/11) : (R3) note de lecture et contradi
 
 **Lignes de ce fichier que le second tour rend caduques et qui restent à réécrire** (non modifiées ici) : M2 et S7 à S10 pour bouba v0.7.1 et K1/K3 ; S13 et M3 pour les GO/NO-GO axe matière et R8-lite ; l'indicateur « verrous passés » (cible 3, dont bouba v0.7.1) ; l'ordre de passage du verrou.
 
-Trois règles ajoutées par le PI le 10/11 : toute entrée au plan nomme ce qu'elle en sort ; avant toute campagne, un test d'une heure montre que la manipulation agit ; les heures sont consignées chaque lundi.
+Trois règles proposées avec le recentrage, **à confirmer par le PI** (elles n'étaient pas dans le QCM) : toute entrée au plan nomme ce qu'elle en sort ; avant toute campagne, un test d'une heure montre que la manipulation agit ; les heures sont consignées chaque lundi.
 
 ## Études en cours (pré-enregistrées)
 
