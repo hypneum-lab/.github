@@ -79,6 +79,18 @@ Avant tout gel de Zuse-2 (relecture du 10/11) : (R3) note de lecture et contradi
 
 **Reste à arbitrer** : statut des passes du banc de décision clef-mlx en cours sur KXKM le 10/11 (pilotes exploratoires à déclarer, ou arrêt) ; inscription de Zuse-2 au catalogue ; plafond de calcul de Zuse-2 (`tbd-by-pi.md` n° 8, proposé pour 17 bases).
 
+### Second tour, 10 novembre 2026 (QCM, ≈ 13:45 CET)
+
+| Question | Décision | Conséquence |
+|---|---|---|
+| Hypothèses candidates C1 à C8 de l'état des lieux du 10/11 | **C1 à C7 inscrites**, C8 (rotation des options) reste proposée | À inscrire au catalogue à partir de NH-114 (prochain numéro libre), dans l'ordre C1 à C7 : C1 DOWNSCALE quasi-symétrie du réseau (dose-réponse contre bruit de même norme, sans rejeu) ; C2 DOWNSCALE comme température (précision inchangée, confiance en baisse) ; C3 bande de charge où le noyau rêveur bat le désapprentissage à meilleure dose, avec porte de mesurabilité ; C4 apport du contradicteur aveugle d'une autre famille, sur les relectures archivées ; C5 part des préregs gelées avant le verrou qui finissent non informatives ; C6 lignée (secondaire de Zuse-2) ; C7 exposition à l'entraînement (secondaire de Zuse-2). Seuils à fixer avant toute lecture. |
+| Recentrage du trimestre | **Trois lignes**, un livrable par ligne : méthode (note sur arXiv avant le 15/12 ; C4, C5) ; calibration des modèles de décision (Zuse-2 ; C6, C7 ; C2 en pont) ; mémoire associative (v2 ReScience, NH-01 et lecture P8c ; C3 ; C1) | **En veille, sans heure avant M3** : communication émergente (N10), bouba_sens (verrou v0.7.1 et K1/K3 compris), kiki-flow hors NH-20, baby-brain, micro-kiki, axe matière, R8-lite. |
+| Axe rêve sur LLM | **C1 d'abord** (remplace « rejouer plus grand » de 12:10) | Aucun rejeu de H14 à plus grande échelle tant que C1 n'a pas montré que DOWNSCALE agit à une dose donnée ; si C1 conclut à une quasi-symétrie, pas de rejeu. Motif : sur les 564 cellules de contrôle E1-small, DOWNSCALE change la norme de 8,36 contre 0,35 pour le rejeu seul, sans changer ni la précision ni la divergence des réponses (0,134 contre 0,137 ; lecture descriptive du 10/11). |
+
+**Lignes de ce fichier que le second tour rend caduques et qui restent à réécrire** (non modifiées ici) : M2 et S7 à S10 pour bouba v0.7.1 et K1/K3 ; S13 et M3 pour les GO/NO-GO axe matière et R8-lite ; l'indicateur « verrous passés » (cible 3, dont bouba v0.7.1) ; l'ordre de passage du verrou.
+
+Trois règles ajoutées par le PI le 10/11 : toute entrée au plan nomme ce qu'elle en sort ; avant toute campagne, un test d'une heure montre que la manipulation agit ; les heures sont consignées chaque lundi.
+
 ## Études en cours (pré-enregistrées)
 
 - **Zuse-2** — miscalibration structurée par la tâche des modèles de décision : étude confirmatoire pré-enregistrée (L0 rév. 2 le 2026-11-09, dépôt privé `hypneum-lab/zuse-2`, passage public au gel L1). Pilote exploratoire = banc public clef-mlx L2c (11 modèles × 6 bases, 2026-11-09) : motif suggestif non confirmé (p apparié 0,041), fragilité à la rotation des identifiants d'options. Statistique primaire : part de variance famille (nuls appariés N1/N2/N2s/N3, Holm). Décision PI n° 15 : ≈ 12 bases par famille (puissance simulée 85 %). Prochaines étapes : inventaire des 60 bases, gel L1 (tag + SWH), OSF (PI). **10/11 : devient la campagne lourde du trimestre (décision 14 bases par famille du 09/11, ≈ 84 bases) ; verrou de lecture à passer ; gel et lancement après le dépôt arXiv de la note méthodo.**
