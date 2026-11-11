@@ -48,7 +48,7 @@ Les candidates (C1 à C8 du 10/11 ; P1 à P4, A1 à A5, K1 à K5 du 11/11) ne so
 
 | Référence | Candidate | Ce que la source établit | Niveau |
 |---|---|---|---|
-| arXiv:2407.01800, Lyle et al. 2024 | C1, A1 | une normalisation rend invariant à l'échelle le sous-réseau qui la précède : f(cθ) = f(θ), pas effectif en 1/‖θ‖² ; projection **continue** à norme fixe (NaP) ; essais langage sur un transformeur de 400 M ; pas de remise à l'échelle ponctuelle testée | extraction, 0–200 000 sur 223 147 |
+| arXiv:2407.01800, Lyle et al. 2024 | C1, A1 | une normalisation rend invariant à l'échelle le sous-réseau qui la précède : f(cθ) = f(θ), pas effectif en 1/‖θ‖² ; projection **continue** à norme fixe (NaP) ; essais langage sur un transformeur de 400 M ; pas de remise à l'échelle ponctuelle testée | **lu en entier le 11/11** (note en bibliothèque) ; l'architecture est construite pour l'invariance (normalisation avant chaque non-linéarité, biais retirés, RMS sur requêtes et clés) : ne prédit pas le résultat sur un LLM pré-LN |
 | arXiv:1706.05350, van Laarhoven 2017 | C1 | invariance d'échelle et pas effectif (référence habituelle) | titre |
 | arXiv:1910.08475, Ash, Adams 2020 | A1 | « rétrécir et perturber » : θ ← λθ + bruit avant de reprendre l'entraînement ; ferme l'écart de généralisation du redémarrage à chaud | résumé |
 | arXiv:2507.04683, Oh et al. | A1, P3 | remise à l'échelle douce par couche, fonction préservée ; MLP, CNN, VGG-16 ; bat rétrécir-et-perturber ; aucun modèle de langage | extraction |
@@ -89,7 +89,7 @@ Les candidates (C1 à C8 du 10/11 ; P1 à P4, A1 à A5, K1 à K5 du 11/11) ne so
 
 ## 3. Constats pour la planification (non décidés)
 
-1. **Le nul d'E1-small sur DOWNSCALE était lisible avant le calcul.** L'invariance d'échelle d'un réseau normalisé est publiée ; une note de lecture l'aurait signalée. Étude de cas possible pour la note méthodo.
+1. **L'effet d'E1-small sur DOWNSCALE était cherché au mauvais endroit** (reformulé le 11/11 au soir après la lecture intégrale de Lyle 2024, `library/references/notes/arxiv-2407.01800.md` ; la version du matin disait « nul prévisible », ce que le texte ne soutient pas : l'invariance est établie pour le sous-réseau normalisé d'une architecture construite pour, pas pour un modèle de langue pré-LN). Ce que la lecture aurait donné avant le gel : l'effet attendu d'une remise à l'échelle porte sur le pas d'apprentissage effectif du bloc suivant (5 à 11 % à ε = 0,05, 1 à 2 % à la dose 0,01 d'E1-small), pas sur la rétention mesurée juste après ; la mesure aurait été déplacée et l'effet borné. Étude de cas retenue par le PI pour la note méthodo (décision 11/11 soir).
 2. **Le noyau rêveur n'a pas été comparé à Daydreaming.** Les préregs P8c et P1bis le rangent dans « ce que cette étude ne teste pas » ; le fichier de références du 07/11 le marquait déjà « à recouper » comme comparateur de NH-112.
 3. **L'axe rêve sur modèle de langage se rétrécit** à un contrôle d'instrument (C1) et, au plus, un test court (A1).
 4. **Vingt-deux candidates en deux jours** : un tri est nécessaire avant toute inscription.
