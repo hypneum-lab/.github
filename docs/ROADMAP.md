@@ -27,7 +27,7 @@ Ce qui change par rapport à la v1 : un **verrou de lecture** conditionne désor
 | 2. Contradicteur | un tiers (Codex en aveugle par défaut, Claude à contexte vierge en secours) reçoit dépôts, veilles et canaux, **pas** la note ni les conclusions du labo, et cherche ce qui rend la question inutile ou déjà tranchée | rapport archivé avec la note |
 | 3. Tours de veille | plusieurs tours datés, chacun sur des sources différentes du précédent ; la note est amendée entre deux tours | journal de veille du dépôt |
 
-Ordre de passage révisé le 10/11 : **Zuse-2** d'abord (note de lecture, contradicteur aveugle, tours de veille : aucune de ces pièces n'existe au 10/11), puis bouba_sens v0.7.1 et NH-20 ; N10-D v2 et N10-C-bis repassent le verrou après M3. Ordre de la v2.1, pour mémoire (spec §5.1) : **N10-D** (nerve-wml) d'abord, puis **bouba_sens v0.7.1** avant K1/K3 Me6, puis **NH-20** Lie contre Strang (lecture mathématique, sans contradicteur obligatoire). N10-C-bis n'est **pas gelée** (issue nerve-wml #62 ouverte, aucun tag `n10c-bis-freeze-*` ; spec:136) : elle passe aussi le verrou, et l'issue #62 est reformulée « geler après verrou ».
+Ordre de passage révisé le 10/11 et le 11/11 : **Zuse-2** d'abord (note de lecture, contradicteur aveugle, tours de veille : aucune de ces pièces n'existe au 10/11), puis NH-20 ; les tests CPU S1 et P3r-b passent le verrou de lecture (fait le 11/11 au soir, sauf textes sous péage) sans tour de contradicteur ; bouba_sens v0.7.1 en veille jusqu'à M3 ; N10-D v2 et N10-C-bis repassent le verrou après M3. Ordre de la v2.1, pour mémoire (spec §5.1) : **N10-D** (nerve-wml) d'abord, puis **bouba_sens v0.7.1** avant K1/K3 Me6, puis **NH-20** Lie contre Strang (lecture mathématique, sans contradicteur obligatoire). N10-C-bis n'est **pas gelée** (issue nerve-wml #62 ouverte, aucun tag `n10c-bis-freeze-*` ; spec:136) : elle passe aussi le verrou, et l'issue #62 est reformulée « geler après verrou ».
 
 ## Jalons du trimestre
 
@@ -35,8 +35,8 @@ Ordre de passage révisé le 10/11 : **Zuse-2** d'abord (note de lecture, contra
 |---|---|---|
 | **M0 Vérité** | 8 nov 2026 | commentaire ReScience #147 (posté le 04/11) ; deux PR de corrections publiques (`.github` #23-#25, kiki-flow-research #65, fusionnées le 06/11) + note « superseded » Zenodo par le PI ; citations #87 portées dans la `.tex` et Paper 2 (dok #86, #90) ; clôture de N10-C run 2 (PR #109, 05/11 ; rapport descriptif #63 à suivre) ; note de lecture N10-D (#102, fusionnée le 06/11, au-delà du « début » prévu) |
 | **M1 Verrou engagé pour Zuse-2** (redéfini le 10/11 ; était « Verrou passé pour N10-D ») | 29 nov 2026 | Zuse-2 : note de lecture, brief et rapport du contradicteur aveugle, trois corrections avant gel (rééchantillonnage par lignée de systèmes, plus petit effet d'intérêt nommé, calcul rechiffré pour ≈ 84 bases) ; FOSDEM corrigé (16/11) ; note méthodo en brouillon complet |
-| **M2 Trois verrous, un calcul** | 3 jan 2027 | note méthodo sur arXiv avant le 15/12, **puis** gel de Zuse-2 (L1, OSF par le PI) et lancement si son verrou est passé (décision 10/11 ; remplace « N10-D ou N10-C-bis ») ; bouba v0.7.1 taguée et K1/K3 lancés sur electron-server ; NH-20 rejoué sous sa note ; note méthodo sur arXiv avant le 15/12 |
-| **M3** | 24 jan 2027 | v2 ReScience soumise (fin novembre visée, M3 au plus tard) ; JOTE ; GO/NO-GO axe matière sur NH-01 et la lecture seule (pilotes kiki-flow reportés, voir « Ce que le trimestre ne fait plus ») ; décision N10-D v2 ou N10-C-bis et cadrage de H14 à plus grande échelle (reportés le 10/11) ; bilan des heures ; roadmap v3 |
+| **M2 Deux verrous, un calcul** (réécrit le 11/11 au soir) | 3 jan 2027 | note méthodo sur arXiv avant le 15/12, **puis** gel de Zuse-2 (L1, OSF par le PI) et lancement si son verrou est passé (décision 10/11 ; remplace « N10-D ou N10-C-bis ») ; NH-20 rejoué sous sa note ; NH-114 (contrôle d'instrument C1/C2) gelé L1 et passé, A1-r et les tests CPU sous verrou (S1, P3r) lancés si leur L0 est relu ; bouba v0.7.1 et K1/K3 **en veille jusqu'à M3** (recentrage du 10/11) |
+| **M3** (réécrit le 11/11 au soir) | 24 jan 2027 | v2 ReScience soumise (fin novembre visée, M3 au plus tard), avec le bras Daydreaming de C3 (NH-115) ou sa limite écrite ; JOTE ; décision sur la reprise des lignes en veille (axe matière et R8-lite, N10-D v2 ou N10-C-bis, bouba v0.7.1 et K1/K3 : banc de communication P1, K2, K3 à refaire avant) ; reprise de H14 **conditionnelle au verdict d'A1-r** (11/11) ; bilan des heures ; roadmap v3 |
 
 ### Point de reprise « roadmap v2 » — tenu le 6 novembre 2026 (anticipé de S5 à S2)
 
@@ -89,7 +89,7 @@ Avant tout gel de Zuse-2 (relecture du 10/11) : (R3) note de lecture et contradi
 | Recentrage du trimestre | **Trois lignes**, un livrable par ligne : méthode (note sur arXiv avant le 15/12 ; C4, C5) ; calibration des modèles de décision (Zuse-2 ; C6, C7 ; C2 en pont) ; mémoire associative (v2 ReScience, NH-01 et lecture P8c ; C3 ; C1) | **En veille, sans heure avant M3** : communication émergente (N10), bouba_sens (verrou v0.7.1 et K1/K3 compris), kiki-flow hors NH-20, baby-brain, micro-kiki, axe matière, R8-lite. |
 | Axe rêve sur LLM | **C1 d'abord** (remplace « rejouer plus grand » de 12:10) | Aucun rejeu de H14 à plus grande échelle tant que C1 n'a pas montré que DOWNSCALE agit à une dose donnée ; si C1 conclut à une quasi-symétrie, pas de rejeu. Motif : sur les 564 cellules de contrôle E1-small, DOWNSCALE change la norme de 8,36 contre 0,35 pour le rejeu seul, sans changer ni la précision ni la divergence des réponses (0,134 contre 0,137 ; lecture descriptive du 10/11). |
 
-**Lignes de ce fichier que le second tour rend caduques et qui restent à réécrire** (non modifiées ici) : M2 et S7 à S10 pour bouba v0.7.1 et K1/K3 ; S13 et M3 pour les GO/NO-GO axe matière et R8-lite ; l'indicateur « verrous passés » (cible 3, dont bouba v0.7.1) ; l'ordre de passage du verrou.
+**Lignes que le second tour rendait caduques — réécrites le 11/11 au soir** (M2, M3, S6 à S13, indicateurs « verrous passés », « tags sans verrou », « préregs gelées », ordre de passage) ; les placements de NH-114, A1-r, S1 et P3r-b dans S6 à S10 sont **proposés**, à confirmer par le PI.
 
 Trois règles proposées avec le recentrage, **à confirmer par le PI** (elles n'étaient pas dans le QCM) : toute entrée au plan nomme ce qu'elle en sort ; avant toute campagne, un test d'une heure montre que la manipulation agit ; les heures sont consignées chaque lundi.
 
@@ -165,14 +165,14 @@ Somme S2-S5 : 56 h = 14 × 4. Par poste (v2.1) : É 40 (#147 18 sur 18, FOSDEM 1
 
 | Sem. | Contenu indicatif | Postes | Jalon |
 |---|---|---|---|
-| S6 (30 nov-6 déc) | Note méthodo (NH-102 ex-NH-03 en section, sans run) ; retraits textuels restants ; Zuse-2 : tours de veille et trois tests ; relecture ReScience C n° 2 | É, R, V, Rés | — |
-| S7 (7-13 déc) | Note méthodo soumise sur arXiv (cs.DL + stat.ME) avant le 15/12, **puis** gel de Zuse-2 (L1, OSF par le PI) si son verrou est passé ; note de lecture bouba v0.7.1 finie ; amendement v0.7.1 ; brief du contradicteur bouba (sans la note) | É, V | M1 au plus tard si glissé |
-| S8 (14-20 déc) | Verrou bouba (rapport du contradicteur, tours) ; verrou NH-20 (lecture mathématique) ; analyse Me6 selon sa préreg ; calcul Zuse-2 (lecture interdite avant la fin des systèmes) | V, A, C | — |
+| S6 (30 nov-6 déc) | Note méthodo (NH-102 ex-NH-03 en section, sans run ; étude de cas « effet cherché au mauvais endroit », 11/11) ; retraits textuels restants ; Zuse-2 : tours de veille et trois tests ; relecture ReScience C n° 2 ; **NH-114 (C1/C2)** : jeux extérieurs épinglés, L0 relu, gel L1 puis run d'inférence (< 1 h GPU, verrou de lecture non applicable, 11/11) [proposé le 11/11, à confirmer] | É, R, V, Rés, C | — |
+| S7 (7-13 déc) | Note méthodo soumise sur arXiv (cs.DL + stat.ME) avant le 15/12, **puis** gel de Zuse-2 (L1, OSF par le PI) si son verrou est passé ; verdict de NH-114 lu (contrôle, pas sous verrou) ; L0 d'A1-r complété avec les doses de C1 [réécrit le 11/11 : bouba v0.7.1 en veille] | É, V | M1 au plus tard si glissé |
+| S8 (14-20 déc) | Verrou NH-20 (lecture mathématique) ; analyse Me6 selon sa préreg ; calcul Zuse-2 (lecture interdite avant la fin des systèmes) ; tests CPU sous verrou : S1 (pas 0 bis puis pas 0 et 1) et P3r-b, résultats non lus avant la note méthodo (11/11) ; porte CPU d'A1-r [réécrit le 11/11 : verrou bouba retiré] | V, A, C | — |
 | S9 (21-27 déc) | Tampon (Noël) : relectures ReScience, réponses éditeur, aucun gel | Rés | — |
-| S10 (28 déc-3 jan) | bouba v0.7.1 taguée après verrou ; K1/K3 sur electron-server ; NH-20 rejoué sous sa note (CPU) ; verdict Zuse-2 rendu par script selon sa préreg | C, V, A | **M2 (3 jan)** |
+| S10 (28 déc-3 jan) | NH-20 rejoué sous sa note (CPU) ; verdict Zuse-2 rendu par script selon sa préreg ; A1-r (1 à 3 h GPU) si C1 a rendu une dose et le L0 est gelé [réécrit le 11/11 : bouba v0.7.1 et K1/K3 retirés, en veille] | C, V, A | **M2 (3 jan)** |
 | S11 (4-10 jan) | Réponses aux relecteurs de la note méthodo ; soumission JOTE | É | — |
 | S12 (11-17 jan) | Rapport descriptif N10-C run 2 (issue #63) ; v2 ReScience (si pas encore soumise) | É, A | — |
-| S13 (18-24 jan) | GO/NO-GO axe matière (NH-01 et lecture seule) ; GO/NO-GO R8-lite ; N10-D v2 ou N10-C-bis ; cadrage de H14 à plus grande échelle ; bilan des heures ; roadmap v3 | Rés | **M3 (24 jan)** |
+| S13 (18-24 jan) | Décision sur les lignes en veille (axe matière, R8-lite, N10-D v2 ou N10-C-bis, bouba v0.7.1 et K1/K3) ; H14 : reprise ou fermeture selon A1-r ; lecture des résultats sous verrou (S1, P3r-b) si la note méthodo est sur arXiv ; bilan des heures ; roadmap v3 [réécrit le 11/11] | Rés | **M3 (24 jan)** |
 
 ## Ce que le trimestre ne fait plus
 
@@ -260,11 +260,11 @@ Pas de nouveau dépôt ni de nouveau « lab » ; pas de nouvel axe ni de nouvell
 
 | Indicateur | Cible fin janvier 2027 |
 |---|---|
-| Verrous passés (note + contradicteur + trois tests, avant le tag) | 3 (Zuse-2, bouba v0.7.1, NH-20) ; Zuse-2 avant son gel, S7 au plus tôt |
+| Verrous passés (note + contradicteur + trois tests, avant le tag) | 2 (Zuse-2, NH-20) ; Zuse-2 avant son gel, S7 au plus tôt ; bouba v0.7.1 retirée du compte (en veille, 10/11) ; S1 et P3r-b passent le verrou de lecture (notes du 11/11) mais pas le contradicteur : comptés à part |
 | Verdicts rendus (campagnes analysées selon leur préreg) | E1-small, N10-C run 2, Me6 ; plus Zuse-2 s'il est lancé |
-| Tags de gel posés sans verrou | 0 |
+| Tags de gel posés sans verrou | 0 ; exception déclarée : NH-114 (contrôle d'instrument, verrou de lecture non applicable par décision du PI du 11/11), compté comme contrôle |
 | Chiffres sans artefact dans README/papiers | 0 |
-| Préregs gelées après verrou (L1 gel + L2) | bouba v0.7.1 ; Zuse-2 |
+| Préregs gelées après verrou (L1 gel + L2) | Zuse-2 ; S1 et P3r-b si lancés (verrou de lecture) ; NH-114 gelé L1 comme contrôle |
 | Errata publiés avec cause racine | 100 % des rétractations |
 | Soumissions | commentaire #147 (posté le 04/11) ; deux relectures ReScience C (acceptées le 04/11) ; v2 ReScience ; note méthodo sur arXiv avant le 15/12 puis JOTE |
 | Temps chercheur, **mesuré** chaque mois | règle ≤ 10 h/semaine ; exception du trimestre : ≈ 14 h/semaine, 185 h en tout, écart affiché chaque mois |
