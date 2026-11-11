@@ -77,7 +77,9 @@ Prises en séance (QCM, ≈ 12:10 CET) après l'état des lieux et la relecture 
 
 Avant tout gel de Zuse-2 (relecture du 10/11) : (R3) note de lecture et contradicteur aveugle, la critique L0 du 09/11 ayant lu le brouillon ; (R4) le panel contient des lignées de systèmes (GLiDE 2B, 9B, 27B ; Qwen3.5 4B, 9B et mammoth-1 sur base Qwen3.5-27B) que le plan d'analyse rééchantillonne comme indépendantes ; (R5) la puissance de 85 % vaut pour l'effet ×1, « borne haute plausible » selon le protocole, et tombe à 44 % à ×0,5.
 
-**Reste à arbitrer** : statut des passes du banc de décision clef-mlx en cours sur KXKM le 10/11 (pilotes exploratoires à déclarer, ou arrêt) ; inscription de Zuse-2 au catalogue ; plafond de calcul de Zuse-2 (`tbd-by-pi.md` n° 8, proposé pour 17 bases).
+**Pilotes déclarés (ligne ajoutée le 11/11 à la demande du PI)** : les passes du banc de décision clef-mlx (L2c et L5, terminées le 10/11 à 12:44) et le pilote LoRA du bras L4 (Qwen3.5-4B-Base, graines 0 à 4, au plus 3,1 h de GPU par graine, décision PI du 10/11 16:15 citée par `l4-lora-seeds-chain.sh`, fin prévue le 11/11 au soir) sont des **pilotes exploratoires**, hors campagne lourde. Leurs données n'entrent dans aucun test confirmatoire ; le bras L4 garde sa préreg séparée (`zuse-2:docs/prereg/zuse-2/protocol.md` §11).
+
+**Reste à arbitrer** : la file « eb_jepa » qui a occupé le GPU de KXKM dans la nuit du 10 au 11/11 (à rattacher ou non à l'issue #43, hors des trois lignes du recentrage) ; inscription de Zuse-2 au catalogue ; plafond de calcul de Zuse-2 (`tbd-by-pi.md` n° 8, proposé pour 17 bases).
 
 ### Second tour, 10 novembre 2026 (QCM, ≈ 13:45 CET)
 
