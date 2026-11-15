@@ -1,147 +1,64 @@
-# hypneum-lab
+# Hypneum Lab
 
-**Executable formal frameworks for cognitive AI.**
+*Spin, here, is a quantum number, not a communication strategy.*
 
-A one-person research lab running an open-science programme on knowledge consolidation in artificial cognitive systems — the **GENIAL** framework (`dream-of-kiki`), a substrate-agnostic **Nerve Protocol** (`nerve-wml`), a Wasserstein-gradient-flow engine (`kiki-flow-research`), a cross-modal plasticity benchmark (`bouba_sens`) and a deployable multi-LoRA runtime (`micro-kiki`). Based in Grandris, Beaujolais, France. 100 % open-source : code MIT (Apache-2.0 for `micro-kiki`, inherited from Qwen), docs CC-BY-4.0.
-
-*State of the programme on 2026-10-25. Dated milestone entries from 2026 are kept in [`docs/profile-journal-2026.md`](https://github.com/hypneum-lab/.github/blob/main/docs/profile-journal-2026.md).*
-
----
-
-## Where the programme stands
-
-**Six months in, the lab has formulated 180 hypotheses or claims and built the discipline to test them** — pre-registration, five seeds minimum, Bonferroni, public errata. A full review of those claims was carried out on 2026-10-24 and revised on 2026-10-25 after two independent critiques ([`docs/research/2026-10-24-revue-hypotheses/`](https://github.com/hypneum-lab/.github/blob/main/docs/research/2026-10-24-revue-hypotheses/README.md), in French). Per its master table : 55 confirmed with ≥ 5 seeds or a calibrated null, 46 negative (refuted, retracted or null), 24 inconclusive, 19 amended, 12 pending, 19 never tested, 5 unverifiable. What holds is mostly *negative or methodological* : the retractions were made by the lab itself, before external review.
-
-That review feeds the **2026-27 roadmap**, maintained privately since 2026-11-15 (public rules and principles in [`docs/PROJECT-MANAGEMENT.md`](https://github.com/hypneum-lab/.github/blob/main/docs/PROJECT-MANAGEMENT.md)) and tracked issue by issue on a GitHub Project of the organisation. Since the PI decisions of 2026-11-10 and 2026-11-11 the quarter is organised around three lines, one deliverable each :
-
-| Line | Deliverable | Milestone |
-|---|---|---|
-| **Method** | methods note (freeze, guard, null, amend) on arXiv | before 2026-12-15, M2 (3 Jan 2027) |
-| **Calibration of decision models** | Zuse-2, the only heavy campaign of the quarter, frozen and launched only after the methods note and its reading gate | M1 reading gate engaged (29 Nov 2026), run after M2 |
-| **Associative memory** | ReScience C v2 (NH-01) submitted, DOWNSCALE dose-response control (NH-114) | M3 (24 Jan 2027) |
-
-Everything else (emergent communication N10, `bouba_sens` v0.7.1, `kiki-flow` beyond NH-20, `baby-brain`) is on hold without hours before M3. The phase table of the v1 roadmap (25 Oct 2026, « Truth / Falsifiable / Ten hypotheses / Write ») is superseded.
-
-Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one test, one verdict ; no new repo, no QPU, no wet-lab, no hardware purchase in 2026-27.
-
----
+Hypneum Lab is a research programme led by Clément Saillant, an independent researcher based in Grandris (Beaujolais, France), associated with L'Électron Rare. It studies knowledge consolidation and communication in artificial cognitive systems through five public software repositories. Since October 2026, studies are frozen before their confirmatory runs; null results and non-tests are published alongside positive ones, and errata are kept in each repository. A hypothesis catalogue (in French) records the status of the lab's claims, including those made before this practice was in force.
 
 ## Repositories
 
-### Flagship — formal framework
+Code under MIT (Apache-2.0 for `micro-kiki`), documentation under CC BY 4.0. Zenodo concept DOIs resolve to the latest archived version.
 
-- [**dream-of-kiki**](https://github.com/hypneum-lab/dream-of-kiki) — substrate-agnostic formal framework for dream-based knowledge consolidation. Framework hypotheses **DR-0..DR-4**, executable Conformance Criterion **C+** (C1 signature typing, C2 axiom property tests, C3 blocking invariants), 8 typed primitives, 4 canonical operations (replay, downscale, restructure, recombine). Two substrates pass all three conformance conditions : MLX `kiki-oniric` and a numpy-LIF thalamocortical E-SNN. Paper 1 v0.2 (22 p) frozen ; arXiv deposit scheduled in phase 3 (January 2027) together with the DR-0/DR-1/DR-3 reformulations the review asks for. Draft PR [#41](https://github.com/hypneum-lab/dream-of-kiki/pull/41) : three new pre-registrations (H12–H14) and a G4 erratum.
-  `main`, 692 commits ; release `v0.9.2` (2026-04-22), `pyproject` 0.23.0, DualVer `C-v0.24.0+PARTIAL`. Zenodo concept DOI [10.5281/zenodo.19701355](https://doi.org/10.5281/zenodo.19701355). MIT + CC-BY-4.0.
+- [**dream-of-kiki**](https://github.com/hypneum-lab/dream-of-kiki) — GENIAL, a substrate-agnostic formal framework for dream-based knowledge consolidation: axioms DR-0 to DR-4, eight typed primitives, four canonical operations (replay, downscale, restructure, recombine), an executable conformance criterion. MIT. [10.5281/zenodo.19701355](https://doi.org/10.5281/zenodo.19701355)
+- [**nerve-wml**](https://github.com/hypneum-lab/nerve-wml) — substrate-agnostic protocol for communication between heterogeneous neural modules (World Model Languages, WMLs): discrete neuroletters, γ/θ multiplexing, sparse learned topology. Also hosts the lab's associative-memory (Hopfield) studies. MIT. [10.5281/zenodo.19656342](https://doi.org/10.5281/zenodo.19656342)
+- [**bouba_sens**](https://github.com/hypneum-lab/bouba_sens) — cross-modal plasticity benchmark: a five-modality agent loses or degrades one sensory channel, congenitally or late, under three pre-registered invariants (B-1, B-2, B-3). MIT. [10.5281/zenodo.19701353](https://doi.org/10.5281/zenodo.19701353)
+- [**kiki-flow-research**](https://github.com/hypneum-lab/kiki-flow-research) — numerical engine for consolidation in language models, built on four psycholinguistic activation densities (Levelt–Baddeley). Its `ERRATUM.md` requalifies the quantitative results of the paper draft and is to be read before citing any number. MIT. [10.5281/zenodo.19666755](https://doi.org/10.5281/zenodo.19666755)
+- [**micro-kiki**](https://github.com/hypneum-lab/micro-kiki) — multi-LoRA runtime: domain-expert LoRA adapters with a cognitive layer (Aeon memory) on Qwen3.6-35B-A3B. Corrected figures are listed in `docs/ERRATA.md`. Apache-2.0. [10.5281/zenodo.19666759](https://doi.org/10.5281/zenodo.19666759)
 
-### Upstream — numerical engine
+Auxiliary public repositories: [`rescience-nh01`](https://github.com/hypneum-lab/rescience-nh01) (ReScience C submission package), [`paper-methodo-2026`](https://github.com/hypneum-lab/paper-methodo-2026) (working repository of the methods note, not yet published) and [`moshivis`](https://github.com/hypneum-lab/moshivis) (fork of Kyutai's vision-speech model). Some auxiliary repositories are private, among them `library` (manuscripts, cited references, review reports and operational planning).
 
-- [**kiki-flow-research**](https://github.com/hypneum-lab/kiki-flow-research) — engine for LLM consolidation, grounded in the Levelt–Baddeley model of language production. Four psycholinguistic species evolve on commodity Apple Silicon under a legacy split scheme (projected Euclidean descent of F, then an entropic KL prox anchored on the previous histogram), which the repository's [ERRATUM](https://github.com/hypneum-lab/kiki-flow-research/blob/main/ERRATUM.md) §12 states is not a JKO step of F ; three tracks (nightly consolidation of a LoRA stack, N-particle Langevin paper proxy, pure-NumPy streaming surrogate for advisory routing).
-  `main`, 227 commits ; latest release **`paper-v0.13-draft`** (2026-10-25) — Zenodo [10.5281/zenodo.23636477](https://doi.org/10.5281/zenodo.23636477), concept DOI [10.5281/zenodo.19666755](https://doi.org/10.5281/zenodo.19666755). October 2026 : two reproducibility bugs found and documented as errata (MLX `prox_w2`, solver `max_iter` ; the second changes no reported number, impact ≤ 1.7e-5), CI pinned (`uv --locked`), rigorous specialisation measure. MIT.
+## Method
 
-### Reference cross-substrate measurement
+- **Freeze.** Since October 2026, a study is frozen by a merged pull request, a freeze manifest and an annotated git tag archived on Software Heritage (level L1); a restricted-access Zenodo deposit adds a third-party date (L2); a public registration on OSF Registries or Octopus is level L3. Runs started before the freeze tag are not confirmatory.
+- **Reading gate.** Since November 2026, heavy campaigns and L3 registrations must first pass a reading gate: a reading note on the primary sources, a report by an independent AI reviewer given the repositories but not the lab's conclusions (the blind contradictor), and dated literature-watch rounds. Campaigns frozen before the rule were not resubmitted to it; dated exceptions are recorded in the repository concerned.
+- **Nulls and non-tests.** Null and inconclusive results are reported at the same rank as positive ones. A test that cannot inform the hypothesis, because the network did not learn the task or because a control could not fail, is reported as a non-test, not as evidence either way.
+- **Amend.** Deviations and amendments are declared and dated in each repository; errata stay next to the claims they correct.
+- **Scope.** Claims made before October 2026 were not all pre-registered. The [hypothesis catalogue](https://github.com/hypneum-lab/.github/blob/main/docs/research/2026-11-06-refresh-hypotheses/catalogue-v3.md) (catalogue v3, 2026-11-11, in French) records the status of each one.
 
-- [**nerve-wml**](https://github.com/hypneum-lab/nerve-wml) — substrate-agnostic Nerve Protocol for inter-WML communication : discrete neuroletters, γ/θ multiplexing, sparse learned topology. Three substrates share the protocol (`MlpWML`, `LifWML`, `TransformerWML`) ; polymorphism gap MLP↔LIF decays with N (10.7 % at N=2 → 2.4 % at N=32). The GammaThetaMultiplexer verdicts are *tied* / *tied-stable* across N8/N9.
-  **N10-C** (Procgen multi-agent, 6 seeds, pre-registered) was frozen on 2026-10-24 (annotated tag `n10c-freeze-20261024`, archived on Software Heritage) and launched on two hosts ; the first attempt was halted on 2026-10-25 — the image trunk collapsed before 1 M steps and the team reward proved too sparse. Diagnosis and re-run presets in draft PR [#72](https://github.com/hypneum-lab/nerve-wml/pull/72) ; control-arm addendum **N10-C-bis** in draft PR [#61](https://github.com/hypneum-lab/nerve-wml/pull/61). Non-determinism of MLX conv backward (Metal ~1e-7, CUDA ~1e-5 rel.) is declared in the pre-reg.
-  **NH-01** (dreaming Hopfield kernel vs uniform synaptic shrink, Fachechi–Agliari–Barra 2019) : three pre-registered runs (pilot, confirmatory N = 1 000, correlated patterns) ; confirmed at m ∈ {0, 0.15}, m = 0.30 registered C1 confirmed but post-analysis inconclusive. A ReScience C submission package, [`rescience-nh01`](https://github.com/hypneum-lab/rescience-nh01), was assembled on 2026-10-31 and went through two independent automated review passes (published in its `review/` folder) ; submission pending the PI's proofread.
-  `master` ; release `v1.10.0` (2026-10-31, first published since `v1.8.1`). Zenodo concept DOI [10.5281/zenodo.19656342](https://doi.org/10.5281/zenodo.19656342). MIT.
+The six programme principles, beginning with "truth before novelty" and "falsifiable before tested", are public (in French) in [`docs/PROJECT-MANAGEMENT.md`](https://github.com/hypneum-lab/.github/blob/main/docs/PROJECT-MANAGEMENT.md) §0.
 
-### Behavioural benchmark
+## Where it stands (2026-11-15)
 
-- [**bouba_sens**](https://github.com/hypneum-lab/bouba_sens) — cross-modal plasticity benchmark. A 5-modality agent (audio, vision, tactile, gravity, force) undergoes congenital vs late-acquired lesions under progressive SNR degradation ; three pre-registered invariants B-1 / B-2 / B-3.
-  **The lab's first null-results programme.** All three original readings were overturned by its own critical validation (ADR-0006 v0.5.0 retraction ; §5.5 FINAL Retract ADR-0019 ; N12 subgroup replication **LOST 0/2** at Bonferroni α=0.025). B-3 survives on magnitude only, and the review of 2026-10-24 asks for a calibrated extreme-value null on Me6 before any further claim. TMLR submission stays **blocked** until B-1/B-2 are reported as equivalence tests (TOST) and the Me6 null is calibrated. Draft pre-regs v0.7–v0.9 in PR [#9](https://github.com/hypneum-lab/bouba_sens/pull/9) ; Me6 null-calibration work merged 2026-10-25 ([#19](https://github.com/hypneum-lab/bouba_sens/pull/19)).
-  `main`, 211 commits ; release `v0.5.9` (2026-05-10). Zenodo concept DOI [10.5281/zenodo.19701353](https://doi.org/10.5281/zenodo.19701353). MIT.
+- **NH-01, ReScience C.** A replication of the dreaming Hopfield kernel of Fachechi, Agliari and Barra (2019) was submitted on 2026-10-31 ([ReScience/submissions#147](https://github.com/ReScience/submissions/issues/147), open on 2026-11-15). The replication is partial: in a pre-registered post-freeze ablation, declared to the editors on 2026-11-04, keeping the self-coupling moves the capacity peak to t = 1 and the headline ratio from 3.9 to 1.9 (draft version 2, branch `v2-diagonal` of `rescience-nh01`).
+- **bouba_sens.** B-1 and B-2 are reported as non-test / non-measurable, since the network did not learn the task in the regime where they were measured (decision of 2026-11-07, [bouba_sens#24](https://github.com/hypneum-lab/bouba_sens/issues/24)). B-3 is inconclusive: its paired null is not calibrated at large n (catalogue v3, row BS-B3).
+- **RECOMBINE.** In `dream-of-kiki`, the recombine operation shows no added benefit across 4 benchmarks × 4 substrates. This is a non-rejection, with a minimum detectable effect of d ≈ 0.86, reported as a null (catalogue v3, row DOK-H6C).
+- **FOSDEM 2027.** A talk proposal, "Freeze, guard, null, amend", was submitted to the Open Research devroom on 2026-10-31.
+- **OSF.** A landing page for the lab, [osf.io/52nf7](https://osf.io/52nf7), was created on 2026-11-15. It is not a study pre-registration.
 
-### Deployable artefact
+## This quarter
 
-- [**micro-kiki**](https://github.com/hypneum-lab/micro-kiki) — multi-LoRA runtime with a cognitive layer on **Qwen3.6-35B-A3B** (native MoE, 256 experts, 3 B active, 262 K context) : 35 domain-expert V4 adapters (rank 16, scale 20), sigmoid domain router (its earlier accuracy figures are withdrawn, see erratum [E-2026-10-25-03](https://github.com/hypneum-lab/micro-kiki/blob/main/docs/ERRATA.md)), **Aeon** episodic memory, `kiki-flow` advisory-routing bridge. October 2026 : MLX prompt-cache reuse fixed ([#6](https://github.com/hypneum-lab/micro-kiki/pull/6)). The Mac Studio that served it is powered down ; adapters and datasets are preserved, and the review lists a RAG-vs-Aeon baseline (NH-85) for phase 2.
-  `main`, 598 commits ; release `v0.3.0` (2026-04-20). Zenodo concept DOI [10.5281/zenodo.19666759](https://doi.org/10.5281/zenodo.19666759). Apache-2.0.
+- **Method:** a methods note, "Freeze, guard, null, amend" (`paper-methodo-2026`).
+- **Calibration of decision models:** Zuse-2 (private repository), the only heavy campaign of the quarter, to be frozen and launched only after the methods note and its reading gate.
+- **Associative memory:** version 2 of the NH-01 ReScience C submission, and a dose-response control of the downscale operation (NH-114).
 
-### Embodied — World-Model Learners *(private)*
+## Durable pointers
 
-- `baby-brain` — ontogenetic harness for substrate-agnostic **World-Model Learners** (649 commits ; milestones `sp1`, `sp1.5-coreml`, `sp2-training` shipped). Phase 0 of the roadmap removes the « PASS » claims that have no artefact ; phase 2 pilots a latent world model (JEPA-class) as substrate (NH-77).
-- `BabyBrain` — macOS SwiftUI cockpit for the harness.
-- `whisperx-server` — streaming speech-to-text (whisper.cpp + CoreML) feeding the Speaker-Identity subsystem.
-- [`moshivis`](https://github.com/hypneum-lab/moshivis) *(public fork)* — Kyutai's vision-speech model, reference substrate for multimodal grounding.
-- `micro-kiki-quantum` — QPU-backed satellite, **archived** since 2026-05-10 (`v0.0.1-archived`). No QPU work in 2026-27.
+- Researcher: Clément Saillant, ORCID [0000-0002-8414-185X](https://orcid.org/0000-0002-8414-185X)
+- Lab page on OSF: [osf.io/52nf7](https://osf.io/52nf7), DOI [10.17605/OSF.IO/52NF7](https://doi.org/10.17605/OSF.IO/52NF7), CC BY 4.0
+- OSF registrations, cycle 1 (2026): [10.17605/OSF.IO/Q6JYN](https://doi.org/10.17605/OSF.IO/Q6JYN) (dreamOfkiki pre-registration, 2026-04-19); [10.17605/OSF.IO/TPM5S](https://doi.org/10.17605/OSF.IO/TPM5S) (Amendment 1, restructuring of the Bonferroni testing family, 2026-04-21)
+- Software archives: Zenodo concept DOIs of the five repositories, listed above
+- Hypothesis catalogue (in French): [`hypneum-lab/.github`, `docs/research/2026-11-06-refresh-hypotheses/catalogue-v3.md`](https://github.com/hypneum-lab/.github/blob/main/docs/research/2026-11-06-refresh-hypotheses/catalogue-v3.md)
+- Upstream components and contributions: [`docs/related-work-upstream.md`](https://github.com/hypneum-lab/.github/blob/main/docs/related-work-upstream.md); documentation pull request [ml-explore/mlx#4810](https://github.com/ml-explore/mlx/pull/4810), merged on 2026-11-03
 
----
+## AI assistance (transparency)
 
-## Architecture map
-
-```
-      ┌─────────────────────────────────────┐
-      │  kiki-flow-research                 │  upstream numerical engine
-      │  legacy split scheme + 4 species    │  paper-v0.13-draft · Zenodo
-      └──────────────┬──────────────────────┘
-                     │ numerical primitives
-                     ▼
-      ┌─────────────────────────────────────────────────────┐
-      │  dream-of-kiki  (flagship, GENIAL framework)        │
-      │  DR-0..DR-4 · Conformance Criterion C+              │
-      │  substrates : MLX kiki-oniric + E-SNN thalamocortical│
-      │  Paper 1 v0.2 → arXiv (phase 3) · Zenodo            │
-      └──────┬───────────────────────────┬──────────────────┘
-             │ cites §7.4                │ ε-trace bridge (gate-dream deferred)
-             ▼                           ▼
-   ┌──────────────────────┐   ┌──────────────────────┐
-   │  nerve-wml  v1.9     │   │  micro-kiki  v0.3    │
-   │  GTM tied-stable     │   │  Qwen3.6-35B-A3B     │
-   │  N10-C → N10-C-bis   │   │  35 LoRA · Aeon ·    │
-   │  Zenodo              │   │  domain router       │
-   └──────────┬───────────┘   └──────────────────────┘
-              │ shared codebook (γ/θ)
-              ▼
-   ┌──────────────────────┐   ┌──────────────────────┐
-   │  bouba_sens  v0.5.9  │   │  baby-brain (private)│
-   │  null results · TMLR │   │  World-Model Learners│
-   │  blocked → TOST+Me6  │   │  → WML-JEPA pilot    │
-   └──────────────────────┘   └──────────────────────┘
-```
-
----
-
-## Related work and upstream
-
-The programme runs on open components from large industrial laboratories and says so in one place: [`docs/related-work-upstream.md`](https://github.com/hypneum-lab/.github/blob/main/docs/related-work-upstream.md). In short : **used** — Apple MLX everywhere, PyTorch, OpenAI Procgen (N10-C), Meta DINOv2 and Kyutai Mimi (`baby-brain`), Qwen (`micro-kiki`) ; **targeted** — Meta I-JEPA (N11-A) and Google DeepMind DreamerV3 (N11-C), both pre-registered and deferred ; **given back** — one upstream issue, [`ml-explore/mlx#3568`](https://github.com/ml-explore/mlx/issues/3568) (cross-architecture non-determinism of `mx.random.normal`, open), an arm64 build patch for Procgen kept in `nerve-wml`, and the ReScience C package `rescience-nh01`. Candidate contributions are listed in [`docs/upstream-contributions-plan-2026-10-31.md`](https://github.com/hypneum-lab/.github/blob/main/docs/upstream-contributions-plan-2026-10-31.md) (two sent on 2026-10-31: the `mlx#3568` follow-up and a test report on `openai/procgen#107`); the standing presence towards contributor or member status (MLX + `mlx-community`, EleutherAI, Farama, reviewer roles) is in [`docs/upstream-contributor-plan-v3-2026-10-31.md`](https://github.com/hypneum-lab/.github/blob/main/docs/upstream-contributor-plan-v3-2026-10-31.md).
-
-## How we work
-
-- **Pre-registration before evidence.** OSF project [dreamOfkiki](https://osf.io/v7a2j) — DOI [10.17605/OSF.IO/Q6JYN](https://doi.org/10.17605/OSF.IO/Q6JYN) (H1–H4, locked 2026-04-19) plus the Bonferroni amendment ; local pre-regs are frozen by annotated git tag + Software Heritage before OSF filing. Levels L0 draft / L1 tag + SWHID / L2 time-stamped deposit / L3 OSF or Octopus.
-- **Bit-exact reproducibility (R1).** Every experimental claim resolves to a deterministic `run_id` keyed on `(c_version, profile, seed, commit_sha, benchmark_version)` ; declared exceptions (MLX conv backward) are stated in the pre-reg.
-- **Multi-seed first class.** Five seeds minimum ; the `bouba_sens` 5 → 10-seed collapse is the canonical case study.
-- **Internal critical validation before external review.** Null-model controls, bootstrap CIs, multi-estimator robustness checks and an independent critic review ; the Popperian guardrails fire inside the lab, which is why this page lists retractions.
-- **Dual-axis versioning (DualVer)** : the formal-consistency axis (FC) and the empirical-consistency axis (EC) bump independently.
-- **No AI co-authorship.** Byline credits *project contributors* ; LLM assistance is flagged in PR descriptions ; the researcher decides, runs, validates and signs. Tools in use : Claude Code (Anthropic) for code, documentation and operations in PI-driven sessions ; Codex CLI (OpenAI) for independent review passes whose reports are published next to the reviewed material. Each repository README carries the same "AI assistance (transparency)" section.
-- **Compute** : a Mac mini M1 (MLX), a shared RTX 4090 node and a small CPU server ; no cloud GPU. The Mac Studio used in spring 2026 is powered down.
-
-Code archives on Zenodo (concept DOIs, latest version resolves) : `dream-of-kiki` [19701355](https://doi.org/10.5281/zenodo.19701355) · `nerve-wml` [19656342](https://doi.org/10.5281/zenodo.19656342) · `bouba_sens` [19701353](https://doi.org/10.5281/zenodo.19701353) · `kiki-flow-research` [19666755](https://doi.org/10.5281/zenodo.19666755) · `micro-kiki` [19666759](https://doi.org/10.5281/zenodo.19666759). Preprints : arXiv (Paper 1, phase 3) then HAL.
-
----
-
-## People
-
-- **Clément Saillant** — founder, corresponding author, maintainer. [GitHub](https://github.com/electron-rare) · [L'Électron Rare](https://www.lelectronrare.fr/) · `clement@saillant.cc`
-  Founder of L'Électron Rare — custom electronic systems (design, consulting, training) : electronics, automation, energy. Ten years of field experience, open-source contributor (KiCad, KXKM). Research at Hypneum Lab is conducted alongside this activity, with a disciplined use of AI agents as research tools ; the verifiability of artefacts (pre-registration, calibrated nulls, public errata, reproducibility) is the chosen counterpart of a non-traditional path. Grandris (69), Auvergne-Rhône-Alpes, France.
-- Visiting collaborators and co-authors are credited per publication.
-
----
+AI assistants are used as tools, never as authors. Claude Code (Anthropic) assists with code, documentation, operations and literature search in sessions driven by the researcher; Codex CLI (OpenAI) runs independent review passes whose reports are published next to the reviewed material. Clément Saillant takes every claim, verdict and pre-registration decision and is responsible for all decisions, errors and retractions. No model is listed as a co-author of a publication or a commit. Each repository README carries an "AI assistance (transparency)" section with the details for that repository.
 
 ## Contributing
 
-Research-first discipline. Pull requests welcome, especially on :
-
-- Formal proofs for the DR-0..DR-4 family (freeness / universal property of the operation semigroup is explicitly open).
-- Conformance Criterion stress tests against alternative substrates (transformer-based, analog neuromorphic, JEPA-class).
-- Calibrated nulls and equivalence tests for the `bouba_sens` invariants.
-- Reproducibility tooling — shared `run_registry`, invariants harness, benchmark integrity.
-- Translations and accessibility improvements.
-
-Policy : every experimental claim must resolve to a registered `run_id` or a proof file (contract R1) ; no AI attribution in author lists, acknowledgments or bibliographies, LLM assistance flagged in PR descriptions ; byline per publication `<repo> project contributors` with Clément Saillant as corresponding author. Issues follow the org-wide templates (hypothesis, correction) and carry the `a-valider-pi` label until the PI validates them. See [`CONTRIBUTING.md`](https://github.com/hypneum-lab/dream-of-kiki/blob/main/CONTRIBUTING.md) in the flagship repository.
-
----
+Issues and pull requests are welcome. The organisation provides issue templates for a new hypothesis and for a correction.
 
 ## Contact
 
-Research / collaboration inquiries : `clement@saillant.cc`. For L'Électron Rare business (custom electronic systems, consulting, training) see [www.lelectronrare.fr](https://www.lelectronrare.fr/).
+Research and collaboration: clement@lelectronrare.fr. L'Électron Rare (electronic systems design, consulting, training): [www.lelectronrare.fr](https://www.lelectronrare.fr/).
 
-*Page rewritten 2026-10-25 from live GitHub and Zenodo state ; the dated milestone sections it replaces are in [`docs/profile-journal-2026.md`](https://github.com/hypneum-lab/.github/blob/main/docs/profile-journal-2026.md).*
+*Page rewritten on 2026-11-15 from the state of the repositories, Zenodo and OSF on that date.*
