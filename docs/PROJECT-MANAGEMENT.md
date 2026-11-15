@@ -7,7 +7,7 @@ Version 1 du 25 octobre 2026. Complète `ROADMAP.md`. Un seul chercheur, dix heu
 | Besoin | Outil | Règle |
 |---|---|---|
 | Tâches, hypothèses, jalons | **GitHub Projects** (org hypneum-lab, projet « Hypneum — Programme 2026-27 ») + une issue par tâche dans le dépôt concerné | une issue = un verdict attendu ; jamais d'issue « réfléchir à » |
-| Vue d'ensemble, décisions, cadence | `ROADMAP.md` et ce fichier dans hypneum-lab/.github ; copie Outline (collection Hypneum Lab) | la version GitHub fait foi ; Outline = lecture |
+| Vue d'ensemble, décisions, cadence | `ROADMAP.md` (privée dans hypneum-lab/library depuis le 2026-11-15) et ce fichier dans hypneum-lab/.github ; copie Outline (collection Hypneum Lab) | la version GitHub fait foi ; Outline = lecture |
 | Décisions scientifiques | ADR dans chaque dépôt (`docs/adr/`), numérotés sans doublon | une décision = un ADR daté, jamais un commentaire de PR |
 | Préenregistrements | niveaux L0–L3 (§4) ; fichiers dans `docs/preregistration/` du dépôt | une préreg sans tag n'existe pas |
 | Résultats | JSON commis dans `results/` ou DOI Zenodo ; jamais un chiffre nu dans un README | definition of done (§5) |
