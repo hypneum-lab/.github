@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Roadmap et gestion de projet
+  - name: Gestion de projet et principes
     url: https://github.com/hypneum-lab/.github
-    about: ROADMAP.md et PROJECT-MANAGEMENT.md (étiquettes, jalons, cadence, niveaux de préenregistrement).
+    about: PROJECT-MANAGEMENT.md (principes, étiquettes, jalons, cadence, niveaux de préenregistrement).
