@@ -12,7 +12,7 @@ body:
     attributes:
       label: Coût estimé (h)
       description: Heures de calcul et d'analyse (ordre de grandeur, source indiquée).
-      placeholder: "8 (1 j, ROADMAP S7)"
+      placeholder: "8 (1 j, source : ADR ou note de lecture)"
     validations:
       required: true
   - type: dropdown

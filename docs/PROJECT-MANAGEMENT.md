@@ -1,6 +1,22 @@
 # Hypneum Lab — Gestion de projet
 
-Version 1 du 25 octobre 2026. Complète `ROADMAP.md`. Un seul chercheur, dix heures par semaine, des agents pour rédiger et exécuter.
+Version 1 du 25 octobre 2026, complétée le 15 novembre 2026 (§0, principes). Complète la roadmap trimestrielle (privée dans hypneum-lab/library depuis le 2026-11-15). Un seul chercheur, dix heures par semaine, des agents pour rédiger et exécuter.
+
+## 0. Principes du programme
+
+Source publique des six principes cités par les préenregistrements, ADR et
+amendements des dépôts d'études (par exemple « principe 3 », « principe 6 »).
+Texte repris sans changement de la roadmap v2.2 (hypneum-lab/.github
+`docs/ROADMAP.md` au commit 12449ff, 2026-11-11, lignes 15-20) le
+2026-11-15, jour où la roadmap est devenue privée. Toute révision des
+principes se fait ici, par PR publique, et est datée.
+
+1. **Vérité avant nouveauté.** On ne lance rien de neuf tant qu'un chiffre faux reste dans un README, un papier ou un fichier Zenodo.
+2. **Falsifiable avant testé.** Une hypothèse entre en phase de test seulement si elle a un nul calibré, un critère de réfutation écrit et un verdict informatif en cas de négatif.
+3. **Une campagne, un verdict.** Pas de nouveau **gel** tant que la précédente campagne n'a pas rendu son verdict ; la lecture n'est pas un gel (spec:140). Exception inchangée : un addendum de contrôle sur une campagne en cours.
+4. **Le calcul suit les machines.** Une seule campagne lourde à la fois. Aucune nouvelle campagne GPU avant S6 ; depuis le 10/11, aucune campagne lourde avant le dépôt arXiv de la note méthodo. CPU léger sur electron-server, CPU lourd sur KXKM en `nice 19`, jamais sur GrosMac.
+5. **Dix heures par semaine, sauf exception datée.** La règle reste 10 h par semaine : deux soirées (arbitrage lundi, écriture jeudi) et un demi-week-end. Le trimestre S1-S13 est une **exception datée** : 185 h (≈ 14 h par semaine), décidée par le PI le 01/11 (rapport:303), mesurée chaque mois et comparée à la règle. La réconciliation avec le plafond de 10 h du plan pro 3 ans appartient au PI (spec:32). Les agents rédigent et exécutent ; le chercheur décide, lance, valide, signe.
+6. **Lire avant de geler.** Aucun tag de gel sans note de lecture, contradicteur et trois tests passés (saturation, recoupement, couverture ; spec §4.2). Le verrou s'applique à toute campagne lourde (GPU, ou > 6 h CPU, ou > 1 semaine calendaire) et à toute préreg L3. Les campagnes déjà gelées (E1-small, N10-C run 2, Me6, GB300 g7) ne sont pas re-soumises.
 
 ## 1. Outils et où vit quoi
 
@@ -82,7 +98,7 @@ confirmé · réfuté · nul (équivalence TOST) · non concluant · rétracté 
 
 ## 7. Rituels mensuels et trimestriels
 
-- **Fin de mois (1 h, samedi)** : indicateurs de `ROADMAP.md` ; table maîtresse mise à jour ; une ligne dans `docs/research/journal.md`.
+- **Fin de mois (1 h, samedi)** : indicateurs de la roadmap (privée) ; table maîtresse mise à jour ; une ligne dans `docs/research/journal.md`.
 - **Fin de phase** : revue de jalon, décision GO/NO-GO des axes concernés (ADR), roadmap révisée.
 - **Octobre** : revue complète des hypothèses (format du 24/10/2026) ; veille semestrielle en avril.
 

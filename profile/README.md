@@ -12,14 +12,15 @@ A one-person research lab running an open-science programme on knowledge consoli
 
 **Six months in, the lab has formulated 180 hypotheses or claims and built the discipline to test them** — pre-registration, five seeds minimum, Bonferroni, public errata. A full review of those claims was carried out on 2026-10-24 and revised on 2026-10-25 after two independent critiques ([`docs/research/2026-10-24-revue-hypotheses/`](https://github.com/hypneum-lab/.github/blob/main/docs/research/2026-10-24-revue-hypotheses/README.md), in French). Per its master table : 55 confirmed with ≥ 5 seeds or a calibrated null, 46 negative (refuted, retracted or null), 24 inconclusive, 19 amended, 12 pending, 19 never tested, 5 unverifiable. What holds is mostly *negative or methodological* : the retractions were made by the lab itself, before external review.
 
-That review feeds the **2026-27 roadmap** (maintained privately since 2026-11-15, see [`docs/ROADMAP.md`](https://github.com/hypneum-lab/.github/blob/main/docs/ROADMAP.md); public rules in [`docs/PROJECT-MANAGEMENT.md`](https://github.com/hypneum-lab/.github/blob/main/docs/PROJECT-MANAGEMENT.md)), tracked issue by issue on an internal GitHub Project of the organisation (47 issues, milestones M0–M3, ~10 h of research time per week) :
+That review feeds the **2026-27 roadmap**, maintained privately since 2026-11-15 (public rules and principles in [`docs/PROJECT-MANAGEMENT.md`](https://github.com/hypneum-lab/.github/blob/main/docs/PROJECT-MANAGEMENT.md)) and tracked issue by issue on a GitHub Project of the organisation. Since the PI decisions of 2026-11-10 and 2026-11-11 the quarter is organised around three lines, one deliverable each :
 
-| Phase | Weeks | Goal | Milestone |
-|---|---|---|---|
-| **0 — Truth** | 26 Oct → 8 Nov 2026 | Retract and correct what is false ; secure priority ; freeze N10-C-bis | M0 |
-| **1 — Falsifiable** | 9 → 29 Nov | Make DR-3, test 6, DR-0 and the `bouba_sens` pre-regs measurable ; evaluate N10-C | M1 |
-| **2 — Ten hypotheses** | 30 Nov → 3 Jan 2027 | Run the ten tests that decide the most for the least ; start the « matter » and WML-JEPA pilots | M2 |
-| **3 — Write** | 4 → 24 Jan | Methodological note (calibrated nulls + errata) submitted ; N10-C report ; GO/NO-GO on the matter axis | M3 |
+| Line | Deliverable | Milestone |
+|---|---|---|
+| **Method** | methods note (freeze, guard, null, amend) on arXiv | before 2026-12-15, M2 (3 Jan 2027) |
+| **Calibration of decision models** | Zuse-2, the only heavy campaign of the quarter, frozen and launched only after the methods note and its reading gate | M1 reading gate engaged (29 Nov 2026), run after M2 |
+| **Associative memory** | ReScience C v2 (NH-01) submitted, DOWNSCALE dose-response control (NH-114) | M3 (24 Jan 2027) |
+
+Everything else (emergent communication N10, `bouba_sens` v0.7.1, `kiki-flow` beyond NH-20, `baby-brain`) is on hold without hours before M3. The phase table of the v1 roadmap (25 Oct 2026, « Truth / Falsifiable / Ten hypotheses / Write ») is superseded.
 
 Principles : truth before novelty ; falsifiable before tested ; one pre-reg, one test, one verdict ; no new repo, no QPU, no wet-lab, no hardware purchase in 2026-27.
 
