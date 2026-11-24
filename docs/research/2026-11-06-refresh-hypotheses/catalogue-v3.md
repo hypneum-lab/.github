@@ -542,19 +542,21 @@ Les 59 reformulations comptent MK-17, ajoutée à 21:10 CET hors du delta (§ D�
 | Classe | 24/10 | v2 | v3 | v3 − v2 |
 |---|---|---|---|---|
 | confirmé | 57 | 55 | 48 | -7 |
-| réfuté | 24 | 24 | 16 | -8 |
+| réfuté | 24 | 24 | 15 | -9 |
 | nul | 7 | 7 | 6 | -1 |
 | non concluant | 24 | 27 | 40 | +13 |
 | rétracté | 14 | 13 | 16 | +3 |
 | amendé | 19 | 20 | 23 | +3 |
 | en attente | 12 | 12 | 10 | -2 |
-| non testé | 19 | 18 | 17 | -1 |
+| non testé | 19 | 18 | 18 | +0 |
 | non vérifiable | 4 | 4 | 4 | +0 |
 | **total** | 180 | 180 | 180 | 0 |
 
 Lignes qui changent de classe entre v2 et v3 : 27 (19 par la table de `delta:146-166`, 3 par Q2 : BS-SF45, BS-CBF, KFR-H2, 1 par la décision de 21:10 CET : MK-17, 4 par M-2 le 07/11 : BS-COMP, BS-TAU, BS-S14c, BS-N12 ; KFR-H2 change encore de classe d'arrivée, réfuté → non concluant, M-3). Le total des écarts vaut 0 par construction ; le contrôle utile est la colonne `Verdict v3` ligne par ligne.
 
 **Mise à jour du 07/11 (passe croisée M-2, M-3 ; recompté par script).** Avant : réfuté 21, non concluant 35, 23 lignes changent de classe (copie `catalogue-v3-pre-cross-2026-11-07.md`). Après : réfuté 16, non concluant 40, 27 lignes. Comptes par étiquette inchangés (fermé 19, reformulé 59, gardé 25, abandonné 1, non touchée 187) : les cinq lignes étaient déjà « fermé ».
+
+**Mise à jour du 24/11 (MK-11 ; recompté par script).** Avant : réfuté 16, non testé 17, 27 lignes changent de classe. Après : réfuté 15, non testé 18, 28 lignes (MK-11, réfuté → non testé : les essais sur données réelles n'utilisaient pas le centrage, erratum `micro-kiki:docs/ERRATA.md` E-2026-11-24-01, décision PI 24/11). Comptes par étiquette inchangés : MK-11 reste « non touchée ».
 
 ## Correspondance avec v2
 
